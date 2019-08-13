@@ -23,6 +23,7 @@ A three-axis accelerometer <TWH: details go here...>
 **Sampling frequency:** 16Hz
 
 ### Example
+
 | UTC Timestamp | Offset | X             | Y               | Z                |
 | ------------- | ------ | ------------- | --------------- | ---------------- |
 | 1533922952107 | -360   | 0.01611328125 | -0.995849609375 | -0.0215847572013 |
@@ -36,6 +37,7 @@ A three-axis gyroscope <TWH: details go here...>
 **Sampling frequency:** 32Hz
 
 ### Example
+
 | UTC Timestamp | Offset | X                | Y                | Z                |
 | ------------- | ------ | ---------------- | ---------------- | ---------------- |
 | 1533922952107 | -360   | 70.2743530273437 | 112.472534179687 | -50.689697265625 |
