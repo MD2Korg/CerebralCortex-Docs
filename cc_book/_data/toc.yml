@@ -74,6 +74,9 @@
   not_numbered: true
   expand_sections: false
   sections:
+  - title: Stress
+    url: /data_dictionary/inferences/stress
+    not_numbered: true
   - title: Smoking
     url: /data_dictionary/inferences/smoking
     not_numbered: true
@@ -83,8 +86,14 @@
   not_numbered: true
   expand_sections: false
   sections:
+  - title: cStress
+    url: /data_dictionary/features/cstress
+    not_numbered: true
   - title: PuffMarker
     url: /data_dictionary/features/puffmarker
+    not_numbered: true
+  - title: EMA
+    url: /data_dictionary/features/ema
     not_numbered: true
 
 - title: Raw Streams
@@ -103,4 +112,16 @@
     not_numbered: true
   - title: MotionSenseHRV
     url: /data_dictionary/raw_streams/motionsensehrv
+    not_numbered: true
+  - title: EMA
+    url: /data_dictionary/raw_streams/ema
+    not_numbered: true
+  - title: mCerebrum
+    url: /data_dictionary/raw_streams/mCerebrum
+    not_numbered: true
+  - title: Scheduler
+    url: /data_dictionary/raw_streams/scheduler
+    not_numbered: true
+  - title: Smartphone
+    url: /data_dictionary/raw_streams/smartphone
     not_numbered: true
