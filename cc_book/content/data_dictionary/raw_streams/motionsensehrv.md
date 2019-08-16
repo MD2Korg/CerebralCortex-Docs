@@ -1,6 +1,6 @@
 # MotionSense
 
-![MotionSenseHRV Hardware](/images/MotionSenseHRV.png)
+![MotionSenseHRV Hardware](../../images/MotionSenseHRV.png)
 
 ## Accelerometer
 

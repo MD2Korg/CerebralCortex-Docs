@@ -5,7 +5,7 @@ transmits 3-axis accelerometer and gyroscope data over a Bluetooth Low Energy
 wireless channel. This device has a run time of about 24 hours on a charge while
 transmitting the data.
 
-![MotionSense Hardware](/images/MotionSenseWrist.png)
+![MotionSense Hardware](../../images/MotionSenseWrist.png)
 
 **Stream name structure:**
 `org.md2k.motionsense+<STREAM_NAME>+MOTION_SENSE+<ATTACHMENT>`

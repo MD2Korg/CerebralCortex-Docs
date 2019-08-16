@@ -26,8 +26,8 @@ feature vector describing the set of numeric features in puffMarker
 ### Example
 
 | UTC Timestamp | Offset | RIP Inspiration Duration | RIP Expiration Duration | Gyro Magnitude | Wrist Pitch | rStime - wStime |
-|---------------|--------|--------------------------|-------------------------|----------------|-------------|-----------------|
-| 1533922952107	| -360	 | 1271	                    | 1701	                  | 1.302452	 	   |10.996382	   | 99.462646       |
+| ------------- | ------ | ------------------------ | ----------------------- | -------------- | ----------- | --------------- |
+| 1533922952107 | -360   | 1271                     | 1701                    | 1.302452       | 10.996382   | 99.462646       |
 
 
 #### Columns
@@ -57,9 +57,9 @@ Represents the probability of Puff using the puffMarker model
 
 ### Example
 
-| UTC Timestamp | Offset | Probability |
-|---------------|--------|-------------|
-| 1533922952107	| -360	 | 0.309815016583471 |
+| UTC Timestamp | Offset | Probability       |
+| ------------- | ------ | ----------------- |
+| 1533922952107 | -360   | 0.309815016583471 |
 
 
 #### Columns
@@ -85,8 +85,8 @@ Represents puff value puffMarker model
 ### Example
 
 | UTC Timestamp | Offset | Label |
-|---------------|--------|-------------|
-| 1533922952107	| -360	 | 1 |
+| ------------- | ------ | ----- |
+| 1533922952107 | -360   | 1     |
 
 #### Columns
 - **UTC Timestamp** _(seconds)_: Coordinated Universal Time indicating the number of seconds since January 1, 1970

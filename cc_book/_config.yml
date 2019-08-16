@@ -22,9 +22,8 @@ email: dev@md2k.org
 description: >-
   This documentation is for the Cerebral Cortex platform.
 
-baseurl: /               # the subpath of your site, e.g. /blog. If there is no subpath for your site, use an empty string ""
+baseurl: /documentation               # the subpath of your site, e.g. /blog. If there is no subpath for your site, use an empty string ""
 url: https://mdk2.org/   # the base hostname & protocol for your site, e.g. http://example.com
-
 
 #######################################################################################
 # Jupyter Book settings
@@ -48,7 +47,7 @@ search_max_words_in_content: 100   # In the search function, use at most this ma
 use_jupyterlab: true                      # If 'true', interact links will use JupyterLab as the interface
 
 # Jupyterhub link settings
-use_jupyterhub_button: true               # If 'true', display a button that will direct users to a JupyterHub (that you provide)
+use_jupyterhub_button: false               # If 'true', display a button that will direct users to a JupyterHub (that you provide)
 jupyterhub_url: https://odin.md2k.org/jupyterhub/ # The URL for your JupyterHub. If no URL, use ""
 jupyterhub_interact_text: Interact             # The text that interact buttons will contain.
 
@@ -125,7 +124,7 @@ sass:
 collections:
   build:
     output: true
-    permalink: /:path #.html
+    permalink: /:path.html
 
 relative_links:
   enabled: true
