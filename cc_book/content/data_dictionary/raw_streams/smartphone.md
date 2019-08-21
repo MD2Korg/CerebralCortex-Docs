@@ -12,4 +12,4 @@
 
 ## Activity Type
 
-## etc...
+## etc.
