@@ -30,7 +30,6 @@ feature vector describing the set of numeric features in puffMarker
 | 1533922952107 | -360   | 1271                     | 1701                    | 1.302452       | 10.996382   | 99.462646       |
 
 
-#### Columns
 - **UTC Timestamp** _(seconds)_: Coordinated Universal Time indicating the number of seconds since January 1, 1970
 - **Offset** _(minutes)_: The difference in time (shown in minutes) between UTC time and the local observed time
 - **RIP Inspiration Duration** _(milliseconds)_: Respiratory Inductance Plethysmography (RIP) breath inspiration duration
