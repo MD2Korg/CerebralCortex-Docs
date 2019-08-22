@@ -1,4 +1,5 @@
 # AutoSense
+
 Autosense is a wireless sensor suite that collects and processes cardiovascular, respiratory, and thermoregularity measurements that can inform about the general stress state of test subjects in their natural environment. The AutoSense suite is complemented with a software framework on a smart phone that processes sensor measurements received from AutoSense to infer stress and other rich human behaviors. AutoSense overcomes several challenges in the design of wearable sensor systems for use in the field. First, it is unobtrusively wearable because it integrates six sensors in a small form factor. Second, it demonstrates a low power design; with a lifetime exceeding ten days while continuously sampling and transmitting sensor measurements. Third, sensor measurements are robust to several sources of errors and confounds inherent in field usage. Fourth, it integrates an ANT radio for low power and integrated quality of service guarantees, even in crowded environments.
 
 ![AutoSense Hardware](/images/AutoSenseChest2.png)
@@ -6,6 +7,13 @@ Autosense is a wireless sensor suite that collects and processes cardiovascular,
 **References:**
 {% bibliography --cited %} <!-- need Bibtex citation inserted in paragraph above -->
 
+
+**Stream name structure:**
+`org.md2k.autosense+<STREAM_NAME>+AUTOSENSE+<ATTACHMENT>`
+
+**Example names:**
+- `org.md2k.autosense+ACCELEROMETER_Y+AUTOSENSE+CHEST+CHEST`
+- `org.md2k.autosense+RESPIRATION+AUTOSENSE+CHEST+CHEST`
 
 ## Respiration
 an algorithmic measure of the participant's respiration
