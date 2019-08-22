@@ -2,8 +2,8 @@
 
 A smoking episode indicates an instance of smoking using puffMarker {% cite saleheen2015puffmarker %}, a multi-sensor approach for pinpointing the timing of a lapse in smoking cessation using two wearable sensors:
 
-- AutoSense to track breathing patterns from respiration
-- MotionSense to track arm movements from 6-axis inertial sensors worn on wrists
+- AutoSense chest sensor to track breathing patterns from respiration
+- MotionSense wrist band to track arm movements from 6-axis inertial sensors worn on wrists
 
 **References:**
 {% bibliography --cited %}
