@@ -54,7 +54,6 @@ the x, y, and z axes of the Autosense accelerometer
 | ------------- | ------ | --------------- | --------------- | --------------- |
 | 1533922952107 | -360   | 1894            | 1961            | 2250            |
 
-
 - **UTC Timestamp** _(seconds)_: Coordinated Universal Time indicating the number of seconds since January 1, 1970
 - **Offset** _(minutes)_: The difference in time (shown in minutes) between UTC time and the local observed time
 - **accelerometer_x**: x-axis position of the AutoSense accelerometer
@@ -80,7 +79,6 @@ measures the data quality of the Autosense respiration signal
 | ------------- | ------ | ------------ |
 | 1533922952107 | -360   | 3            |
 
-
 - **UTC Timestamp** _(seconds)_: Coordinated Universal Time indicating the number of seconds since January 1, 1970
 - **Offset** _(minutes)_: The difference in time (shown in minutes) between UTC time and the local observed time
 - **Data_Quality**: Values=  GOOD(0), NOISE(1), BAD(2), BAND_OFF(3), MISSING(4), NOT_WORN(5), BAND_LOOSE(6)
@@ -103,7 +101,6 @@ measures the data quality of the Autosense ECG signal
 | UTC Timestamp | Offset | Data_Quality |
 | ------------- | ------ | ------------ |
 | 1533922952107 | -360   | 0            |
-
 
 - **UTC Timestamp** _(seconds)_: Coordinated Universal Time indicating the number of seconds since January 1, 1970
 - **Offset** _(minutes)_: The difference in time (shown in minutes) between UTC time and the local observed time
@@ -128,7 +125,6 @@ measures the data variance of the Autosense respiration signal
 | ------------- | ------ | ------------- |
 | 1533922952107 | -360   | 0             |
 
-
 - **UTC Timestamp** _(seconds)_: Coordinated Universal Time indicating the number of seconds since January 1, 1970
 - **Offset** _(minutes)_: The difference in time (shown in minutes) between UTC time and the local observed time
 - **Data_Variance**: Values = GOOD(0), BAD(1), NODATA(2)
@@ -151,7 +147,6 @@ measures the data variance of the Autosense ECG signal
 | UTC Timestamp | Offset | Data_Variance |
 | ------------- | ------ | ------------- |
 | 1533922952107 | -360   | 1             |
-
 
 - **UTC Timestamp** _(seconds)_: Coordinated Universal Time indicating the number of seconds since January 1, 1970
 - **Offset** _(minutes)_: The difference in time (shown in minutes) between UTC time and the local observed time

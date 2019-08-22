@@ -29,7 +29,6 @@ feature vector describing the set of numeric features in puffMarker
 | ------------- | ------ | ------------------------ | ----------------------- | -------------- | ----------- | --------------- |
 | 1533922952107 | -360   | 1271                     | 1701                    | 1.302452       | 10.996382   | 99.462646       |
 
-
 - **UTC Timestamp** _(seconds)_: Coordinated Universal Time indicating the number of seconds since January 1, 1970
 - **Offset** _(minutes)_: The difference in time (shown in minutes) between UTC time and the local observed time
 - **RIP Inspiration Duration** _(milliseconds)_: Respiratory Inductance Plethysmography (RIP) breath inspiration duration,
@@ -83,7 +82,6 @@ Represents the probability of Puff using the puffMarker model
 | ------------- | ------ | ----------------- |
 | 1533922952107 | -360   | 0.309815016583471 |
 
-
 - **UTC Timestamp** _(seconds)_: Coordinated Universal Time indicating the number of seconds since January 1, 1970
 - **Offset** _(minutes)_: The difference in time (shown in minutes) between UTC time and the local observed time
 - **Probability**: Represents the probability of Puff using the puffMarker model.
@@ -91,7 +89,7 @@ Represents the probability of Puff using the puffMarker model
 ## Label
 Represents puff value puffMarker model
 
-**Data Descriptor:** "NAME": "Puff Label", 
+**Data Descriptor:** "NAME": "Puff Label",
 "DATA_TYPE": "double",
 "MAX_VALUE": "2",
 "MIN_VALUE": "0",
@@ -114,7 +112,6 @@ Represents puff value puffMarker model
 | UTC Timestamp | Offset | Label |
 | ------------- | ------ | ----- |
 | 1533922952107 | -360   | 1     |
-
 
 - **UTC Timestamp** _(seconds)_: Coordinated Universal Time indicating the number of seconds since January 1, 1970
 - **Offset** _(minutes)_: The difference in time (shown in minutes) between UTC time and the local observed time
