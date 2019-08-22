@@ -32,15 +32,38 @@ feature vector describing the set of numeric features in puffMarker
 
 - **UTC Timestamp** _(seconds)_: Coordinated Universal Time indicating the number of seconds since January 1, 1970
 - **Offset** _(minutes)_: The difference in time (shown in minutes) between UTC time and the local observed time
-- **RIP Inspiration Duration** _(milliseconds)_: Respiratory Inductance Plethysmography (RIP) breath inspiration duration
-- **RIP Expiration Duration** _(milliseconds)_: Respiratory Inductance Plethysmography (RIP) breath expiration duration
-- **Gyro Magnitude** _(degrees/second)_: Wrist-based magnitude of rotation across the x, y, and z axis.
-- **Gyro Magnitude** _(degrees)_: Wrist pitch orientations relative to gravity???
-- **rStime - wStime** _(seconds)_: ???
+- **RIP Inspiration Duration** _(milliseconds)_: Respiratory Inductance Plethysmography (RIP) breath inspiration duration,
+"DATA_TYPE": "double",
+"UNIT": "ms",  
+"FREQUENCY": "0.0167 Hz"
+- **RIP Expiration Duration** _(milliseconds)_: Respiratory Inductance Plethysmography (RIP) breath expiration duration,
+"DATA_TYPE": "double",
+"UNIT": "ms",  
+"FREQUENCY": "0.0167 Hz"
+- **Gyro Magnitude** _(degrees/second)_: Wrist-based magnitude of rotation across the x, y, and z axis,
+"DATA_TYPE": "double",
+"UNIT": "ms",  
+"STATISTIC": "median",
+"FREQUENCY": "0.0167 Hz"
+- **Wrist Pitch** _(degrees)_: Represents the quartile deviation of wrist pitch orientation,
+"DATA_TYPE": "double",
+"UNIT": "ms",  
+"STATISTIC": "quartile deviation",
+"FREQUENCY": "0.0167 Hz"
+- **rStime - wStime** _(seconds)_: Represents the time difference between respiration starttime and wrist segment starttime,
+"DATA_TYPE": "double",
+"UNIT": "ms",  
+"FREQUENCY": "0.0167 Hz"
 
 
 ## Probability
 Represents the probability of Puff using the puffMarker model
+
+**Data Descriptor:** "NAME": "Puff Probability",
+"DATA_TYPE": "double",
+"MAX_VALUE": "1",
+"MIN_VALUE": "0",
+"FREQUENCY": "0.0167 Hz"
 
 ### Input Datastreams
 - [RESPIRATION](../raw_streams/autosense#respiration)
@@ -61,13 +84,18 @@ Represents the probability of Puff using the puffMarker model
 | 1533922952107 | -360   | 0.309815016583471 |
 
 
-#### Columns
 - **UTC Timestamp** _(seconds)_: Coordinated Universal Time indicating the number of seconds since January 1, 1970
 - **Offset** _(minutes)_: The difference in time (shown in minutes) between UTC time and the local observed time
 - **Probability**: Represents the probability of Puff using the puffMarker model.
 
 ## Label
 Represents puff value puffMarker model
+
+**Data Descriptor:** "NAME": "Puff Label", 
+"DATA_TYPE": "double",
+"MAX_VALUE": "2",
+"MIN_VALUE": "0",
+"FREQUENCY": "0.0167 Hz"
 
 ### Input Datastreams
 - [RESPIRATION](../raw_streams/autosense#respiration)
@@ -87,7 +115,7 @@ Represents puff value puffMarker model
 | ------------- | ------ | ----- |
 | 1533922952107 | -360   | 1     |
 
-#### Columns
+
 - **UTC Timestamp** _(seconds)_: Coordinated Universal Time indicating the number of seconds since January 1, 1970
 - **Offset** _(minutes)_: The difference in time (shown in minutes) between UTC time and the local observed time
 - **Label** _(enumeration)_: Represents puff value puffMarker model
