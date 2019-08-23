@@ -8,11 +8,6 @@ A smoking episode indicates an instance of smoking using puffMarker {% cite sale
 **References:**
 {% bibliography --cited %}
 
-**Data Descriptor:** "NAME": "Smoking Episode",
-"DATA_TYPE": "double",
-"MAX_VALUE": "1",
-"MIN_VALUE": "1",
-
 ### Input Datastreams
 - [PUFFMARKER_FEATURE_VECTOR](../features/puffmarker#feature-vector)
 - [PUFF_PROBABILITY](../features/puffmarker#probability)
@@ -24,6 +19,12 @@ A smoking episode indicates an instance of smoking using puffMarker {% cite sale
 |---------------|--------|-----------------|
 | 1533922952107 | -360   | 1               |
 
+#### Data Descriptors:
 - **UTC Timestamp**: Coordinated Universal Time indicating the number of seconds since January 1, 1970
+  - Unit: seconds
+  - Type: long
 - **Offset**: The difference in time (shown in minutes) between UTC time and the local observed time
-- **Smoking Episode**: Values = YES(1)
+  - Unit: minutes
+  - Type: integer
+- **Smoking Episode**:
+  - **1** = YES (smoking episode detected)
