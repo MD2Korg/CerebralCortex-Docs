@@ -20,9 +20,6 @@ A custom wrist sensor developed by The Ohio State University.  It captures and t
 ## Accelerometer
 the x, y, and z axes of the MotionSense accelerometer
 
-**Range:** -2g to +2g
-**Sampling frequency:** 16Hz
-
 ### Used by
 - [PUFFMARKER](../features/puffmarker)
 
@@ -40,15 +37,18 @@ the x, y, and z axes of the MotionSense accelerometer
   - Unit: minutes
   - Type: integer
 - **accelerometer_x**: x-axis position of the MotionSense accelerometer
+  - Unit: g (G-forces)
+  - Type: double
+  - Sampling frequency: 16 Hz
+  - Range: -2g to +2g
 - **accelerometer_y**: y-axis position of the MotionSense accelerometer
+  - *same as above (accelerometer_x)*
 - **accelerometer_z**: z-axis position of the MotionSense accelerometer
+  - *same as above (accelerometer_x)*
 
 
 ## Gyroscope
 the x, y, and z axes of the MotionSense gyroscope
-
-**Range:** -250 degrees/second to +250 degrees/second
-**Sampling frequency:** 32Hz
 
 ### Example
 
@@ -63,19 +63,19 @@ the x, y, and z axes of the MotionSense gyroscope
 - **Offset**: The difference in time (shown in minutes) between UTC time and the local observed time
   - Unit: minutes
   - Type: integer
-- **gyroscope_x**: x-axis position of the MotionSense gyroscope
+- **gyroscope_x**: x-axis position of the MotionSense gyroscope  
+  - Unit: degrees/second
+  - Type: double
+  - Sampling frequency: 32 Hz
+  - Range: -250 to +250
 - **gyroscope_y**: y-axis position of the MotionSense gyroscope
+  - *same as above (gyroscope_x)*
 - **gyroscope_z**: z-axis position of the MotionSense gyroscope
+  - *same as above (gyroscope_x)*
 
 
 ## Data Quality
 measures the data quality of the MotionSense wrist sensor signal
-
-**Data Descriptor:** "NAME": "DataQuality",
-"DATA_TYPE": "int",
-"MAX_VALUE": "8",
-"MIN_VALUE": "1",
-"FREQUENCY": "16.0Hz"
 
 ### Used by
 - [PUFFMARKER](../features/puffmarker)
@@ -93,11 +93,13 @@ measures the data quality of the MotionSense wrist sensor signal
 - **Offset**: The difference in time (shown in minutes) between UTC time and the local observed time
   - Unit: minutes
   - Type: integer
-- **DataQuality_ACL** _(enumeration)_:
-  - **0**: good data is being collected
-  - **1**: noise
-  - **2**: bad signal
-  - **3**: sensor is off
-  - **4**: missing data
-  - **5**: sensor band not worn
-  - **6**: sensor band is loose
+- **DataQuality_ACL**:
+  - Sampling Frequency: 16 Hz
+  - Values:
+    - **0**: good data is being collected
+    - **1**: noise
+    - **2**: bad signal
+    - **3**: sensor is off
+    - **4**: missing data
+    - **5**: sensor band not worn
+    - **6**: sensor band is loose

@@ -101,7 +101,7 @@ Represents the probability of Puff using the puffMarker model
   - Unit: milliseconds
   - Type: double
   - Sampling Frequency: 0.0167 Hz
-  - Range: 0 - 1
+  - Range: 0 to 1
 
 
 ## Label
