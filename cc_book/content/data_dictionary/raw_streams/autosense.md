@@ -142,12 +142,6 @@ measures the data quality of the Autosense ECG signal
 ## Data Variance (respiration)
 measures the data variance of the Autosense respiration signal
 
-**Data Descriptor:** "NAME": "DataQuality-Variance",
-"DATA_TYPE": "int",
-"MAX_VALUE": "2",
-"MIN_VALUE": "0",
-"FREQUENCY": "0.3333333333333333 Hz"
-
 ### Used by
 - [PUFFMARKER](../features/puffmarker)
 
