@@ -1,6 +1,6 @@
-# Books with Jupyter and Jekyll
+# Cerebral Cortex Docs and Tutorials
 
-Jupyter Books lets you build an online book using a collection of Jupyter Notebooks
+CC lets you build an online book using a collection of Jupyter Notebooks
 and Markdown files. Its output is similar to the excellent [Bookdown](https://bookdown.org/yihui/bookdown/) tool,
 and adds extra functionality for people running a Jupyter stack.
 
