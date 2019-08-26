@@ -99,13 +99,13 @@ measures the data quality of the Autosense respiration signal
 - **Data_Quality**:
   - Sampling Frequency: 0.33 Hz
   - Values:
-  - **0**: good data is being collected
-  - **1**: noise
-  - **2**: bad signal
-  - **3**: sensor is off
-  - **4**: missing data
-  - **5**: sensor band not worn
-  - **6**: sensor band is loose
+    - **0**: good data is being collected
+    - **1**: noise
+    - **2**: bad signal
+    - **3**: sensor is off
+    - **4**: missing data
+    - **5**: sensor band not worn
+    - **6**: sensor band is loose
 
 
 ## Data Quality (electrocardiogram)
@@ -130,13 +130,13 @@ measures the data quality of the Autosense ECG signal
 - **Data_Quality**:
   - Sampling Frequency: 0.33 Hz
   - Values:
-  - **0**: good data is being collected
-  - **1**: noise
-  - **2**: bad signal
-  - **3**: sensor is off
-  - **4**: missing data
-  - **5**: sensor band not worn
-  - **6**: sensor band is loose
+    - **0**: good data is being collected
+    - **1**: noise
+    - **2**: bad signal
+    - **3**: sensor is off
+    - **4**: missing data
+    - **5**: sensor band not worn
+    - **6**: sensor band is loose
 
 
 ## Data Variance (respiration)
@@ -167,9 +167,9 @@ measures the data variance of the Autosense respiration signal
 - **Data_Variance**:
   - Sampling Frequency: 0.33 Hz
   - Values:
-  - **0**: good data
-  - **1**: bad signal
-  - **2**: no data
+    - **0**: good data
+    - **1**: bad signal
+    - **2**: no data
 
 
 ## Data Variance (electrocardiogram)
@@ -194,6 +194,6 @@ measures the data variance of the Autosense ECG signal
 - **Data_Variance**:
   - Sampling Frequency: 0.33 Hz
   - Values:
-  - **0**: good data
-  - **1**: bad signal
-  - **2**: no data
+    - **0**: good data
+    - **1**: bad signal
+    - **2**: no data
