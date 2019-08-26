@@ -36,10 +36,10 @@ an algorithmic measure of the participant's respiration
   - Unit: minutes
   - Type: integer
 - **Respiration**: an algorithmic measure of the participant's respiration
-  - Unit: ***TWH***
+  - Unit: ADC Value
   - Type: integer
   - Sampling Frequency: 21.33 Hz
-  - Range: 0 to 4096
+  - Range: 0 to 4095
 
 
 ## Electrocardiogram
@@ -67,10 +67,10 @@ the x, y, and z axes of the Autosense accelerometer
   - Unit: minutes
   - Type: integer
 - **accelerometer_x**: x-axis position of the AutoSense accelerometer
-  - Unit: ***TWH***
+  - Unit: ADC Value
   - Type: integer
   - Sampling Frequency: 10.66 Hz
-  - Range: 0 to 4096
+  - Range: 0 to 4095
 - **accelerometer_y**: y-axis position of the AutoSense accelerometer
   - *same as above (accelerometer_x)*
 - **accelerometer_z**: z-axis position of the AutoSense accelerometer
