@@ -4,6 +4,7 @@ A custom wrist sensor developed by The Ohio State University.  It captures and t
 
 ![MotionSense Hardware](../../images/MotionSenseWrist.png)
 
+
 **References:**
 {% bibliography --cited %} <!-- need Bibtex citation inserted in paragraph above -->
 
@@ -31,8 +32,13 @@ the x, y, and z axes of the MotionSense accelerometer
 | ------------- | ------ | ---------------- | ---------------- | ----------------- |
 | 1533922952107 | -360   | 0.01611328125    | -0.995849609375  | -0.0215847572013  |
 
-- **UTC Timestamp** _(seconds)_: Coordinated Universal Time indicating the number of seconds since January 1, 1970
-- **Offset** _(minutes)_: The difference in time (shown in minutes) between UTC time and the local observed time
+#### Column Details
+- **UTC Timestamp**: Coordinated Universal Time indicating the number of seconds since January 1, 1970
+  - Unit: seconds
+  - Type: long
+- **Offset**: The difference in time (shown in minutes) between UTC time and the local observed time
+  - Unit: minutes
+  - Type: integer
 - **accelerometer_x**: x-axis position of the MotionSense accelerometer
 - **accelerometer_y**: y-axis position of the MotionSense accelerometer
 - **accelerometer_z**: z-axis position of the MotionSense accelerometer
@@ -50,8 +56,13 @@ the x, y, and z axes of the MotionSense gyroscope
 | ------------- | ------ | --------------- | --------------- | ---------------- |
 | 1533922952107 | -360   | 0.01611328125   | -0.995849609375 | -0.0215847572013 |
 
-- **UTC Timestamp** _(seconds)_: Coordinated Universal Time indicating the number of seconds since January 1, 1970
-- **Offset** _(minutes)_: The difference in time (shown in minutes) between UTC time and the local observed time
+#### Column Details
+- **UTC Timestamp**: Coordinated Universal Time indicating the number of seconds since January 1, 1970
+  - Unit: seconds
+  - Type: long
+- **Offset**: The difference in time (shown in minutes) between UTC time and the local observed time
+  - Unit: minutes
+  - Type: integer
 - **gyroscope_x**: x-axis position of the MotionSense gyroscope
 - **gyroscope_y**: y-axis position of the MotionSense gyroscope
 - **gyroscope_z**: z-axis position of the MotionSense gyroscope
@@ -75,6 +86,18 @@ measures the data quality of the MotionSense wrist sensor signal
 | ------------- | ------ | --------------- |
 | 1533922952107 | -360   | 3               |
 
-- **UTC Timestamp** _(seconds)_: Coordinated Universal Time indicating the number of seconds since January 1, 1970
-- **Offset** _(minutes)_: The difference in time (shown in minutes) between UTC time and the local observed time
-- **DataQuality_ACL**: Values=  GOOD(0), NOISE(1), BAD(2), BAND_OFF(3), MISSING(4), NOT_WORN(5), BAND_LOOSE(6)
+#### Column Details
+- **UTC Timestamp**: Coordinated Universal Time indicating the number of seconds since January 1, 1970
+  - Unit: seconds
+  - Type: long
+- **Offset**: The difference in time (shown in minutes) between UTC time and the local observed time
+  - Unit: minutes
+  - Type: integer
+- **DataQuality_ACL** _(enumeration)_:
+  - **0**: good data is being collected
+  - **1**: noise
+  - **2**: bad signal
+  - **3**: sensor is off
+  - **4**: missing data
+  - **5**: sensor band not worn
+  - **6**: sensor band is loose

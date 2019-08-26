@@ -5,21 +5,27 @@ A smoking episode indicates an instance of smoking using puffMarker {% cite sale
 - AutoSense chest sensor to track breathing patterns from respiration
 - MotionSense wrist band to track arm movements from 6-axis inertial sensors worn on wrists
 
+
 **References:**
 {% bibliography --cited %}
+
+
+**Stream name structure:**
+`org.md2k.streamprocessor+PUFFMARKER_SMOKING_EPISODE+PHONE`
+
 
 ### Input Datastreams
 - [PUFFMARKER_FEATURE_VECTOR](../features/puffmarker#feature-vector)
 - [PUFF_PROBABILITY](../features/puffmarker#probability)
 - [PUFF_LABEL](../features/puffmarker#label)
 
-## Example
+### Example
 
 | UTC Timestamp | Offset | Smoking Episode |
 |---------------|--------|-----------------|
 | 1533922952107 | -360   | 1               |
 
-#### Data Descriptors:
+#### Column Details
 - **UTC Timestamp**: Coordinated Universal Time indicating the number of seconds since January 1, 1970
   - Unit: seconds
   - Type: long
@@ -27,4 +33,4 @@ A smoking episode indicates an instance of smoking using puffMarker {% cite sale
   - Unit: minutes
   - Type: integer
 - **Smoking Episode**:
-  - **1** = YES (smoking episode detected)
+  - **1** = yes (smoking episode detected)
