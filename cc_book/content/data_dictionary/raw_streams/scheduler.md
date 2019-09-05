@@ -50,7 +50,7 @@ represents the status of the particpant's interaction with EMA/EMIs
 - **Offset**: The difference in time (shown in milliseconds) between UTC time and the local observed time
   - Unit: milliseconds
   - Type: integer
-**TWH - no column desciptors available in files, I took my best guess on the first two**
+- **TWH - no column desciptors available in files, I took my best guess on the first two below, unsure about the third**
 - **Output Type**: represents the type of output delivered by the Scheduler (e.g., EMA, NOTIFICATION, NOTIFICATION_WITH_DELAY, INCENTIVE)
   - Type: text **TWH**
 - **Participant Response**: represents the action on the phone taken by the participant
