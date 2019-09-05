@@ -32,7 +32,7 @@ the x, y, and z axes of the MotionSense accelerometer
 | 1533922952107 | -18000000 | 0.01611328125   | -0.995849609375 | -0.0215847572013 |
 
 #### Column Details
-- **UTC Timestamp**: Coordinated Universal Time indicating the number of seconds since January 1, 1970
+- **UTC Timestamp**: Coordinated Universal Time indicating the number of milliseconds since January 1, 1970
   - Unit: milliseconds
   - Type: long
 - **Offset**: The difference in time (shown in milliseconds) between UTC time and the local observed time
@@ -64,7 +64,7 @@ the x, y, and z axes of the MotionSense gyroscope
 | 1533922952107 | -18000000 | 0.01611328125 | -0.995849609375 | -0.0215847572013 |
 
 #### Column Details
-- **UTC Timestamp**: Coordinated Universal Time indicating the number of seconds since January 1, 1970
+- **UTC Timestamp**: Coordinated Universal Time indicating the number of milliseconds since January 1, 1970
   - Unit: milliseconds
   - Type: long
 - **Offset**: The difference in time (shown in milliseconds) between UTC time and the local observed time
@@ -96,7 +96,7 @@ measures the data quality of the MotionSense wrist sensor signal
 | 1533922952107 | -18000000 | 3           |
 
 #### Column Details
-- **UTC Timestamp**: Coordinated Universal Time indicating the number of seconds since January 1, 1970
+- **UTC Timestamp**: Coordinated Universal Time indicating the number of milliseconds since January 1, 1970
   - Unit: milliseconds
   - Type: long
 - **Offset**: The difference in time (shown in milliseconds) between UTC time and the local observed time

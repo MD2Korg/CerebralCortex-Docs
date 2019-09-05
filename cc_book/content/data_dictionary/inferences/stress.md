@@ -20,6 +20,6 @@
 | 1533922952107 | -360   | 1               | -->
 
 ### Columns
-<!-- - **UTC Timestamp**: Coordinated Universal Time indicating the number of seconds since January 1, 1970
+<!-- - **UTC Timestamp**: Coordinated Universal Time indicating the number of milliseconds since January 1, 1970
 - **Offset**: The difference in time (shown in minutes) between UTC time and the local observed time
 - **Smoking Episode**: Values = YES(1) -->

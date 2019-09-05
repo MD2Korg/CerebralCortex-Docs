@@ -31,7 +31,7 @@ feature vector describing the set of numeric features in cStress
 
 
 #### Columns
-- **UTC Timestamp** _(seconds)_: Coordinated Universal Time indicating the number of seconds since January 1, 1970
+- **UTC Timestamp** _(seconds)_: Coordinated Universal Time indicating the number of milliseconds since January 1, 1970
 - **Offset** _(minutes)_: The difference in time (shown in minutes) between UTC time and the local observed time
 - **RIP Inspiration Duration** _(milliseconds)_: Respiratory Inductance Plethysmography (RIP) breath inspiration duration
 - **RIP Expiration Duration** _(milliseconds)_: Respiratory Inductance Plethysmography (RIP) breath expiration duration
@@ -63,7 +63,7 @@ Represents the probability of stress using the cStress model
 
 
 #### Columns
-- **UTC Timestamp** _(seconds)_: Coordinated Universal Time indicating the number of seconds since January 1, 1970
+- **UTC Timestamp** _(seconds)_: Coordinated Universal Time indicating the number of milliseconds since January 1, 1970
 - **Offset** _(minutes)_: The difference in time (shown in minutes) between UTC time and the local observed time
 - **Probability**: Represents the probability of Puff using the puffMarker model.
 
@@ -89,7 +89,7 @@ Represents puff value puffMarker model
 | 1533922952107 | -360   | 1     |
 
 #### Columns
-- **UTC Timestamp** _(seconds)_: Coordinated Universal Time indicating the number of seconds since January 1, 1970
+- **UTC Timestamp** _(seconds)_: Coordinated Universal Time indicating the number of milliseconds since January 1, 1970
 - **Offset** _(minutes)_: The difference in time (shown in minutes) between UTC time and the local observed time
 - **Label** _(enumeration)_: Represents puff value puffMarker model
   - **0**: no puff
@@ -118,7 +118,7 @@ Represents stress label based only on the Respiratory Inductance Plethysmography
 | 1533922952107 | -360   | 1     |
 
 #### Columns
-- **UTC Timestamp** _(seconds)_: Coordinated Universal Time indicating the number of seconds since January 1, 1970
+- **UTC Timestamp** _(seconds)_: Coordinated Universal Time indicating the number of milliseconds since January 1, 1970
 - **Offset** _(minutes)_: The difference in time (shown in minutes) between UTC time and the local observed time
 - **Label** _(enumeration)_: Represents puff value puffMarker model
   - **0**: no puff
@@ -149,7 +149,7 @@ Represents puff value puffMarker model
 | 1533922952107 | -360   | 1     |
 
 #### Columns
-- **UTC Timestamp** _(seconds)_: Coordinated Universal Time indicating the number of seconds since January 1, 1970
+- **UTC Timestamp** _(seconds)_: Coordinated Universal Time indicating the number of milliseconds since January 1, 1970
 - **Offset** _(minutes)_: The difference in time (shown in minutes) between UTC time and the local observed time
 - **Label** _(enumeration)_: Represents puff value puffMarker model
   - **0**: no puff

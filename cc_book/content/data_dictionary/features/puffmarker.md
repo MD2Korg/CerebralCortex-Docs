@@ -39,7 +39,7 @@ feature vector describing the set of numeric features in puffMarker
 | 1533922952107 | -18000000 | 1271                     | 1701                    | 1.302452       | 10.996382   | 99.462646       |
 
 #### Column Details
-- **UTC Timestamp**: Coordinated Universal Time indicating the number of seconds since January 1, 1970
+- **UTC Timestamp**: Coordinated Universal Time indicating the number of milliseconds since January 1, 1970
   - Unit: milliseconds
   - Type: long
 - **Offset**: The difference in time (shown in milliseconds) between UTC time and the local observed time
@@ -91,7 +91,7 @@ Represents the probability of Puff using the puffMarker model
 | 1533922952107 | -18000000 | 0.309815016583471 |
 
 #### Column Details
-- **UTC Timestamp**: Coordinated Universal Time indicating the number of seconds since January 1, 1970
+- **UTC Timestamp**: Coordinated Universal Time indicating the number of milliseconds since January 1, 1970
   - Unit: milliseconds
   - Type: long
 - **Offset**: The difference in time (shown in milliseconds) between UTC time and the local observed time
@@ -125,7 +125,7 @@ Represents puff value puffMarker model
 | 1533922952107 | -18000000 | 1     |
 
 #### Column Details
-- **UTC Timestamp**: Coordinated Universal Time indicating the number of seconds since January 1, 1970
+- **UTC Timestamp**: Coordinated Universal Time indicating the number of milliseconds since January 1, 1970
   - Unit: milliseconds
   - Type: long
 - **Offset**: The difference in time (shown in milliseconds) between UTC time and the local observed time

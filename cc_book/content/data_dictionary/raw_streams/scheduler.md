@@ -28,7 +28,7 @@ represents the log of the EMA Scheduler
 | 1533922952107 | -18000000 | 1/24/2019  12:52:39 PM | DEBUG, BackgroundService, Scheduler Started |
 
 #### Column Details
-- **UTC Timestamp**: Coordinated Universal Time indicating the number of seconds since January 1, 1970
+- **UTC Timestamp**: Coordinated Universal Time indicating the number of milliseconds since January 1, 1970
   - Unit: milliseconds
   - Type: long
 - **Offset**: The difference in time (shown in milliseconds) between UTC time and the local observed time
@@ -51,7 +51,7 @@ represents the status of the particpant's interaction with EMA/EMIs
 | 1533922952107 | -18000000 | NOTIFICATION_WITH_DELAY | OK       | EMA        |
 
 #### Column Details
-- **UTC Timestamp**: Coordinated Universal Time indicating the number of seconds since January 1, 1970
+- **UTC Timestamp**: Coordinated Universal Time indicating the number of milliseconds since January 1, 1970
   - Unit: milliseconds
   - Type: long
 - **Offset**: The difference in time (shown in milliseconds) between UTC time and the local observed time
@@ -83,7 +83,7 @@ represents the incentive values rewarded to participants for completing requeste
 | 1533922952107 | -18000000 | 1.25       | 5.75         |
 
 #### Column Details
-- **UTC Timestamp**: Coordinated Universal Time indicating the number of seconds since January 1, 1970
+- **UTC Timestamp**: Coordinated Universal Time indicating the number of milliseconds since January 1, 1970
   - Unit: milliseconds
   - Type: long
 - **Offset**: The difference in time (shown in milliseconds) between UTC time and the local observed time
