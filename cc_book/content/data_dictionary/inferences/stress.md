@@ -21,8 +21,8 @@ A stress episode indicates an instance of stress using cStress, a model for infe
 | 1533922952107 | -18000000 | 1               |
 
 #### Column Details
-- **UTC Timestamp**: Coordinated Universal Time indicating the number of seconds since January 1, 1970
-  - Unit: seconds
+- **UTC Timestamp**: Coordinated Universal Time indicating the number of milliseconds since January 1, 1970
+  - Unit: milliseconds
   - Type: long
 - **Offset**: The difference in time (shown in milliseconds) between UTC time and the local observed time
   - Unit: milliseconds
