@@ -33,4 +33,4 @@ A smoking episode indicates an instance of smoking using puffMarker {% cite sale
   - Unit: milliseconds
   - Type: integer
 - **Smoking Episode**:
-  - **1** = yes (smoking episode detected)
+  - **1** = Smoking episode detected

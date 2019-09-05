@@ -16,9 +16,9 @@ A stress episode indicates an instance of stress using cStress, a model for infe
 
 ### Example
 
-| UTC Timestamp | Offset    | Smoking Episode |
-| ------------- | --------- | --------------- |
-| 1533922952107 | -18000000 | 1               |
+| UTC Timestamp | Offset    | Stress Episode |
+| ------------- | --------- | -------------- |
+| 1533922952107 | -18000000 | 2              |
 
 #### Column Details
 - **UTC Timestamp**: Coordinated Universal Time indicating the number of milliseconds since January 1, 1970
@@ -27,5 +27,12 @@ A stress episode indicates an instance of stress using cStress, a model for infe
 - **Offset**: The difference in time (shown in milliseconds) between UTC time and the local observed time
   - Unit: milliseconds
   - Type: integer
-- **Smoking Episode**:
-  - **1** = yes (smoking episode detected)
+- **Stress Episode**:
+  - Type: double
+  - Frequency: 0.0167 Hz
+  - Values:
+    -  **0** = not stressed
+    -  **1** = unsure
+    -  **2** = stressed
+    -  **3** = unknown
+    -  **4** = not classified
