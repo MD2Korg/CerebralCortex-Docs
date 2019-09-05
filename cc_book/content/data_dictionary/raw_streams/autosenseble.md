@@ -28,7 +28,7 @@ an algorithmic measure of the participant's respiration
 
 #### Column Details
 - **UTC Timestamp**: Coordinated Universal Time indicating the number of seconds since January 1, 1970
-  - Unit: seconds
+  - Unit: milliseconds
   - Type: long
 - **Offset**: The difference in time (shown in milliseconds) between UTC time and the local observed time
   - Unit: milliseconds
@@ -54,13 +54,13 @@ an algorithmic measure of the participant's heart rate
 
 #### Column Details
 - **UTC Timestamp**: Coordinated Universal Time indicating the number of seconds since January 1, 1970
-  - Unit: seconds
+  - Unit: milliseconds
   - Type: long
 - **Offset**: The difference in time (shown in milliseconds) between UTC time and the local observed time
   - Unit: milliseconds
   - Type: integer
 - **ECG**: an algorithmic measure of the participant's respiration
-  - Unit: ADC Value **TWH**
+  - Unit: ADC Value
   - Type: double
   - Sampling Frequency: 100 Hz
   - Range: 0 to 4095
@@ -80,7 +80,7 @@ measures the acceleration on the x, y, and z axes of the Autosense BLE accelerom
 
 #### Column Details
 - **UTC Timestamp**: Coordinated Universal Time indicating the number of seconds since January 1, 1970
-  - Unit: seconds
+  - Unit: milliseconds
   - Type: long
 - **Offset**: The difference in time (shown in milliseconds) between UTC time and the local observed time
   - Unit: milliseconds
@@ -110,7 +110,7 @@ measures the data quality of the Autosense BLE respiration signal
 
 #### Column Details
 - **UTC Timestamp**: Coordinated Universal Time indicating the number of seconds since January 1, 1970
-  - Unit: seconds
+  - Unit: milliseconds
   - Type: long
 - **Offset**: The difference in time (shown in milliseconds) between UTC time and the local observed time
   - Unit: milliseconds
@@ -141,7 +141,7 @@ measures the data quality of the Autosense BLE ECG signal
 
 #### Column Details
 - **UTC Timestamp**: Coordinated Universal Time indicating the number of seconds since January 1, 1970
-  - Unit: seconds
+  - Unit: milliseconds
   - Type: long
 - **Offset**: The difference in time (shown in milliseconds) between UTC time and the local observed time
   - Unit: milliseconds
@@ -172,7 +172,7 @@ measures the data variance of the Autosense respiration signal
 
 #### Column Details
 - **UTC Timestamp**: Coordinated Universal Time indicating the number of seconds since January 1, 1970
-  - Unit: seconds
+  - Unit: milliseconds
   - Type: long
 - **Offset**: The difference in time (shown in milliseconds) between UTC time and the local observed time
   - Unit: milliseconds
@@ -199,7 +199,7 @@ measures the data variance of the Autosense ECG signal
 
 #### Column Details
 - **UTC Timestamp**: Coordinated Universal Time indicating the number of seconds since January 1, 1970
-  - Unit: seconds
+  - Unit: milliseconds
   - Type: long
 - **Offset**: The difference in time (shown in milliseconds) between UTC time and the local observed time
   - Unit: milliseconds

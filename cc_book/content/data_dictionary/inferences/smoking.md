@@ -27,7 +27,7 @@ A smoking episode indicates an instance of smoking using puffMarker {% cite sale
 
 #### Column Details
 - **UTC Timestamp**: Coordinated Universal Time indicating the number of seconds since January 1, 1970
-  - Unit: seconds
+  - Unit: milliseconds
   - Type: long
 - **Offset**: The difference in time (shown in milliseconds) between UTC time and the local observed time
   - Unit: milliseconds

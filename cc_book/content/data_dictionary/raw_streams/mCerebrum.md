@@ -24,14 +24,13 @@ represents for each day the time at which the study day was started and data col
 
 #### Column Details
 - **UTC Timestamp**: Coordinated Universal Time indicating the number of seconds since January 1, 1970
-  - Unit: seconds
+  - Unit: milliseconds
   - Type: long
 - **Offset**: The difference in time (shown in milliseconds) between UTC time and the local observed time
   - Unit: milliseconds
   - Type: integer
-- **TWH - no descriptors in files, please confirm if the below is accurate**
-- **Day Start**: the time at which the study day was started and data collection began (shown as a local time indication of the number of seconds since January 1, 1970)
-  - Unit: seconds
+- **Day Start**: The time at which the study day was started and data collection began (shown as a local time indication of the number of seconds since January 1, 1970)
+  - Unit: milliseconds
   - Type: long
 
 
@@ -40,18 +39,17 @@ represents for each day the time at which the study day was ended and data colle
 
 ### Example
 
-| UTC Timestamp | Offset    | Day Start     |
+| UTC Timestamp | Offset    | Day End       |
 | ------------- | --------- | ------------- |
 | 1549441800030 | -18000000 | 1549420200030 |
 
 #### Column Details
 - **UTC Timestamp**: Coordinated Universal Time indicating the number of seconds since January 1, 1970
-  - Unit: seconds
+  - Unit: milliseconds
   - Type: long
 - **Offset**: The difference in time (shown in milliseconds) between UTC time and the local observed time
   - Unit: milliseconds
   - Type: integer
-- **TWH - no descriptors in files, please confirm if the below is accurate**
-- **Day Start**: the time at which the study day was stopped and data collection ended (shown as a local time indication of the number of seconds since January 1, 1970)
-  - Unit: seconds
+- **Day End**: The time at which the study day was started and data collection began (shown as a local time indication of the number of seconds since January 1, 1970)
+  - Unit: milliseconds
   - Type: long

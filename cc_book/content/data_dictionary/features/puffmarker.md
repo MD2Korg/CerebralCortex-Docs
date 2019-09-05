@@ -40,7 +40,7 @@ feature vector describing the set of numeric features in puffMarker
 
 #### Column Details
 - **UTC Timestamp**: Coordinated Universal Time indicating the number of seconds since January 1, 1970
-  - Unit: seconds
+  - Unit: milliseconds
   - Type: long
 - **Offset**: The difference in time (shown in milliseconds) between UTC time and the local observed time
   - Unit: milliseconds
@@ -64,7 +64,7 @@ feature vector describing the set of numeric features in puffMarker
   - Sampling Frequency: 0.0167 Hz
   - Statistic: quartile deviation
 - **rStime - wStime**: Represents the time difference between respiration starttime and wrist segment starttime
-  - Unit: seconds
+  - Unit: seconds **TWH: Verify this unit**
   - Type: double
   - Sampling Frequency: 0.0167 Hz
 
@@ -92,7 +92,7 @@ Represents the probability of Puff using the puffMarker model
 
 #### Column Details
 - **UTC Timestamp**: Coordinated Universal Time indicating the number of seconds since January 1, 1970
-  - Unit: seconds
+  - Unit: milliseconds
   - Type: long
 - **Offset**: The difference in time (shown in milliseconds) between UTC time and the local observed time
   - Unit: milliseconds
@@ -126,7 +126,7 @@ Represents puff value puffMarker model
 
 #### Column Details
 - **UTC Timestamp**: Coordinated Universal Time indicating the number of seconds since January 1, 1970
-  - Unit: seconds
+  - Unit: milliseconds
   - Type: long
 - **Offset**: The difference in time (shown in milliseconds) between UTC time and the local observed time
   - Unit: milliseconds
