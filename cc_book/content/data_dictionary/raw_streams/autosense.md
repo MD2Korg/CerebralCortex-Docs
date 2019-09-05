@@ -20,6 +20,8 @@ Autosense is a wireless sensor suite that collects and processes cardiovascular,
 an algorithmic measure of the participant's respiration
 
 ### Used by
+- [CSTRESS](../features/cstress)
+- [EMA](../features/ema)
 - [PUFFMARKER](../features/puffmarker)
 
 ### Example
@@ -46,6 +48,8 @@ an algorithmic measure of the participant's respiration
 an algorithmic measure of the participant's heart rate
 
 ### Used by
+- [CSTRESS](../features/cstress)
+- [EMA](../features/ema)
 - [PUFFMARKER](../features/puffmarker)
 
 ### Example
@@ -72,6 +76,8 @@ an algorithmic measure of the participant's heart rate
 measures the acceleration on the x, y, and z axes of the Autosense accelerometer
 
 ### Used by
+- [CSTRESS](../features/cstress)
+- [EMA](../features/ema)
 - [PUFFMARKER](../features/puffmarker)
 
 ### Example
@@ -102,6 +108,8 @@ measures the acceleration on the x, y, and z axes of the Autosense accelerometer
 measures the data quality of the Autosense respiration signal
 
 ### Used by
+- [CSTRESS](../features/cstress)
+- [EMA](../features/ema)
 - [PUFFMARKER](../features/puffmarker)
 
 ### Example
@@ -133,6 +141,8 @@ measures the data quality of the Autosense respiration signal
 measures the data quality of the Autosense ECG signal
 
 ### Used by
+- [CSTRESS](../features/cstress)
+- [EMA](../features/ema)
 - [PUFFMARKER](../features/puffmarker)
 
 ### Example
@@ -164,6 +174,8 @@ measures the data quality of the Autosense ECG signal
 measures the data variance of the Autosense respiration signal
 
 ### Used by
+- [CSTRESS](../features/cstress)
+- [EMA](../features/ema)
 - [PUFFMARKER](../features/puffmarker)
 
 ### Example
@@ -191,6 +203,8 @@ measures the data variance of the Autosense respiration signal
 measures the data variance of the Autosense ECG signal
 
 ### Used by
+- [CSTRESS](../features/cstress)
+- [EMA](../features/ema)
 - [PUFFMARKER](../features/puffmarker)
 
 ### Example

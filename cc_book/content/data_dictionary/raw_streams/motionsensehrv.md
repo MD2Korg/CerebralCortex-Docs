@@ -21,6 +21,8 @@ A custom wrist sensor developed by The Ohio State University.  It captures and t
 the x, y, and z axes of the MotionSense accelerometer
 
 ### Used by
+- [CSTRESS](../features/cstress)
+- [EMA](../features/ema)
 - [PUFFMARKER](../features/puffmarker)
 
 ### Example
@@ -50,6 +52,11 @@ the x, y, and z axes of the MotionSense accelerometer
 ## Gyroscope
 the x, y, and z axes of the MotionSense gyroscope
 
+### Used by
+- [CSTRESS](../features/cstress)
+- [EMA](../features/ema)
+- [PUFFMARKER](../features/puffmarker)
+
 ### Example
 
 | UTC Timestamp | Offset    | gyroscope_x   | gyroscope_y     | gyroscope_z      |
@@ -78,6 +85,8 @@ the x, y, and z axes of the MotionSense gyroscope
 measures the data quality of the MotionSense wrist sensor signal
 
 ### Used by
+- [CSTRESS](../features/cstress)
+- [EMA](../features/ema)
 - [PUFFMARKER](../features/puffmarker)
 
 ### Example

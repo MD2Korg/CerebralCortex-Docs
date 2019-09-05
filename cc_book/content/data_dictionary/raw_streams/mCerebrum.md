@@ -16,6 +16,9 @@ The mCerebrum app is smartphone software developed by the MD2K team at the Uniiv
 ## Day Start
 represents for each day the time at which the study day was started and data collection began
 
+### Used by
+- [EMA](../features/ema)
+
 ### Example
 
 | UTC Timestamp | Offset    | Day Start     |
@@ -36,6 +39,9 @@ represents for each day the time at which the study day was started and data col
 
 ## Day End
 represents for each day the time at which the study day was ended and data collection stopped
+
+### Used by
+- [EMA](../features/ema)
 
 ### Example
 
