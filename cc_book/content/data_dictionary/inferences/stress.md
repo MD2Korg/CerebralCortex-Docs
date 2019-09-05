@@ -8,7 +8,7 @@ A stress episode indicates an instance of stress using cStress, a model for infe
 
 
 **Example stream name structure:**
-`org.md2k.streamprocessor+PUFFMARKER_SMOKING_EPISODE+PHONE`
+`org.md2k.streamprocessor+ORG_MD2K_CSTRESS_STRESS_EPISODE_CLASSIFICATION+PHONE`
 
 
 ### Input Datastreams
