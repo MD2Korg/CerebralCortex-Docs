@@ -2,17 +2,17 @@
 
 Autosense is a wireless sensor suite that collects and processes cardiovascular, respiratory, and thermoregularity measurements that can inform about the general stress state of test subjects in their natural environment. The AutoSense suite is complemented with a software framework on a smart phone that processes sensor measurements received from AutoSense to infer stress and other rich human behaviors. AutoSense overcomes several challenges in the design of wearable sensor systems for use in the field. First, it is unobtrusively wearable because it integrates six sensors in a small form factor. Second, it demonstrates a low power design; with a lifetime exceeding ten days while continuously sampling and transmitting sensor measurements. Third, sensor measurements are robust to several sources of errors and confounds inherent in field usage. Fourth, it integrates an ANT radio for low power and integrated quality of service guarantees, even in crowded environments.
 
-![AutoSense Hardware](/images/AutoSenseChest2.png)
+![AutoSense Hardware](../../images/AutoSenseChest2.png)
 
-**References:**
-{% bibliography --cited %} <!-- need Bibtex citation inserted in paragraph above -->
+<!-- **References:**
+{% bibliography --cited %} (remove comment after inserting Bibtex citation in paragraph above) -->
 
 
 **Stream name structure:**
 `org.md2k.autosense+<STREAM_NAME>+AUTOSENSE+<ATTACHMENT>`
 
 **Example names:**
-- `org.md2k.autosense+ACCELEROMETER_Y+AUTOSENSE+CHEST+CHEST`
+- `org.md2k.autosense+ACCELEROMETER_Z+AUTOSENSE+CHEST+CHEST`
 - `org.md2k.autosense+RESPIRATION+AUTOSENSE+CHEST+CHEST`
 
 
@@ -43,12 +43,33 @@ an algorithmic measure of the participant's respiration
 
 
 ## Electrocardiogram
+an algorithmic measure of the participant's heart rate
 
-<!-- need content from json and excel files -->
+### Used by
+- [PUFFMARKER](../features/puffmarker)
+
+### Example
+
+| UTC Timestamp | Offset | ECG  |
+| ------------- | ------ | ---- |
+| 1533922952107 | -360   | 1023 |
+
+#### Column Details
+- **UTC Timestamp**: Coordinated Universal Time indicating the number of seconds since January 1, 1970
+  - Unit: seconds
+  - Type: long
+- **Offset**: The difference in time (shown in minutes) between UTC time and the local observed time
+  - Unit: minutes
+  - Type: integer
+- **ECG**: an algorithmic measure of the participant's respiration
+  - Unit: ADC Value
+  - Type: integer
+  - Sampling Frequency: 64 Hz
+  - Range: 0 to 4095
 
 
 ## Accelerometer (x,y,z)
-the x, y, and z axes of the Autosense accelerometer
+measures the acceleration on the x, y, and z axes of the Autosense accelerometer
 
 ### Used by
 - [PUFFMARKER](../features/puffmarker)

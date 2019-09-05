@@ -5,8 +5,8 @@ A custom wrist sensor developed by The Ohio State University.  It captures and t
 ![MotionSense Hardware](../../images/MotionSenseWrist.png)
 
 
-**References:**
-{% bibliography --cited %} <!-- need Bibtex citation inserted in paragraph above -->
+<!-- **References:**
+{% bibliography --cited %} (remove comment after inserting Bibtex citation in paragraph above) -->
 
 
 **Stream name structure:**
@@ -63,7 +63,7 @@ the x, y, and z axes of the MotionSense gyroscope
 - **Offset**: The difference in time (shown in minutes) between UTC time and the local observed time
   - Unit: minutes
   - Type: integer
-- **gyroscope_x**: x-axis position of the MotionSense gyroscope  
+- **gyroscope_x**: x-axis position of the MotionSense gyroscope
   - Unit: degrees/second
   - Type: double
   - Sampling frequency: 32 Hz
