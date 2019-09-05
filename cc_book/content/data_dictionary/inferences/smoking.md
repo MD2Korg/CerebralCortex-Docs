@@ -21,16 +21,16 @@ A smoking episode indicates an instance of smoking using puffMarker {% cite sale
 
 ### Example
 
-| UTC Timestamp | Offset | Smoking Episode |
-|---------------|--------|-----------------|
-| 1533922952107 | -360   | 1               |
+| UTC Timestamp | Offset    | Smoking Episode |
+| ------------- | --------- | --------------- |
+| 1533922952107 | -18000000 | 1               |
 
 #### Column Details
 - **UTC Timestamp**: Coordinated Universal Time indicating the number of seconds since January 1, 1970
   - Unit: seconds
   - Type: long
-- **Offset**: The difference in time (shown in minutes) between UTC time and the local observed time
-  - Unit: minutes
+- **Offset**: The difference in time (shown in milliseconds) between UTC time and the local observed time
+  - Unit: milliseconds
   - Type: integer
 - **Smoking Episode**:
   - **1** = yes (smoking episode detected)

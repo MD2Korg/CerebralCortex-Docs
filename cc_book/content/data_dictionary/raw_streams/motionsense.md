@@ -25,16 +25,16 @@ the x, y, and z axes of the MotionSense accelerometer
 
 ### Example
 
-| UTC Timestamp | Offset | accelerometer_x  | accelerometer_y  | accelerometer_z   |
-| ------------- | ------ | ---------------- | ---------------- | ----------------- |
-| 1533922952107 | -360   | 0.01611328125    | -0.995849609375  | -0.0215847572013  |
+| UTC Timestamp | Offset    | accelerometer_x | accelerometer_y | accelerometer_z  |
+| ------------- | --------- | --------------- | --------------- | ---------------- |
+| 1533922952107 | -18000000 | 0.01611328125   | -0.995849609375 | -0.0215847572013 |
 
 #### Column Details
 - **UTC Timestamp**: Coordinated Universal Time indicating the number of seconds since January 1, 1970
   - Unit: seconds
   - Type: long
-- **Offset**: The difference in time (shown in minutes) between UTC time and the local observed time
-  - Unit: minutes
+- **Offset**: The difference in time (shown in milliseconds) between UTC time and the local observed time
+  - Unit: milliseconds
   - Type: integer
 - **accelerometer_x**: x-axis position of the MotionSense accelerometer
   - Unit: g (G-forces)
@@ -52,16 +52,16 @@ the x, y, and z axes of the MotionSense gyroscope
 
 ### Example
 
-| UTC Timestamp | Offset | gyroscope_x     | gyroscope_y     | gyroscope_z      |
-| ------------- | ------ | --------------- | --------------- | ---------------- |
-| 1533922952107 | -360   | 0.01611328125   | -0.995849609375 | -0.0215847572013 |
+| UTC Timestamp | Offset    | gyroscope_x   | gyroscope_y     | gyroscope_z      |
+| ------------- | --------- | ------------- | --------------- | ---------------- |
+| 1533922952107 | -18000000 | 0.01611328125 | -0.995849609375 | -0.0215847572013 |
 
 #### Column Details
 - **UTC Timestamp**: Coordinated Universal Time indicating the number of seconds since January 1, 1970
   - Unit: seconds
   - Type: long
-- **Offset**: The difference in time (shown in minutes) between UTC time and the local observed time
-  - Unit: minutes
+- **Offset**: The difference in time (shown in milliseconds) between UTC time and the local observed time
+  - Unit: milliseconds
   - Type: integer
 - **gyroscope_x**: x-axis position of the MotionSense gyroscope
   - Unit: degrees/second
@@ -82,16 +82,16 @@ measures the data quality of the MotionSense wrist sensor signal
 
 ### Example
 
-| UTC Timestamp | Offset | DataQuality_ACL |
-| ------------- | ------ | --------------- |
-| 1533922952107 | -360   | 3               |
+| UTC Timestamp | Offset    | DataQuality_ACL |
+| ------------- | --------- | --------------- |
+| 1533922952107 | -18000000 | 3               |
 
 #### Column Details
 - **UTC Timestamp**: Coordinated Universal Time indicating the number of seconds since January 1, 1970
   - Unit: seconds
   - Type: long
-- **Offset**: The difference in time (shown in minutes) between UTC time and the local observed time
-  - Unit: minutes
+- **Offset**: The difference in time (shown in milliseconds) between UTC time and the local observed time
+  - Unit: milliseconds
   - Type: integer
 - **DataQuality_ACL**:
   - Sampling Frequency: 16 Hz

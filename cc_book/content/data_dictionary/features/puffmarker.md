@@ -28,43 +28,43 @@ feature vector describing the set of numeric features in puffMarker
 - [ACCELEROMETER](../raw_streams/motionsense#accelerometer)
 - [GYROSCOPE](../raw_streams/motionsense#accelerometer)
 
-### Used by   
+### Used by
 - [SMOKING](../inferences/smoking)
 
 
 ### Example
 
-| UTC Timestamp | Offset | RIP Inspiration Duration | RIP Expiration Duration | Gyro Magnitude | Wrist Pitch | rStime - wStime |
-| ------------- | ------ | ------------------------ | ----------------------- | -------------- | ----------- | --------------- |
-| 1533922952107 | -360   | 1271                     | 1701                    | 1.302452       | 10.996382   | 99.462646       |
+| UTC Timestamp | Offset    | RIP Inspiration Duration | RIP Expiration Duration | Gyro Magnitude | Wrist Pitch | rStime - wStime |
+| ------------- | --------- | ------------------------ | ----------------------- | -------------- | ----------- | --------------- |
+| 1533922952107 | -18000000 | 1271                     | 1701                    | 1.302452       | 10.996382   | 99.462646       |
 
 #### Column Details
 - **UTC Timestamp**: Coordinated Universal Time indicating the number of seconds since January 1, 1970
   - Unit: seconds
   - Type: long
-- **Offset**: The difference in time (shown in minutes) between UTC time and the local observed time
-  - Unit: minutes
+- **Offset**: The difference in time (shown in milliseconds) between UTC time and the local observed time
+  - Unit: milliseconds
   - Type: integer
-- **RIP Inspiration Duration** _(milliseconds)_: Respiratory Inductance Plethysmography (RIP) breath inspiration duration
+- **RIP Inspiration Duration**: Respiratory Inductance Plethysmography (RIP) breath inspiration duration
   - Unit: milliseconds
   - Type: double
   - Sampling Frequency: 0.0167 Hz
-- **RIP Expiration Duration** _(milliseconds)_: Respiratory Inductance Plethysmography (RIP) breath expiration duration
+- **RIP Expiration Duration**: Respiratory Inductance Plethysmography (RIP) breath expiration duration
   - Unit: milliseconds
   - Type: double
   - Sampling Frequency: 0.0167 Hz
-- **Gyro Magnitude** _(degrees/second)_: Wrist-based magnitude of rotation across the x, y, and z axis
-  - Unit: milliseconds
+- **Gyro Magnitude**: Wrist-based magnitude of rotation across the x, y, and z axis
+  - Unit: degrees/second
   - Type: double
   - Sampling Frequency: 0.0167 Hz
   - Statistic: median
-- **Wrist Pitch** _(degrees)_: Represents the quartile deviation of wrist pitch orientation
-  - Unit: milliseconds
+- **Wrist Pitch**: Represents the quartile deviation of wrist pitch orientation
+  - Unit: degrees
   - Type: double
   - Sampling Frequency: 0.0167 Hz
   - Statistic: quartile deviation
-- **rStime - wStime** _(seconds)_: Represents the time difference between respiration starttime and wrist segment starttime
-  - Unit: milliseconds
+- **rStime - wStime**: Represents the time difference between respiration starttime and wrist segment starttime
+  - Unit: seconds
   - Type: double
   - Sampling Frequency: 0.0167 Hz
 
@@ -86,16 +86,16 @@ Represents the probability of Puff using the puffMarker model
 
 ### Example
 
-| UTC Timestamp | Offset | Probability       |
-| ------------- | ------ | ----------------- |
-| 1533922952107 | -360   | 0.309815016583471 |
+| UTC Timestamp | Offset    | Probability       |
+| ------------- | --------- | ----------------- |
+| 1533922952107 | -18000000 | 0.309815016583471 |
 
 #### Column Details
 - **UTC Timestamp**: Coordinated Universal Time indicating the number of seconds since January 1, 1970
   - Unit: seconds
   - Type: long
-- **Offset**: The difference in time (shown in minutes) between UTC time and the local observed time
-  - Unit: minutes
+- **Offset**: The difference in time (shown in milliseconds) between UTC time and the local observed time
+  - Unit: milliseconds
   - Type: integer
 - **Probability**: Represents the probability of Puff using the puffMarker model.
   - Unit: milliseconds
@@ -120,16 +120,16 @@ Represents puff value puffMarker model
 
 ### Example
 
-| UTC Timestamp | Offset | Label |
-| ------------- | ------ | ----- |
-| 1533922952107 | -360   | 1     |
+| UTC Timestamp | Offset    | Label |
+| ------------- | --------- | ----- |
+| 1533922952107 | -18000000 | 1     |
 
 #### Column Details
 - **UTC Timestamp**: Coordinated Universal Time indicating the number of seconds since January 1, 1970
   - Unit: seconds
   - Type: long
-- **Offset**: The difference in time (shown in minutes) between UTC time and the local observed time
-  - Unit: minutes
+- **Offset**: The difference in time (shown in milliseconds) between UTC time and the local observed time
+  - Unit: milliseconds
   - Type: integer
 - **Label**: Represents puff value puffMarker model
   - Sampling Frequency: 0.0167 Hz

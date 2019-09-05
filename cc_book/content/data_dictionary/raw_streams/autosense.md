@@ -24,16 +24,16 @@ an algorithmic measure of the participant's respiration
 
 ### Example
 
-| UTC Timestamp | Offset | Respiration |
-| ------------- | ------ | ----------- |
-| 1533922952107 | -360   | 2038        |
+| UTC Timestamp | Offset    | Respiration |
+| ------------- | --------- | ----------- |
+| 1533922952107 | -18000000 | 2038        |
 
 #### Column Details
 - **UTC Timestamp**: Coordinated Universal Time indicating the number of seconds since January 1, 1970
   - Unit: seconds
   - Type: long
-- **Offset**: The difference in time (shown in minutes) between UTC time and the local observed time
-  - Unit: minutes
+- **Offset**: The difference in time (shown in milliseconds) between UTC time and the local observed time
+  - Unit: milliseconds
   - Type: integer
 - **Respiration**: an algorithmic measure of the participant's respiration
   - Unit: ADC Value
@@ -50,16 +50,16 @@ an algorithmic measure of the participant's heart rate
 
 ### Example
 
-| UTC Timestamp | Offset | ECG  |
-| ------------- | ------ | ---- |
-| 1533922952107 | -360   | 1023 |
+| UTC Timestamp | Offset    | ECG  |
+| ------------- | --------- | ---- |
+| 1533922952107 | -18000000 | 1023 |
 
 #### Column Details
 - **UTC Timestamp**: Coordinated Universal Time indicating the number of seconds since January 1, 1970
   - Unit: seconds
   - Type: long
-- **Offset**: The difference in time (shown in minutes) between UTC time and the local observed time
-  - Unit: minutes
+- **Offset**: The difference in time (shown in milliseconds) between UTC time and the local observed time
+  - Unit: milliseconds
   - Type: integer
 - **ECG**: an algorithmic measure of the participant's respiration
   - Unit: ADC Value **TWH**
@@ -76,16 +76,16 @@ measures the acceleration on the x, y, and z axes of the Autosense accelerometer
 
 ### Example
 
-| UTC Timestamp | Offset | accelerometer_x | accelerometer_y | accelerometer_z |
-| ------------- | ------ | --------------- | --------------- | --------------- |
-| 1533922952107 | -360   | 1894            | 1961            | 2250            |
+| UTC Timestamp | Offset    | accelerometer_x | accelerometer_y | accelerometer_z |
+| ------------- | --------- | --------------- | --------------- | --------------- |
+| 1533922952107 | -18000000 | 1894            | 1961            | 2250            |
 
 #### Column Details
 - **UTC Timestamp**: Coordinated Universal Time indicating the number of seconds since January 1, 1970
   - Unit: seconds
   - Type: long
-- **Offset**: The difference in time (shown in minutes) between UTC time and the local observed time
-  - Unit: minutes
+- **Offset**: The difference in time (shown in milliseconds) between UTC time and the local observed time
+  - Unit: milliseconds
   - Type: integer
 - **accelerometer_x**: x-axis position of the AutoSense accelerometer
   - Unit: ADC Value
@@ -106,16 +106,16 @@ measures the data quality of the Autosense respiration signal
 
 ### Example
 
-| UTC Timestamp | Offset | Data_Quality |
-| ------------- | ------ | ------------ |
-| 1533922952107 | -360   | 3            |
+| UTC Timestamp | Offset    | Data_Quality |
+| ------------- | --------- | ------------ |
+| 1533922952107 | -18000000 | 3            |
 
 #### Column Details
 - **UTC Timestamp**: Coordinated Universal Time indicating the number of seconds since January 1, 1970
   - Unit: seconds
   - Type: long
-- **Offset**: The difference in time (shown in minutes) between UTC time and the local observed time
-  - Unit: minutes
+- **Offset**: The difference in time (shown in milliseconds) between UTC time and the local observed time
+  - Unit: milliseconds
   - Type: integer
 - **Data_Quality**:
   - Sampling Frequency: 0.33 Hz
@@ -137,16 +137,16 @@ measures the data quality of the Autosense ECG signal
 
 ### Example
 
-| UTC Timestamp | Offset | Data_Quality |
-| ------------- | ------ | ------------ |
-| 1533922952107 | -360   | 0            |
+| UTC Timestamp | Offset    | Data_Quality |
+| ------------- | --------- | ------------ |
+| 1533922952107 | -18000000 | 0            |
 
 #### Column Details
 - **UTC Timestamp**: Coordinated Universal Time indicating the number of seconds since January 1, 1970
   - Unit: seconds
   - Type: long
-- **Offset**: The difference in time (shown in minutes) between UTC time and the local observed time
-  - Unit: minutes
+- **Offset**: The difference in time (shown in milliseconds) between UTC time and the local observed time
+  - Unit: milliseconds
   - Type: integer
 - **Data_Quality**:
   - Sampling Frequency: 0.33 Hz
@@ -168,16 +168,16 @@ measures the data variance of the Autosense respiration signal
 
 ### Example
 
-| UTC Timestamp | Offset | Data_Variance |
-| ------------- | ------ | ------------- |
-| 1533922952107 | -360   | 0             |
+| UTC Timestamp | Offset    | Data_Variance |
+| ------------- | --------- | ------------- |
+| 1533922952107 | -18000000 | 0             |
 
 #### Column Details
 - **UTC Timestamp**: Coordinated Universal Time indicating the number of seconds since January 1, 1970
   - Unit: seconds
   - Type: long
-- **Offset**: The difference in time (shown in minutes) between UTC time and the local observed time
-  - Unit: minutes
+- **Offset**: The difference in time (shown in milliseconds) between UTC time and the local observed time
+  - Unit: milliseconds
   - Type: integer
 - **Data_Variance**:
   - Sampling Frequency: 0.33 Hz
@@ -195,16 +195,16 @@ measures the data variance of the Autosense ECG signal
 
 ### Example
 
-| UTC Timestamp | Offset | Data_Variance |
-| ------------- | ------ | ------------- |
-| 1533922952107 | -360   | 1             |
+| UTC Timestamp | Offset    | Data_Variance |
+| ------------- | --------- | ------------- |
+| 1533922952107 | -18000000 | 1             |
 
 #### Column Details
 - **UTC Timestamp**: Coordinated Universal Time indicating the number of seconds since January 1, 1970
   - Unit: seconds
   - Type: long
-- **Offset**: The difference in time (shown in minutes) between UTC time and the local observed time
-  - Unit: minutes
+- **Offset**: The difference in time (shown in milliseconds) between UTC time and the local observed time
+  - Unit: milliseconds
   - Type: integer
 - **Data_Variance**:
   - Sampling Frequency: 0.33 Hz
