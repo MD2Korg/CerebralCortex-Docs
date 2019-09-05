@@ -8,7 +8,7 @@ Autosense is a wireless sensor suite that collects and processes cardiovascular,
 {% bibliography --cited %} (remove comment after inserting Bibtex citation in paragraph above) -->
 
 
-**Stream name structure:**
+**Example stream name structure:**
 `org.md2k.autosense+<STREAM_NAME>+AUTOSENSE+<ATTACHMENT>`
 
 **Example names:**
