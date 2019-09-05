@@ -60,7 +60,7 @@ an algorithmic measure of the participant's heart rate
   - Unit: minutes
   - Type: integer
 - **ECG**: an algorithmic measure of the participant's respiration
-  - Unit: ADC Value
+  - Unit: ADC Value **TWH**
   - Type: double
   - Sampling Frequency: 100 Hz
   - Range: 0 to 4095
@@ -87,7 +87,7 @@ measures the acceleration on the x, y, and z axes of the Autosense BLE accelerom
   - Type: integer
 - **accelerometer_x**: Acceleration minus Gx on the x-axis of the AutoSense accelerometer
   - Unit: ADC Value
-  - Type: integer
+  - Type: double
   - Sampling Frequency: 16 Hz
   - Range: -2 to +2
 - **accelerometer_y**: Acceleration minus Gy on the y-axis position of the AutoSense accelerometer

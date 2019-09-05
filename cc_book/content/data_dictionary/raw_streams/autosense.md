@@ -62,7 +62,7 @@ an algorithmic measure of the participant's heart rate
   - Unit: minutes
   - Type: integer
 - **ECG**: an algorithmic measure of the participant's respiration
-  - Unit: ADC Value
+  - Unit: ADC Value **TWH**
   - Type: integer
   - Sampling Frequency: 64 Hz
   - Range: 0 to 4095
