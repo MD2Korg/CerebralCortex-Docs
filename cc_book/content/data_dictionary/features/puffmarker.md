@@ -9,7 +9,7 @@ A smoking episode indicates an instance of smoking using puffMarker {% cite sale
 {% bibliography --cited %}
 
 
-**Stream name structure:**
+**Example stream name structure:**
 `org.md2k.streamprocessor+<STREAM_NAME>+<ATTACHMENT>`
 
 **Example names:**

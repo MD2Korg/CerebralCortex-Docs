@@ -1,6 +1,6 @@
 # MotionSense
 
-A custom wrist sensor developed by The Ohio State University.  It captures and transmits 3-axis accelerometer and gyroscope data over a Bluetooth Low Energy wireless channel. This device has a run time of about 24 hours on a charge while transmitting the data.
+A custom wrist sensor developed by The Ohio State University.  It captures and transmits 3-axis accelerometer and gyroscope data over a Bluetooth Low Energy wireless channel. This device has a runtime of about 24 hours on a charge while transmitting the data.
 
 ![MotionSense Hardware](../../images/MotionSenseWrist.png)
 
@@ -9,7 +9,7 @@ A custom wrist sensor developed by The Ohio State University.  It captures and t
 {% bibliography --cited %} (remove comment after inserting Bibtex citation in paragraph above) -->
 
 
-**Stream name structure:**
+**Example stream name structure:**
 `org.md2k.motionsense+<STREAM_NAME>+MOTION_SENSE+<ATTACHMENT>`
 
 **Example names:**

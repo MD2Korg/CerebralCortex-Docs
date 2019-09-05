@@ -6,7 +6,7 @@ Autosense BLE is a wireless Bluetooth Low energy sensor suite that collects and 
 {% bibliography --cited %} (remove comment after inserting Bibtex citation in paragraph above) -->
 
 
-**Stream name structure:**
+**Example stream name structure:**
 `org.md2k.autosenseble+<STREAM_NAME>+AUTOSENSE_BLE+<ATTACHMENT>`
 
 **Example names:**
