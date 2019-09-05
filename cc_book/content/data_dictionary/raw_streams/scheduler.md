@@ -18,6 +18,9 @@ The Scheduler component of the mCerebrum software works to deliver ecological mo
 ## System Log
 represents the log of the EMA Scheduler
 
+### Used by
+- [EMA](../features/ema)
+
 ### Example
 
 | UTC Timestamp | Offset    | Timestamp              | **TWH** | **TWH**           | **TWH**           |
@@ -36,6 +39,9 @@ represents the log of the EMA Scheduler
 
 ## Status
 represents the status of the particpant's interaction with EMA/EMIs
+
+### Used by
+- [EMA](../features/ema)
 
 ### Example
 
@@ -66,6 +72,9 @@ represents the status of the particpant's interaction with EMA/EMIs
 
 ## Incentive
 represents the incentive values rewarded to participants for completing requested tasks (e.g., completing an EMA survey)
+
+### Used by
+- [EMA](../features/ema)
 
 ### Example
 
