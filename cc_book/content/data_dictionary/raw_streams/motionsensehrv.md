@@ -36,14 +36,14 @@ the x, y, and z axes of the MotionSense accelerometer
 - **Offset**: The difference in time (shown in milliseconds) between UTC time and the local observed time
   - Unit: milliseconds
   - Type: integer
-- **accelerometer_x**: x-axis position of the MotionSense accelerometer
+- **accelerometer_x**: Acceleration minus Gx on the x-axis of the MotionSense HRV accelerometer
   - Unit: g (G-forces)
   - Type: double
   - Sampling frequency: 16 Hz
   - Range: -2g to +2g
-- **accelerometer_y**: y-axis position of the MotionSense accelerometer
+- **accelerometer_y**: Acceleration minus Gy on the y-axis of the MotionSense HRV accelerometer
   - *same as above (accelerometer_x)*
-- **accelerometer_z**: z-axis position of the MotionSense accelerometer
+- **accelerometer_z**: Acceleration minus Gz on the z-axis of the MotionSense HRV accelerometer
   - *same as above (accelerometer_x)*
 
 
@@ -63,14 +63,14 @@ the x, y, and z axes of the MotionSense gyroscope
 - **Offset**: The difference in time (shown in milliseconds) between UTC time and the local observed time
   - Unit: milliseconds
   - Type: integer
-- **gyroscope_x**: x-axis position of the MotionSense gyroscope
+- **gyroscope_x**: Angular speed around the x-axis of the MotionSense HRV gyroscope
   - Unit: degrees/second
   - Type: double
-  - Sampling frequency: 32 Hz
+  - Sampling frequency: 16 Hz
   - Range: -250 to +250
-- **gyroscope_y**: y-axis position of the MotionSense gyroscope
+- **gyroscope_y**: Angular speed around the y-axis of the MotionSense HRV gyroscope
   - *same as above (gyroscope_x)*
-- **gyroscope_z**: z-axis position of the MotionSense gyroscope
+- **gyroscope_z**: Angular speed around the z-axis of the MotionSense HRV gyroscope
   - *same as above (gyroscope_x)*
 
 
@@ -82,9 +82,9 @@ measures the data quality of the MotionSense wrist sensor signal
 
 ### Example
 
-| UTC Timestamp | Offset    | DataQuality_ACL |
-| ------------- | --------- | --------------- |
-| 1533922952107 | -18000000 | 3               |
+| UTC Timestamp | Offset    | DataQuality |
+| ------------- | --------- | ----------- |
+| 1533922952107 | -18000000 | 3           |
 
 #### Column Details
 - **UTC Timestamp**: Coordinated Universal Time indicating the number of seconds since January 1, 1970
@@ -93,8 +93,8 @@ measures the data quality of the MotionSense wrist sensor signal
 - **Offset**: The difference in time (shown in milliseconds) between UTC time and the local observed time
   - Unit: milliseconds
   - Type: integer
-- **DataQuality_ACL**:
-  - Sampling Frequency: 16 Hz
+- **DataQuality**:
+  - Sampling Frequency: 0.33 Hz
   - Values:
     - **0**: good data is being collected
     - **1**: noise

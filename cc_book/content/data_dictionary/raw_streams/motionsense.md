@@ -36,15 +36,15 @@ the x, y, and z axes of the MotionSense accelerometer
 - **Offset**: The difference in time (shown in milliseconds) between UTC time and the local observed time
   - Unit: milliseconds
   - Type: integer
-- **accelerometer_x**: x-axis position of the MotionSense accelerometer
+- **accelerometer_x**: Acceleration minus Gx on the x-axis of the MotionSense HRV accelerometer
   - Unit: g (G-forces)
   - Type: double
   - Sampling frequency: 16 Hz
   - Range: -2g to +2g
-- **accelerometer_y**: y-axis position of the MotionSense accelerometer
+- **accelerometer_y**: Acceleration minus Gy on the y-axis of the MotionSense HRV accelerometer
   - *same as above (accelerometer_x)*
-- **accelerometer_z**: z-axis position of the MotionSense accelerometer
-  - *same as above (accelerometer_x)*
+- **accelerometer_z**: Acceleration minus Gz on the z-axis of the MotionSense HRV accelerometer
+    - *same as above (accelerometer_x)*
 
 
 ## Gyroscope
