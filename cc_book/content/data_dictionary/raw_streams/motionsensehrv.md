@@ -10,11 +10,11 @@ A custom wrist sensor developed by The Ohio State University.  It captures and t
 
 
 **Example stream name structure:**
-`org.md2k.motionsense+<STREAM_NAME>+MOTION_SENSE+<ATTACHMENT>`
+`org.md2k.motionsense+<STREAM_NAME>+MOTION_SENSE_HRV+<ATTACHMENT>`
 
 **Example names:**
-- `org.md2k.motionsense+ACCELEROMETER+MOTION_SENSE+LEFT_WRIST`
-- `org.md2k.motionsense+ACCELEROMETER+MOTION_SENSE+RIGHT_WRIST`
+- `org.md2k.motionsense+ACCELEROMETER+MOTION_SENSE_HRV+LEFT_WRIST`
+- `org.md2k.motionsense+ACCELEROMETER+MOTION_SENSE_HRV+RIGHT_WRIST`
 
 
 ## Accelerometer
