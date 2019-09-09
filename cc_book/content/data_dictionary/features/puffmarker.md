@@ -34,16 +34,33 @@ feature vector describing the set of numeric features in puffMarker
 
 ### Example
 
-| UTC Timestamp | Offset    | RIP Inspiration Duration | RIP Expiration Duration | Gyro Magnitude | Wrist Pitch | rStime - wStime |
+<!--| UTC Timestamp | Offset    | RIP Inspiration Duration | RIP Expiration Duration | Gyro Magnitude | Wrist Pitch | rStime - wStime |
 | ------------- | --------- | ------------------------ | ----------------------- | -------------- | ----------- | --------------- |
-| 1533922952107 | -18000000 | 1271                     | 1701                    | 1.302452       | 10.996382   | 99.462646       |
+| 1533922952107 | -18000000 | 1271                     | 1701                    | 1.302452       | 10.996382   | 99.462646       | -->
 
 
-| UTC Timestamp            | 1533922952107 |
-| ------------------------ | ------------- |
-| Offset                   | -18000000     |
-| RIP Inspiration Duration | 1271          |
-| RIP Expiration Duration  | 1701          | 
+| UTC Timestamp                         | 1533922952107    |
+| ------------------------------------- | ---------------- |
+| **Offset**                            | -18000000        |
+| **RIP Inspiration Duration**          | 1271             |
+| **RIP Expiration Duration**           | 1701             |
+| **RIP Respiration Duration**          | 2972             |
+| **RIP Inspiration Expiration Ratio**  | 0.7472           |
+| **RIP Stretch**                       | 1999             |
+| **RIP Upper Stretch**                 | 999.5            |
+| **RIP Lower Stretch**                 | -999.5           |
+| **RIP Backward Inspiration Duration** | -135             |
+| **RIP Backward Expiration Duration**  | -711             |
+| **RIP Backward Respiration Duration** | -846             |
+| **RIP Backward Stretch**              | 903              |
+| **RIP Forward Inspiration Duration**  | 123              |
+| **RIP Forward Expiration Duration**   | 730              |
+| **RIP Forward Respiration Duration**  | 853              |
+| **RIP Forward Stretch**               | 1377             |
+| **RIP d5 Expiration**                 | 1.55867446393762 |
+| **RIP d5 Stretch**                    | 1.30245022970903 |
+| **RIP Maximum Rate of Change**        | 16.028728191573  |
+| **RIP Minimum Rate of Change**        | 14.357905959232  |
 
 
 #### Column Details
@@ -61,6 +78,74 @@ feature vector describing the set of numeric features in puffMarker
   - Unit: milliseconds
   - Type: double
   - Sampling Frequency: 0.0167 Hz
+- **RIP Respiration Duration**: Represents the respiration duration from the RIP data source
+  - Unit: milliseconds
+  - Type: double
+  - Sampling Frequency: 0.0167 Hz
+- **RIP Inspiration Expiration Ratio**: Represents the inspiration expiration ratio from the RIP data source
+  - Type: double
+  - Sampling Frequency: 0.0167 Hz
+- **RIP Stretch**: Represents the stretch from the RIP data source
+  - Unit: **TWH**
+  - Type: double
+  - Sampling Frequency: 0.0167 Hz
+- **RIP Upper Stretch**: Represents the stretch in upward direction from the RIP data source
+  - Unit: **TWH**
+  - Type: double
+  - Sampling Frequency: 0.0167 Hz
+- **RIP Lower Stretch**: Represents the stretch in downward direction from the RIP data source
+  - Unit: **TWH**
+  - Type: double
+  - Sampling Frequency: 0.0167 Hz
+- **RIP Backward Inspiration Duration**: Represents the first order differences of the inspiration duration values from their previous from the RIP data source
+  - Unit: milliseconds
+  - Type: double
+  - Sampling Frequency: 0.0167 Hz
+- **RIP Backward Expiration Duration**: Represents the first order differences of the expiration duration values from their previous from the RIP data source
+  - Unit: milliseconds
+  - Type: double
+  - Sampling Frequency: 0.0167 Hz
+- **RIP Backward Respiration Duration**: Represents the first order differences of the respiration duration values from their previous from the RIP data source
+  - Unit: milliseconds
+  - Type: double
+  - Sampling Frequency: 0.0167 Hz
+- **RIP Backward Stretch**: Represents first order differences of the stretch values from their previous from the RIP data source
+  - Unit: **TWH**
+  - Type: double
+  - Sampling Frequency: 0.0167 Hz
+- **RIP Forward Inspiration Duration**: Represents the first order differences of the inspiration duration values from their next from the RIP data source
+  - Unit: milliseconds
+  - Type: double
+  - Sampling Frequency: 0.0167 Hz
+- **RIP Forward Expiration Duration**: Represents the first order differences of the expiration duration values from their next from the RIP data source
+  - Unit: milliseconds
+  - Type: double
+  - Sampling Frequency: 0.0167 Hz
+- **RIP Forward Respiration Duration**: Represents the first order differences of the respiration duration values from their next from the RIP data source
+  - Unit: milliseconds
+  - Type: double
+  - Sampling Frequency: 0.0167 Hz
+- **RIP Forward Stretch**: Represents first order differences of the stretch values from their next from the RIP data source
+  - Unit: **TWH**
+  - Type: double
+  - Sampling Frequency: 0.0167 Hz
+- **RIP d5 Expiration**: Represents the ratio of its expiration duration to the average expiration duration value in a window of five cycles from the RIP data source
+  - Type: double
+  - Sampling Frequency: 0.0167 Hz
+- **RIP d5 Stretch**: Represents the ratio of its stretch to the average stretch value in a window of five cycles from the RIP data source
+  - Type: double
+  - Sampling Frequency: 0.0167 Hz
+- **RIP Maximum Rate of Change**: Represents the maximum rate of change of signal from the RIP data source
+  - Unit: **TWH**
+  - Type: double
+  - Sampling Frequency: 0.0167 Hz
+- **RIP Minimum Rate of Change**: Represents the minimum rate of change of signal from the RIP data source
+  - Unit: **TWH**
+  - Type: double
+  - Sampling Frequency: 0.0167 Hz
+
+
+
 - **Gyro Magnitude**: Wrist-based magnitude of rotation across the x, y, and z axis
   - Unit: degrees/second
   - Type: double
