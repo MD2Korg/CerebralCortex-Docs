@@ -15,17 +15,20 @@ The Scheduler component of the mCerebrum software works to deliver ecological mo
 - `org.md2k.scheduler+EMA+STRESS_EMA+PHONE`
 
 
-## System Log
-represents the log of the EMA Scheduler
+## EMA (Random)
+
+
+## Incentive
+represents the incentive values rewarded to participants for completing requested tasks (e.g., completing an EMA survey)
 
 ### Used by
 - [EMA](../features/ema)
 
 ### Example
 
-| UTC Timestamp | Offset    | Timestamp              | Log Message                                 |
-| ------------- | --------- | ---------------------- | ------------------------------------------- |
-| 1533922952107 | -18000000 | 1/24/2019  12:52:39 PM | DEBUG, BackgroundService, Scheduler Started |
+| UTC Timestamp | Offset    | Earned Now | Earned Total |
+| ------------- | --------- | ---------- | ------------ |
+| 1533922952107 | -18000000 | 1.25       | 5.75         |
 
 #### Column Details
 - **UTC Timestamp**: Coordinated Universal Time indicating the number of milliseconds since January 1, 1970
@@ -34,8 +37,12 @@ represents the log of the EMA Scheduler
 - **Offset**: The difference in time (shown in milliseconds) between UTC time and the local observed time
   - Unit: milliseconds
   - Type: integer
-- **Log Message**: The EMA scheduler debugging log message (note: may contain commas).
-  - Type: string
+- **Earned Now**: amount of incentive the participant earned by completing the current task
+  - Unit: USD (dollars)
+  - Type: double
+- **Earned Total**: total amount of incentive the participant has earned from all completed tasks
+  - Unit: USD (dollars)
+  - Type: double
 
 
 ## Status
@@ -69,18 +76,17 @@ represents the status of the particpant's interaction with EMA/EMIs
 - **Next State** Represents the next scheduler action/state (e.g., EMA, NOTIFICATION, NOTIFICATION_WITH_DELAY, INCENTIVE, null).  Null is the final state the designates the sequence of schedule actions is complete.
 
 
-
-## Incentive
-represents the incentive values rewarded to participants for completing requested tasks (e.g., completing an EMA survey)
+## System Log
+represents the log of the EMA Scheduler
 
 ### Used by
 - [EMA](../features/ema)
 
 ### Example
 
-| UTC Timestamp | Offset    | Earned Now | Earned Total |
-| ------------- | --------- | ---------- | ------------ |
-| 1533922952107 | -18000000 | 1.25       | 5.75         |
+| UTC Timestamp | Offset    | Timestamp              | Log Message                                 |
+| ------------- | --------- | ---------------------- | ------------------------------------------- |
+| 1533922952107 | -18000000 | 1/24/2019  12:52:39 PM | DEBUG, BackgroundService, Scheduler Started |
 
 #### Column Details
 - **UTC Timestamp**: Coordinated Universal Time indicating the number of milliseconds since January 1, 1970
@@ -89,9 +95,5 @@ represents the incentive values rewarded to participants for completing requeste
 - **Offset**: The difference in time (shown in milliseconds) between UTC time and the local observed time
   - Unit: milliseconds
   - Type: integer
-- **Earned Now**: amount of incentive the participant earned by completing the current task
-  - Unit: USD (dollars)
-  - Type: double
-- **Earned Total**: total amount of incentive the participant has earned from all completed tasks
-  - Unit: USD (dollars)
-  - Type: double
+- **Log Message**: The EMA scheduler debugging log message (note: may contain commas).
+  - Type: string

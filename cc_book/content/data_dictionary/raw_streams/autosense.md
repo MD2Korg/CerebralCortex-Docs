@@ -16,62 +16,6 @@ Autosense is a wireless sensor suite that collects and processes cardiovascular,
 - `org.md2k.autosense+RESPIRATION+AUTOSENSE+CHEST+CHEST`
 
 
-## Respiration
-an algorithmic measure of the participant's respiration
-
-### Used by
-- [CSTRESS](../features/cstress)
-- [EMA](../features/ema)
-- [PUFFMARKER](../features/puffmarker)
-
-### Example
-
-| UTC Timestamp | Offset    | Respiration |
-| ------------- | --------- | ----------- |
-| 1533922952107 | -18000000 | 2038        |
-
-#### Column Details
-- **UTC Timestamp**: Coordinated Universal Time indicating the number of milliseconds since January 1, 1970
-  - Unit: milliseconds
-  - Type: long
-- **Offset**: The difference in time (shown in milliseconds) between UTC time and the local observed time
-  - Unit: milliseconds
-  - Type: integer
-- **Respiration**: an algorithmic measure of the participant's respiration
-  - Unit: ADC Value
-  - Type: integer
-  - Sampling Frequency: 21.33 Hz
-  - Range: 0 to 4095
-
-
-## Electrocardiogram
-an algorithmic measure of the participant's heart rate
-
-### Used by
-- [CSTRESS](../features/cstress)
-- [EMA](../features/ema)
-- [PUFFMARKER](../features/puffmarker)
-
-### Example
-
-| UTC Timestamp | Offset    | ECG  |
-| ------------- | --------- | ---- |
-| 1533922952107 | -18000000 | 1023 |
-
-#### Column Details
-- **UTC Timestamp**: Coordinated Universal Time indicating the number of milliseconds since January 1, 1970
-  - Unit: milliseconds
-  - Type: long
-- **Offset**: The difference in time (shown in milliseconds) between UTC time and the local observed time
-  - Unit: milliseconds
-  - Type: integer
-- **ECG**: an algorithmic measure of the participant's respiration
-  - Unit: ADC Value
-  - Type: integer
-  - Sampling Frequency: 64 Hz
-  - Range: 0 to 4095
-
-
 ## Accelerometer (x,y,z)
 measures the acceleration on the x, y, and z axes of the Autosense accelerometer
 
@@ -104,19 +48,17 @@ measures the acceleration on the x, y, and z axes of the Autosense accelerometer
   - *same as above (accelerometer_x)*
 
 
-## Data Quality (respiration)
-measures the data quality of the Autosense respiration signal
+## Ambient Temerature
+shows the ambient temperature of the AutoSense unit
 
 ### Used by
-- [CSTRESS](../features/cstress)
-- [EMA](../features/ema)
-- [PUFFMARKER](../features/puffmarker)
+**TWH**
 
 ### Example
 
-| UTC Timestamp | Offset    | Data_Quality |
-| ------------- | --------- | ------------ |
-| 1533922952107 | -18000000 | 3            |
+| UTC Timestamp | Offset    | Ambient Temperature |
+| ------------- | --------- | ------------------- |
+| 1533922952107 | -18000000 | 4080                |
 
 #### Column Details
 - **UTC Timestamp**: Coordinated Universal Time indicating the number of milliseconds since January 1, 1970
@@ -125,16 +67,37 @@ measures the data quality of the Autosense respiration signal
 - **Offset**: The difference in time (shown in milliseconds) between UTC time and the local observed time
   - Unit: milliseconds
   - Type: integer
-- **Data_Quality**:
-  - Sampling Frequency: 0.33 Hz
-  - Values:
-    - **0**: good data is being collected
-    - **1**: noise
-    - **2**: bad signal
-    - **3**: sensor is off
-    - **4**: missing data
-    - **5**: sensor band not worn
-    - **6**: sensor band is loose
+- **Ambient Temperature**: current ambient temperature
+  - Unit: **TWH**
+  - Type: integer
+  - Frequency: 1.28 Hz
+  - Range: 0 to 4095
+
+
+## Battery
+shows the current battery level of the AutoSense unit
+
+### Used by
+**TWH**
+
+### Example
+
+| UTC Timestamp | Offset    | Battery Level |
+| ------------- | --------- | ------------- |
+| 1533922952107 | -18000000 | 2819          |
+
+#### Column Details
+- **UTC Timestamp**: Coordinated Universal Time indicating the number of milliseconds since January 1, 1970
+  - Unit: milliseconds
+  - Type: long
+- **Offset**: The difference in time (shown in milliseconds) between UTC time and the local observed time
+  - Unit: milliseconds
+  - Type: integer
+- **Battery Level**: current battery charge
+  - Unit: **TWH**
+  - Type: integer
+  - Frequency: 1.28 Hz
+  - Range: 0 to 4095
 
 
 ## Data Quality (electrocardiogram)
@@ -170,8 +133,8 @@ measures the data quality of the Autosense ECG signal
     - **6**: sensor band is loose
 
 
-## Data Variance (respiration)
-measures the data variance of the Autosense respiration signal
+## Data Quality (respiration)
+measures the data quality of the Autosense respiration signal
 
 ### Used by
 - [CSTRESS](../features/cstress)
@@ -180,9 +143,9 @@ measures the data variance of the Autosense respiration signal
 
 ### Example
 
-| UTC Timestamp | Offset    | Data_Variance |
-| ------------- | --------- | ------------- |
-| 1533922952107 | -18000000 | 0             |
+| UTC Timestamp | Offset    | Data_Quality |
+| ------------- | --------- | ------------ |
+| 1533922952107 | -18000000 | 3            |
 
 #### Column Details
 - **UTC Timestamp**: Coordinated Universal Time indicating the number of milliseconds since January 1, 1970
@@ -191,12 +154,16 @@ measures the data variance of the Autosense respiration signal
 - **Offset**: The difference in time (shown in milliseconds) between UTC time and the local observed time
   - Unit: milliseconds
   - Type: integer
-- **Data_Variance**:
+- **Data_Quality**:
   - Sampling Frequency: 0.33 Hz
   - Values:
-    - **0**: good data
-    - **1**: bad signal
-    - **2**: no data
+    - **0**: good data is being collected
+    - **1**: noise
+    - **2**: bad signal
+    - **3**: sensor is off
+    - **4**: missing data
+    - **5**: sensor band not worn
+    - **6**: sensor band is loose
 
 
 ## Data Variance (electrocardiogram)
@@ -226,3 +193,140 @@ measures the data variance of the Autosense ECG signal
     - **0**: good data
     - **1**: bad signal
     - **2**: no data
+
+
+## Data Variance (respiration)
+measures the data variance of the Autosense respiration signal
+
+### Used by
+- [CSTRESS](../features/cstress)
+- [EMA](../features/ema)
+- [PUFFMARKER](../features/puffmarker)
+
+### Example
+
+| UTC Timestamp | Offset    | Data_Variance |
+| ------------- | --------- | ------------- |
+| 1533922952107 | -18000000 | 0             |
+
+#### Column Details
+- **UTC Timestamp**: Coordinated Universal Time indicating the number of milliseconds since January 1, 1970
+  - Unit: milliseconds
+  - Type: long
+- **Offset**: The difference in time (shown in milliseconds) between UTC time and the local observed time
+  - Unit: milliseconds
+  - Type: integer
+- **Data_Variance**:
+  - Sampling Frequency: 0.33 Hz
+  - Values:
+    - **0**: good data
+    - **1**: bad signal
+    - **2**: no data
+
+
+## Electrocardiogram
+an algorithmic measure of the participant's heart rate
+
+### Used by
+- [CSTRESS](../features/cstress)
+- [EMA](../features/ema)
+- [PUFFMARKER](../features/puffmarker)
+
+### Example
+
+| UTC Timestamp | Offset    | ECG  |
+| ------------- | --------- | ---- |
+| 1533922952107 | -18000000 | 1023 |
+
+#### Column Details
+- **UTC Timestamp**: Coordinated Universal Time indicating the number of milliseconds since January 1, 1970
+  - Unit: milliseconds
+  - Type: long
+- **Offset**: The difference in time (shown in milliseconds) between UTC time and the local observed time
+  - Unit: milliseconds
+  - Type: integer
+- **ECG**: an algorithmic measure of the participant's respiration
+  - Unit: ADC Value
+  - Type: integer
+  - Sampling Frequency: 64 Hz
+  - Range: 0 to 4095
+
+
+## Galvanic Skin Response
+a change in the electrical resistance of the skin caused by emotional stress, measurable with a sensitive galvanometer
+
+### Used by
+**TWH**
+
+### Example
+
+| UTC Timestamp | Offset    | Galvanic Skin Response | 
+| ------------- | --------- | ---------------------- |
+| 1533922952107 | -18000000 | 2148                   |
+
+#### Column Details
+- **UTC Timestamp**: Coordinated Universal Time indicating the number of milliseconds since January 1, 1970
+  - Unit: milliseconds
+  - Type: long
+- **Offset**: The difference in time (shown in milliseconds) between UTC time and the local observed time
+  - Unit: milliseconds
+  - Type: integer
+- **Ambient Temperature**: a change in the electrical resistance of the skin caused by emotional stress, measurable with a sensitive galvanometer
+  - Unit: **TWH**
+  - Type: integer
+  - Frequency: 10.66 Hz
+  - Range: 0 to 4095
+
+
+## Respiration
+an algorithmic measure of the participant's respiration
+
+### Used by
+- [CSTRESS](../features/cstress)
+- [EMA](../features/ema)
+- [PUFFMARKER](../features/puffmarker)
+
+### Example
+
+| UTC Timestamp | Offset    | Respiration |
+| ------------- | --------- | ----------- |
+| 1533922952107 | -18000000 | 2038        |
+
+#### Column Details
+- **UTC Timestamp**: Coordinated Universal Time indicating the number of milliseconds since January 1, 1970
+  - Unit: milliseconds
+  - Type: long
+- **Offset**: The difference in time (shown in milliseconds) between UTC time and the local observed time
+  - Unit: milliseconds
+  - Type: integer
+- **Respiration**: an algorithmic measure of the participant's respiration
+  - Unit: ADC Value
+  - Type: integer
+  - Sampling Frequency: 21.33 Hz
+  - Range: 0 to 4095
+
+
+## Skin Temerature
+shows the current skin temperature
+
+### Used by
+**TWH**
+
+### Example
+
+| UTC Timestamp | Offset    | Ambient Temperature |
+| ------------- | --------- | ------------------- |
+| 1533922952107 | -18000000 | 2897                |
+
+#### Column Details
+- **UTC Timestamp**: Coordinated Universal Time indicating the number of milliseconds since January 1, 1970
+  - Unit: milliseconds
+  - Type: long
+- **Offset**: The difference in time (shown in milliseconds) between UTC time and the local observed time
+  - Unit: milliseconds
+  - Type: integer
+- **Ambient Temperature**: current skin temperature
+  - Unit: **TWH**
+  - Type: integer
+  - Frequency: 1.28 Hz
+  - Range: 0 to 4095
