@@ -1,5 +1,5 @@
 # mCerebrum Core
-The mCerebrum app is smartphone software developed by the MD2K team at the Uniiversity of Memphis. It is the primary user interface on the smartphone for participant interaction with the software.
+The mCerebrum study app is smartphone software developed by the MD2K team at the Uniiversity of Memphis. It is the primary user interface on the smartphone for participant interaction with the software.
 
 <!-- **References:**
 {% bibliography --cited %} (remove comment after inserting Bibtex citation in paragraph above) -->
