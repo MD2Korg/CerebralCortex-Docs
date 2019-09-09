@@ -79,6 +79,8 @@ feature vector describing the set of numeric features in puffMarker
 | **rStime - wEtime**                                 | 99.4626460785894  |
 | **rEtime - wEtime**                                 | 101.942342742508  |
 
+**TWH - check if number of columns is correct; column descriptions seem to be missing from file?; values in this table are likely incorrect**
+
 
 #### Column Details
 - **UTC Timestamp**: Coordinated Universal Time indicating the number of milliseconds since January 1, 1970
