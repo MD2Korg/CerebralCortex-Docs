@@ -38,6 +38,14 @@ feature vector describing the set of numeric features in puffMarker
 | ------------- | --------- | ------------------------ | ----------------------- | -------------- | ----------- | --------------- |
 | 1533922952107 | -18000000 | 1271                     | 1701                    | 1.302452       | 10.996382   | 99.462646       |
 
+
+| UTC Timestamp            | 1533922952107 |
+| ------------------------ | ------------- |
+| Offset                   | -18000000     |
+| RIP Inspiration Duration | 1271          |
+| RIP Expiration Duration  | 1701          | 
+
+
 #### Column Details
 - **UTC Timestamp**: Coordinated Universal Time indicating the number of milliseconds since January 1, 1970
   - Unit: milliseconds
