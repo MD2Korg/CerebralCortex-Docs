@@ -6,10 +6,10 @@ The mCerebrum app is smartphone software developed by the MD2K team at the Uniiv
 
 
 **Example stream name structure:**
-`org.md2k.studywithema+<STREAM_NAME>`
+`org.md2k.<APPLICATION>+<STREAM_NAME>`
 
 **Example names:**
-- `org.md2k.studywithema+DAY+START`
+- `org.md2k.study+DAY+START`
 - `org.md2k.studywithema+DAY_END`
 
 

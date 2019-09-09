@@ -11,7 +11,7 @@ The Scheduler component of the mCerebrum software works to deliver ecological mo
 `org.md2k.scheduler+<STREAM_NAME>+<ATTACHMENT>`
 
 **Example names:**
-- `org.md2k.scheduler+LOG+PHONE`
+- `org.md2k.ema_scheduler+LOG+PHONE`
 - `org.md2k.scheduler+EMA+STRESS_EMA+PHONE`
 
 

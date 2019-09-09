@@ -49,19 +49,17 @@ the x, y, and z axes of the MotionSense accelerometer
     - *same as above (accelerometer_x)*
 
 
-## Gyroscope
-the x, y, and z axes of the MotionSense gyroscope
+## Battery
+shows the current battery level as a percentage
 
 ### Used by
-- [CSTRESS](../features/cstress)
-- [EMA](../features/ema)
-- [PUFFMARKER](../features/puffmarker)
+**TWH**
 
 ### Example
 
-| UTC Timestamp | Offset    | gyroscope_x   | gyroscope_y     | gyroscope_z      |
-| ------------- | --------- | ------------- | --------------- | ---------------- |
-| 1533922952107 | -18000000 | 0.01611328125 | -0.995849609375 | -0.0215847572013 |
+| UTC Timestamp | Offset    | Battery Level |
+| ------------- | --------- | ------------- |
+| 1533922952107 | -18000000 | 99            |
 
 #### Column Details
 - **UTC Timestamp**: Coordinated Universal Time indicating the number of milliseconds since January 1, 1970
@@ -70,15 +68,10 @@ the x, y, and z axes of the MotionSense gyroscope
 - **Offset**: The difference in time (shown in milliseconds) between UTC time and the local observed time
   - Unit: milliseconds
   - Type: integer
-- **gyroscope_x**: x-axis position of the MotionSense gyroscope
-  - Unit: degrees/second
+- **Battery Level**: current battery charge
+  - Unit: percentage
   - Type: double
-  - Sampling frequency: 32 Hz
-  - Range: -250 to +250
-- **gyroscope_y**: y-axis position of the MotionSense gyroscope
-  - *same as above (gyroscope_x)*
-- **gyroscope_z**: z-axis position of the MotionSense gyroscope
-  - *same as above (gyroscope_x)*
+  - Range: 0% to 100%
 
 
 ## Data Quality
@@ -112,3 +105,62 @@ measures the data quality of the MotionSense wrist sensor signal
     - **4**: missing data
     - **5**: sensor band not worn
     - **6**: sensor band is loose
+
+
+## Gyroscope
+the x, y, and z axes of the MotionSense gyroscope
+
+### Used by
+- [CSTRESS](../features/cstress)
+- [EMA](../features/ema)
+- [PUFFMARKER](../features/puffmarker)
+
+### Example
+
+| UTC Timestamp | Offset    | gyroscope_x   | gyroscope_y     | gyroscope_z      |
+| ------------- | --------- | ------------- | --------------- | ---------------- |
+| 1533922952107 | -18000000 | 0.01611328125 | -0.995849609375 | -0.0215847572013 |
+
+#### Column Details
+- **UTC Timestamp**: Coordinated Universal Time indicating the number of milliseconds since January 1, 1970
+  - Unit: milliseconds
+  - Type: long
+- **Offset**: The difference in time (shown in milliseconds) between UTC time and the local observed time
+  - Unit: milliseconds
+  - Type: integer
+- **gyroscope_x**: x-axis position of the MotionSense gyroscope
+  - Unit: degrees/second
+  - Type: double
+  - Sampling frequency: 32 Hz
+  - Range: -250 to +250
+- **gyroscope_y**: y-axis position of the MotionSense gyroscope
+  - *same as above (gyroscope_x)*
+- **gyroscope_z**: z-axis position of the MotionSense gyroscope
+  - *same as above (gyroscope_x)*
+
+
+## Sequence Number
+shows the sequence number of the packet
+
+### Used by
+- [CSTRESS](../features/cstress)
+- [EMA](../features/ema)
+- [PUFFMARKER](../features/puffmarker)
+
+### Example
+
+| UTC Timestamp | Offset    | Sequence number |
+| ------------- | --------- | --------------- |
+| 1533922952107 | -18000000 | 44824           |
+
+#### Column Details
+- **UTC Timestamp**: Coordinated Universal Time indicating the number of milliseconds since January 1, 1970
+  - Unit: milliseconds
+  - Type: long
+- **Offset**: The difference in time (shown in milliseconds) between UTC time and the local observed time
+  - Unit: milliseconds
+  - Type: integer
+- **Sequence Number**: Sequence number of the packet
+  - Unit: number
+  - Type: double
+  - Range: 0 to 65535
