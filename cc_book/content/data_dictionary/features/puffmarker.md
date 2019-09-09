@@ -39,28 +39,44 @@ feature vector describing the set of numeric features in puffMarker
 | 1533922952107 | -18000000 | 1271                     | 1701                    | 1.302452       | 10.996382   | 99.462646       | -->
 
 
-| UTC Timestamp                         | 1533922952107    |
-| ------------------------------------- | ---------------- |
-| **Offset**                            | -18000000        |
-| **RIP Inspiration Duration**          | 1271             |
-| **RIP Expiration Duration**           | 1701             |
-| **RIP Respiration Duration**          | 2972             |
-| **RIP Inspiration Expiration Ratio**  | 0.7472           |
-| **RIP Stretch**                       | 1999             |
-| **RIP Upper Stretch**                 | 999.5            |
-| **RIP Lower Stretch**                 | -999.5           |
-| **RIP Backward Inspiration Duration** | -135             |
-| **RIP Backward Expiration Duration**  | -711             |
-| **RIP Backward Respiration Duration** | -846             |
-| **RIP Backward Stretch**              | 903              |
-| **RIP Forward Inspiration Duration**  | 123              |
-| **RIP Forward Expiration Duration**   | 730              |
-| **RIP Forward Respiration Duration**  | 853              |
-| **RIP Forward Stretch**               | 1377             |
-| **RIP d5 Expiration**                 | 1.55867446393762 |
-| **RIP d5 Stretch**                    | 1.30245022970903 |
-| **RIP Maximum Rate of Change**        | 16.028728191573  |
-| **RIP Minimum Rate of Change**        | 14.357905959232  |
+| UTC Timestamp                                       | 1533922952107     |
+| --------------------------------------------------- | ----------------- |
+| **Offset**                                          | -18000000         |
+| **RIP Inspiration Duration**                        | 1271              |
+| **RIP Expiration Duration**                         | 1701              |
+| **RIP Respiration Duration**                        | 2972              |
+| **RIP Inspiration Expiration Ratio**                | 0.7472            |
+| **RIP Stretch**                                     | 1999              |
+| **RIP Upper Stretch**                               | 999.5             |
+| **RIP Lower Stretch**                               | -999.5            |
+| **RIP Backward Inspiration Duration**               | -135              |
+| **RIP Backward Expiration Duration**                | -711              |
+| **RIP Backward Respiration Duration**               | -846              |
+| **RIP Backward Stretch**                            | 903               |
+| **RIP Forward Inspiration Duration**                | 123               |
+| **RIP Forward Expiration Duration**                 | 730               |
+| **RIP Forward Respiration Duration**                | 853               |
+| **RIP Forward Stretch**                             | 1377              |
+| **RIP d5 Expiration**                               | 1.55867446393762  |
+| **RIP d5 Stretch**                                  | 1.30245022970903  |
+| **RIP Maximum Rate of Change**                      | 16.028728191573   |
+| **RIP Minimum Rate of Change**                      | 14.357905959232   |
+| **Wrist Gyroscope Magnintude - average**            | 8.84787527301585  |
+| **Wrist Gyroscope Magnintude - median**             | 10.9963822500373  |
+| **Wrist Gyroscope Magnintude - standard deviation** | -134.350368670461 |
+| **Wrist Gyroscope Magnintude - quartile deviation** | -133.885360055109 |
+| **Wrist Pitch - average**                           | -8.60802363630346 |
+| **Wrist Pitch - median**                            | -6.91704787506283 |
+| **Wrist Pitch - standard deviation**                | 2.07655586268374  |
+| **Wrist Pitch - quartile deviation**                | 2.29336075060682  |
+| **Wrist Roll - average**                            | -5.84228645831747 |
+| **Wrist Roll - median**                             | -7.19390302876743 |
+| **Wrist Roll - standard deviation**                 | -8.60802363630346 |
+| **Wrist Roll - quartile deviation**                 | -6.91704787506283 |
+| **rStime - wStime**                                 | 2.07655586268374  |
+| **rEtime - wStime**                                 | 2.2933607506068   |
+| **rStime - wEtime**                                 | 99.4626460785894  |
+| **rEtime - wEtime**                                 | 101.942342742508  | 
 
 
 #### Column Details
@@ -143,23 +159,72 @@ feature vector describing the set of numeric features in puffMarker
   - Unit: **TWH**
   - Type: double
   - Sampling Frequency: 0.0167 Hz
-
-
-
-- **Gyro Magnitude**: Wrist-based magnitude of rotation across the x, y, and z axis
-  - Unit: degrees/second
+- **Wrist Gyroscope Magnintude - average**: Represents the mean of magnitude of gyroscope of Motionsense wrist
+  - Unit: degree
   - Type: double
   - Sampling Frequency: 0.0167 Hz
-  - Statistic: median
-- **Wrist Pitch**: Represents the quartile deviation of wrist pitch orientation
-  - Unit: degrees
+- **Wrist Gyroscope Magnintude - median**: Represents the median of magnitude of gyroscope of Motionsense wrist
+  - Unit: degree
   - Type: double
   - Sampling Frequency: 0.0167 Hz
-  - Statistic: quartile deviation
+- **Wrist Gyroscope Magnintude - standard deviation**: Represents the standard deviation of magnitude of gyroscope of Motionsense wrist
+  - Unit: degree
+  - Type: double
+  - Sampling Frequency: 0.0167 Hz
+- **Wrist Gyroscope Magnintude - quartile deviation**: Represents the quartile deviation of magnitude of gyroscope of Motionsense wrist
+  - Unit: degree
+  - Type: double
+  - Sampling Frequency: 0.0167 Hz
+- **Wrist Pitch - average**: Represents the mean of the pitch of Motionsense wrist
+  - Unit: degree
+  - Type: double
+  - Sampling Frequency: 0.0167 Hz
+- **Wrist Pitch - median**: Represents the median of the pitch of Motionsense wrist
+  - Unit: degree
+  - Type: double
+  - Sampling Frequency: 0.0167 Hz
+- **Wrist Pitch - standard deviation**: Represents the standard deviation of the pitch of Motionsense wrist
+  - Unit: degree
+  - Type: double
+  - Sampling Frequency: 0.0167 Hz
+- **Wrist Pitch - quartile deviation**: Represents the quartile deviation of the pitch of Motionsense wrist
+  - Unit: degree
+  - Type: double
+  - Sampling Frequency: 0.0167 Hz
+- **Wrist Roll - average**: Represents the mean of the roll of Motionsense wrist
+  - Unit: degree
+  - Type: double
+  - Sampling Frequency: 0.0167 Hz
+- **Wrist Roll - median**: Represents the median of the roll of Motionsense wrist
+  - Unit: degree
+  - Type: double
+  - Sampling Frequency: 0.0167 Hz
+- **Wrist Roll - standard deviation**: Represents the standard deviation of the roll of Motionsense wrist
+  - Unit: degree
+  - Type: double
+  - Sampling Frequency: 0.0167 Hz
+- **Wrist Roll - quartile deviation**: Represents the quartile deviation of the roll of Motionsense wrist
+  - Unit: degree
+  - Type: double
+  - Sampling Frequency: 0.0167 Hz
 - **rStime - wStime**: Represents the time difference between respiration starttime and wrist segment starttime
-  - Unit: seconds **TWH: Verify this unit**
+  - Unit: milliseconds
   - Type: double
   - Sampling Frequency: 0.0167 Hz
+- **rEtime - wStime**: Represents the time difference between respiration endtime and wrist segment starttime
+  - Unit: milliseconds
+  - Type: double
+  - Sampling Frequency: 0.0167 Hz
+- **rStime - wEtime**: Represents the time difference between respiration starttime and wrist segment endtime
+  - Unit: milliseconds
+  - Type: double
+  - Sampling Frequency: 0.0167 Hz
+- **rEtime - wEtime**: Represents the time difference between respiration endtime and wrist segment endtime
+  - Unit: milliseconds
+  - Type: double
+  - Sampling Frequency: 0.0167 Hz
+
+
 
 
 ## Probability
