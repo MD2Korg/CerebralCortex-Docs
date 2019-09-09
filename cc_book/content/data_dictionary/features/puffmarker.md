@@ -39,8 +39,9 @@ feature vector describing the set of numeric features in puffMarker
 | 1533922952107 | -18000000 | 1271                     | 1701                    | 1.302452       | 10.996382   | 99.462646       | -->
 
 
-| UTC Timestamp                                       | 1533922952107     |
+| **Label**                                           | **Value**         |
 | --------------------------------------------------- | ----------------- |
+| **UTC Timestamp**                                   | 1533922952107     |
 | **Offset**                                          | -18000000         |
 | **RIP Inspiration Duration**                        | 1271              |
 | **RIP Expiration Duration**                         | 1701              |
@@ -76,7 +77,7 @@ feature vector describing the set of numeric features in puffMarker
 | **rStime - wStime**                                 | 2.07655586268374  |
 | **rEtime - wStime**                                 | 2.2933607506068   |
 | **rStime - wEtime**                                 | 99.4626460785894  |
-| **rEtime - wEtime**                                 | 101.942342742508  | 
+| **rEtime - wEtime**                                 | 101.942342742508  |
 
 
 #### Column Details
