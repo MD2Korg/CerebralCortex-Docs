@@ -107,17 +107,17 @@
   - title: AutoSenseBLE
     url: /data_dictionary/raw_streams/autosenseble
     not_numbered: true
-  - title: MotionSense
-    url: /data_dictionary/raw_streams/motionsense
-    not_numbered: true
-  - title: MotionSenseHRV
-    url: /data_dictionary/raw_streams/motionsensehrv
-    not_numbered: true
   - title: EMA
     url: /data_dictionary/raw_streams/ema
     not_numbered: true
   - title: mCerebrum
     url: /data_dictionary/raw_streams/mCerebrum
+    not_numbered: true
+  - title: MotionSense
+    url: /data_dictionary/raw_streams/motionsense
+    not_numbered: true
+  - title: MotionSenseHRV
+    url: /data_dictionary/raw_streams/motionsensehrv
     not_numbered: true
   - title: Scheduler
     url: /data_dictionary/raw_streams/scheduler
