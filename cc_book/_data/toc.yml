@@ -107,6 +107,9 @@
   - title: AutoSenseBLE
     url: /data_dictionary/raw_streams/autosenseble
     not_numbered: true
+  - title: Easysense
+    url: /data_dictionary/raw_streams/easysense
+    not_numbered: true
   - title: EMA
     url: /data_dictionary/raw_streams/ema
     not_numbered: true
