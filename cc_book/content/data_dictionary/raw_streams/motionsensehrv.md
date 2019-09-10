@@ -96,7 +96,7 @@ measures the data quality of the MotionSense wrist sensor signal
   - Unit: milliseconds
   - Type: integer
 - **DataQuality**:
-  - Sampling Frequency: 0.33 Hz
+  - Sampling frequency: 0.33 Hz
   - Values:
     - **0**: good data is being collected
     - **1**: noise

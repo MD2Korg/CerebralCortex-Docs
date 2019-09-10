@@ -96,7 +96,7 @@ measures the data quality of the MotionSense wrist sensor signal
   - Unit: milliseconds
   - Type: integer
 - **DataQuality_ACL**:
-  - Sampling Frequency: 16 Hz
+  - Sampling frequency: 16 Hz
   - Values:
     - **0**: good data is being collected
     - **1**: noise

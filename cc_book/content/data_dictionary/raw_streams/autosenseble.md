@@ -38,7 +38,7 @@ an algorithmic measure of the participant's respiration
 - **Respiration**: an algorithmic measure of the participant's respiration
   - Unit: ADC Value
   - Type: double
-  - Sampling Frequency: 25 Hz
+  - Sampling frequency: 25 Hz
   - Range: 0 to 4095
 
 
@@ -66,7 +66,7 @@ an algorithmic measure of the participant's heart rate
 - **ECG**: an algorithmic measure of the participant's respiration
   - Unit: ADC Value
   - Type: double
-  - Sampling Frequency: 100 Hz
+  - Sampling frequency: 100 Hz
   - Range: 0 to 4095
 
 
@@ -94,7 +94,7 @@ measures the acceleration on the x, y, and z axes of the Autosense BLE accelerom
 - **accelerometer_x**: Acceleration minus Gx on the x-axis of the AutoSense accelerometer
   - Unit: ADC Value
   - Type: double
-  - Sampling Frequency: 16 Hz
+  - Sampling frequency: 16 Hz
   - Range: -2 to +2
 - **accelerometer_y**: Acceleration minus Gy on the y-axis position of the AutoSense accelerometer
   - *same as above (accelerometer_x)*
@@ -124,7 +124,7 @@ measures the data quality of the Autosense BLE respiration signal
   - Unit: milliseconds
   - Type: integer
 - **Data_Quality**:
-  - Sampling Frequency: 0.33 Hz
+  - Sampling frequency: 0.33 Hz
   - Values:
     - **0**: good data is being collected
     - **1**: noise
@@ -157,7 +157,7 @@ measures the data quality of the Autosense BLE ECG signal
   - Unit: milliseconds
   - Type: integer
 - **Data_Quality**:
-  - Sampling Frequency: 0.33 Hz
+  - Sampling frequency: 0.33 Hz
   - Values:
     - **0**: good data is being collected
     - **1**: noise
@@ -190,7 +190,7 @@ measures the data variance of the Autosense respiration signal
   - Unit: milliseconds
   - Type: integer
 - **Data_Variance**:
-  - Sampling Frequency: 0.33 Hz
+  - Sampling frequency: 0.33 Hz
   - Values:
     - **0**: good data
     - **1**: bad signal
@@ -219,7 +219,7 @@ measures the data variance of the Autosense ECG signal
   - Unit: milliseconds
   - Type: integer
 - **Data_Variance**:
-  - Sampling Frequency: 0.33 Hz
+  - Sampling frequency: 0.33 Hz
   - Values:
     - **0**: good data
     - **1**: bad signal

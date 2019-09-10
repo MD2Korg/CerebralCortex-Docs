@@ -92,142 +92,140 @@ feature vector describing the set of numeric features in puffMarker
 - **RIP Inspiration Duration**: Respiratory Inductance Plethysmography (RIP) breath inspiration duration
   - Unit: milliseconds
   - Type: double
-  - Sampling Frequency: 0.0167 Hz
+  - Sampling frequency: 0.0167 Hz
 - **RIP Expiration Duration**: Respiratory Inductance Plethysmography (RIP) breath expiration duration
   - Unit: milliseconds
   - Type: double
-  - Sampling Frequency: 0.0167 Hz
+  - Sampling frequency: 0.0167 Hz
 - **RIP Respiration Duration**: Represents the respiration duration from the RIP data source
   - Unit: milliseconds
   - Type: double
-  - Sampling Frequency: 0.0167 Hz
+  - Sampling frequency: 0.0167 Hz
 - **RIP Inspiration Expiration Ratio**: Represents the inspiration expiration ratio from the RIP data source
   - Type: double
-  - Sampling Frequency: 0.0167 Hz
+  - Sampling frequency: 0.0167 Hz
 - **RIP Stretch**: Represents the stretch from the RIP data source
   - Unit: **TWH**
   - Type: double
-  - Sampling Frequency: 0.0167 Hz
+  - Sampling frequency: 0.0167 Hz
 - **RIP Upper Stretch**: Represents the stretch in upward direction from the RIP data source
   - Unit: **TWH**
   - Type: double
-  - Sampling Frequency: 0.0167 Hz
+  - Sampling frequency: 0.0167 Hz
 - **RIP Lower Stretch**: Represents the stretch in downward direction from the RIP data source
   - Unit: **TWH**
   - Type: double
-  - Sampling Frequency: 0.0167 Hz
+  - Sampling frequency: 0.0167 Hz
 - **RIP Backward Inspiration Duration**: Represents the first order differences of the inspiration duration values from their previous from the RIP data source
   - Unit: milliseconds
   - Type: double
-  - Sampling Frequency: 0.0167 Hz
+  - Sampling frequency: 0.0167 Hz
 - **RIP Backward Expiration Duration**: Represents the first order differences of the expiration duration values from their previous from the RIP data source
   - Unit: milliseconds
   - Type: double
-  - Sampling Frequency: 0.0167 Hz
+  - Sampling frequency: 0.0167 Hz
 - **RIP Backward Respiration Duration**: Represents the first order differences of the respiration duration values from their previous from the RIP data source
   - Unit: milliseconds
   - Type: double
-  - Sampling Frequency: 0.0167 Hz
+  - Sampling frequency: 0.0167 Hz
 - **RIP Backward Stretch**: Represents first order differences of the stretch values from their previous from the RIP data source
   - Unit: **TWH**
   - Type: double
-  - Sampling Frequency: 0.0167 Hz
+  - Sampling frequency: 0.0167 Hz
 - **RIP Forward Inspiration Duration**: Represents the first order differences of the inspiration duration values from their next from the RIP data source
   - Unit: milliseconds
   - Type: double
-  - Sampling Frequency: 0.0167 Hz
+  - Sampling frequency: 0.0167 Hz
 - **RIP Forward Expiration Duration**: Represents the first order differences of the expiration duration values from their next from the RIP data source
   - Unit: milliseconds
   - Type: double
-  - Sampling Frequency: 0.0167 Hz
+  - Sampling frequency: 0.0167 Hz
 - **RIP Forward Respiration Duration**: Represents the first order differences of the respiration duration values from their next from the RIP data source
   - Unit: milliseconds
   - Type: double
-  - Sampling Frequency: 0.0167 Hz
+  - Sampling frequency: 0.0167 Hz
 - **RIP Forward Stretch**: Represents first order differences of the stretch values from their next from the RIP data source
   - Unit: **TWH**
   - Type: double
-  - Sampling Frequency: 0.0167 Hz
+  - Sampling frequency: 0.0167 Hz
 - **RIP d5 Expiration**: Represents the ratio of its expiration duration to the average expiration duration value in a window of five cycles from the RIP data source
   - Type: double
-  - Sampling Frequency: 0.0167 Hz
+  - Sampling frequency: 0.0167 Hz
 - **RIP d5 Stretch**: Represents the ratio of its stretch to the average stretch value in a window of five cycles from the RIP data source
   - Type: double
-  - Sampling Frequency: 0.0167 Hz
+  - Sampling frequency: 0.0167 Hz
 - **RIP Maximum Rate of Change**: Represents the maximum rate of change of signal from the RIP data source
   - Unit: **TWH**
   - Type: double
-  - Sampling Frequency: 0.0167 Hz
+  - Sampling frequency: 0.0167 Hz
 - **RIP Minimum Rate of Change**: Represents the minimum rate of change of signal from the RIP data source
   - Unit: **TWH**
   - Type: double
-  - Sampling Frequency: 0.0167 Hz
+  - Sampling frequency: 0.0167 Hz
 - **Wrist Gyroscope Magnintude - average**: Represents the mean of magnitude of gyroscope of Motionsense wrist
   - Unit: degree
   - Type: double
-  - Sampling Frequency: 0.0167 Hz
+  - Sampling frequency: 0.0167 Hz
 - **Wrist Gyroscope Magnintude - median**: Represents the median of magnitude of gyroscope of Motionsense wrist
   - Unit: degree
   - Type: double
-  - Sampling Frequency: 0.0167 Hz
+  - Sampling frequency: 0.0167 Hz
 - **Wrist Gyroscope Magnintude - standard deviation**: Represents the standard deviation of magnitude of gyroscope of Motionsense wrist
   - Unit: degree
   - Type: double
-  - Sampling Frequency: 0.0167 Hz
+  - Sampling frequency: 0.0167 Hz
 - **Wrist Gyroscope Magnintude - quartile deviation**: Represents the quartile deviation of magnitude of gyroscope of Motionsense wrist
   - Unit: degree
   - Type: double
-  - Sampling Frequency: 0.0167 Hz
+  - Sampling frequency: 0.0167 Hz
 - **Wrist Pitch - average**: Represents the mean of the pitch of Motionsense wrist
   - Unit: degree
   - Type: double
-  - Sampling Frequency: 0.0167 Hz
+  - Sampling frequency: 0.0167 Hz
 - **Wrist Pitch - median**: Represents the median of the pitch of Motionsense wrist
   - Unit: degree
   - Type: double
-  - Sampling Frequency: 0.0167 Hz
+  - Sampling frequency: 0.0167 Hz
 - **Wrist Pitch - standard deviation**: Represents the standard deviation of the pitch of Motionsense wrist
   - Unit: degree
   - Type: double
-  - Sampling Frequency: 0.0167 Hz
+  - Sampling frequency: 0.0167 Hz
 - **Wrist Pitch - quartile deviation**: Represents the quartile deviation of the pitch of Motionsense wrist
   - Unit: degree
   - Type: double
-  - Sampling Frequency: 0.0167 Hz
+  - Sampling frequency: 0.0167 Hz
 - **Wrist Roll - average**: Represents the mean of the roll of Motionsense wrist
   - Unit: degree
   - Type: double
-  - Sampling Frequency: 0.0167 Hz
+  - Sampling frequency: 0.0167 Hz
 - **Wrist Roll - median**: Represents the median of the roll of Motionsense wrist
   - Unit: degree
   - Type: double
-  - Sampling Frequency: 0.0167 Hz
+  - Sampling frequency: 0.0167 Hz
 - **Wrist Roll - standard deviation**: Represents the standard deviation of the roll of Motionsense wrist
   - Unit: degree
   - Type: double
-  - Sampling Frequency: 0.0167 Hz
+  - Sampling frequency: 0.0167 Hz
 - **Wrist Roll - quartile deviation**: Represents the quartile deviation of the roll of Motionsense wrist
   - Unit: degree
   - Type: double
-  - Sampling Frequency: 0.0167 Hz
+  - Sampling frequency: 0.0167 Hz
 - **rStime - wStime**: Represents the time difference between respiration starttime and wrist segment starttime
   - Unit: milliseconds
   - Type: double
-  - Sampling Frequency: 0.0167 Hz
+  - Sampling frequency: 0.0167 Hz
 - **rEtime - wStime**: Represents the time difference between respiration endtime and wrist segment starttime
   - Unit: milliseconds
   - Type: double
-  - Sampling Frequency: 0.0167 Hz
+  - Sampling frequency: 0.0167 Hz
 - **rStime - wEtime**: Represents the time difference between respiration starttime and wrist segment endtime
   - Unit: milliseconds
   - Type: double
-  - Sampling Frequency: 0.0167 Hz
+  - Sampling frequency: 0.0167 Hz
 - **rEtime - wEtime**: Represents the time difference between respiration endtime and wrist segment endtime
   - Unit: milliseconds
   - Type: double
-  - Sampling Frequency: 0.0167 Hz
-
-
+  - Sampling frequency: 0.0167 Hz
 
 
 ## Probability
@@ -261,7 +259,7 @@ Represents the probability of Puff using the puffMarker model
 - **Probability**: Represents the probability of Puff using the puffMarker model.
   - Unit: milliseconds
   - Type: double
-  - Sampling Frequency: 0.0167 Hz
+  - Sampling frequency: 0.0167 Hz
   - Range: 0 to 1
 
 
@@ -293,7 +291,7 @@ Represents puff value puffMarker model
   - Unit: milliseconds
   - Type: integer
 - **Label**: Represents puff value puffMarker model
-  - Sampling Frequency: 0.0167 Hz
+  - Sampling frequency: 0.0167 Hz
   - Values:
     - **0**: no puff
     - **1**: puff

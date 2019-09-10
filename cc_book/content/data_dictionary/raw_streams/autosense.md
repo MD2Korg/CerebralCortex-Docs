@@ -40,7 +40,7 @@ measures the acceleration on the x, y, and z axes of the Autosense accelerometer
 - **accelerometer_x**: x-axis position of the AutoSense accelerometer
   - Unit: ADC Value
   - Type: integer
-  - Sampling Frequency: 10.66 Hz
+  - Sampling frequency: 10.66 Hz
   - Range: 0 to 4095
 - **accelerometer_y**: y-axis position of the AutoSense accelerometer
   - *same as above (accelerometer_x)*
@@ -70,7 +70,7 @@ shows the ambient temperature of the AutoSense unit
 - **Ambient Temperature**: current ambient temperature
   - Unit: **TWH**
   - Type: integer
-  - Frequency: 1.28 Hz
+  - Sampling frequency: 1.28 Hz
   - Range: 0 to 4095
 
 
@@ -96,7 +96,7 @@ shows the current battery level of the AutoSense unit
 - **Battery Level**: current battery charge
   - Unit: **TWH**
   - Type: integer
-  - Frequency: 1.28 Hz
+  - Sampling frequency: 1.28 Hz
   - Range: 0 to 4095
 
 
@@ -122,7 +122,7 @@ measures the data quality of the Autosense ECG signal
   - Unit: milliseconds
   - Type: integer
 - **Data_Quality**:
-  - Sampling Frequency: 0.33 Hz
+  - Sampling frequency: 0.33 Hz
   - Values:
     - **0**: good data is being collected
     - **1**: noise
@@ -155,7 +155,7 @@ measures the data quality of the Autosense respiration signal
   - Unit: milliseconds
   - Type: integer
 - **Data_Quality**:
-  - Sampling Frequency: 0.33 Hz
+  - Sampling frequency: 0.33 Hz
   - Values:
     - **0**: good data is being collected
     - **1**: noise
@@ -188,7 +188,7 @@ measures the data variance of the Autosense ECG signal
   - Unit: milliseconds
   - Type: integer
 - **Data_Variance**:
-  - Sampling Frequency: 0.33 Hz
+  - Sampling frequency: 0.33 Hz
   - Values:
     - **0**: good data
     - **1**: bad signal
@@ -217,7 +217,7 @@ measures the data variance of the Autosense respiration signal
   - Unit: milliseconds
   - Type: integer
 - **Data_Variance**:
-  - Sampling Frequency: 0.33 Hz
+  - Sampling frequency: 0.33 Hz
   - Values:
     - **0**: good data
     - **1**: bad signal
@@ -248,7 +248,7 @@ an algorithmic measure of the participant's heart rate
 - **ECG**: an algorithmic measure of the participant's respiration
   - Unit: ADC Value
   - Type: integer
-  - Sampling Frequency: 64 Hz
+  - Sampling frequency: 64 Hz
   - Range: 0 to 4095
 
 
@@ -260,7 +260,7 @@ a change in the electrical resistance of the skin caused by emotional stress, me
 
 ### Example
 
-| UTC Timestamp | Offset    | Galvanic Skin Response | 
+| UTC Timestamp | Offset    | Galvanic Skin Response |
 | ------------- | --------- | ---------------------- |
 | 1533922952107 | -18000000 | 2148                   |
 
@@ -274,7 +274,7 @@ a change in the electrical resistance of the skin caused by emotional stress, me
 - **Ambient Temperature**: a change in the electrical resistance of the skin caused by emotional stress, measurable with a sensitive galvanometer
   - Unit: **TWH**
   - Type: integer
-  - Frequency: 10.66 Hz
+  - Samplinng frequency: 10.66 Hz
   - Range: 0 to 4095
 
 
@@ -302,7 +302,7 @@ an algorithmic measure of the participant's respiration
 - **Respiration**: an algorithmic measure of the participant's respiration
   - Unit: ADC Value
   - Type: integer
-  - Sampling Frequency: 21.33 Hz
+  - Sampling frequency: 21.33 Hz
   - Range: 0 to 4095
 
 
@@ -328,5 +328,5 @@ shows the current skin temperature
 - **Ambient Temperature**: current skin temperature
   - Unit: **TWH**
   - Type: integer
-  - Frequency: 1.28 Hz
+  - Sampling frequency: 1.28 Hz
   - Range: 0 to 4095

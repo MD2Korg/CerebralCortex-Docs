@@ -109,12 +109,12 @@ shows the current battery information
 - **Voltage**: battery voltage
   - Unit: voltage
   - Type: float
-  - Frequency: 1.0 Hz
+  - Sampling frequency: 1.0 Hz
   - Range: 0 to 5000
 - **Temperature**: current battery temperature
   - Unit: degrees Celsius
   - Type: float
-  - Frequency: 1.0 Hz
+  - Sampling frequency: 1.0 Hz
   - Range: -50 to +100
 
 
@@ -225,5 +225,5 @@ shows the user's step count during a given time window
 - **Step Count**: the number of steps the participant has taken during a given time window
   - Unit: number
   - Type: integer
-  - Frequency: 1.0 Hz
+  - Sampling frequency: 1.0 Hz
   - Range: 0 to 50
