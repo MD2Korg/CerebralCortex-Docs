@@ -50,7 +50,6 @@ measures the data quality of the Autosense ECG signal
     - **4**: missing data
 
 
-
 ## Data Quality (respiration)
 measures the data quality of the Autosense respiration signal
 
@@ -90,12 +89,11 @@ measures the data quality of the Autosense respiration signal
 feature vector describing the set of numeric features in cStress
 
 ### Input Datastreams **TWH**
+- [ELECTROCARDIOGRAM](../raw_streams/autosense#electrocardiogram)
 - [RESPIRATION](../raw_streams/autosense#respiration)
 - [ACCELEROMETER_X](../raw_streams/autosense#accelerometer-xyz)
 - [ACCELEROMETER_Y](../raw_streams/autosense#accelerometer-xyz)
 - [ACCELEROMETER_Z](../raw_streams/autosense#accelerometer-xyz)
-- [ACCELEROMETER](../raw_streams/motionsense#accelerometer)
-- [GYROSCOPE](../raw_streams/motionsense#accelerometer)
 
 ### Used by
 - [STRESS](../inferences/stress)
@@ -301,7 +299,7 @@ feature vector describing the set of numeric features in cStress
 
 
 ## Feature Vector (RIP)
-feature vector describing the set of numeric features in cStress (respiration only) **TWH - is this description accurate?**
+feature vector describing the set of numeric features in cStress (respiration only)
 
 ### Input Datastreams **TWH**
 - [RESPIRATION](../raw_streams/autosense#respiration)
@@ -438,28 +436,24 @@ feature vector describing the set of numeric features in cStress (respiration on
   - Sampling frequency: 0.0167 Hz
 
 
-
-
-## Probability
-Represents the probability of Puff using the puffMarker model
+## Stress Activity
+Represents the activity filter for cStress
 
 ### Input Datastreams
+- [ELECTROCARDIOGRAM](../raw_streams/autosense#electrocardiogram)
 - [RESPIRATION](../raw_streams/autosense#respiration)
 - [ACCELEROMETER_X](../raw_streams/autosense#accelerometer-xyz)
 - [ACCELEROMETER_Y](../raw_streams/autosense#accelerometer-xyz)
 - [ACCELEROMETER_Z](../raw_streams/autosense#accelerometer-xyz)
-- [ACCELEROMETER](../raw_streams/motionsense#accelerometer)
-- [GYROSCOPE](../raw_streams/motionsense#accelerometer)
 
 ### Used by
-- [SMOKING](../inferences/smoking.html)
-
+- [STRESS](../inferences/stress)
 
 ### Example
 
-| UTC Timestamp | Offset    | Probability       |
-| ------------- | --------- | ----------------- |
-| 1533922952107 | -18000000 | 0.309815016583471 |
+| UTC Timestamp | Offset    | Stress Activity |
+| ------------- | --------- | --------------- |
+| 1533922952107 | -18000000 | 1               |
 
 #### Column Details
 - **UTC Timestamp**: Coordinated Universal Time indicating the number of milliseconds since January 1, 1970
@@ -468,32 +462,272 @@ Represents the probability of Puff using the puffMarker model
 - **Offset**: The difference in time (shown in milliseconds) between UTC time and the local observed time
   - Unit: milliseconds
   - Type: integer
-- **Probability**: Represents the probability of Puff using the puffMarker model.
+- **Stress Activity**: Represents the activity filter for cStress
+  - Type: double
+  - Sampling frequency: 0.0167 Hz
+  - Values:
+    - **0**: no activity
+    - **1**: activity
+
+
+## Stress Accelerometer Activity Deviation
+Represents the standard deviation of activity level for cStress
+
+### Input Datastreams
+- [ELECTROCARDIOGRAM](../raw_streams/autosense#electrocardiogram)
+- [RESPIRATION](../raw_streams/autosense#respiration)
+- [ACCELEROMETER_X](../raw_streams/autosense#accelerometer-xyz)
+- [ACCELEROMETER_Y](../raw_streams/autosense#accelerometer-xyz)
+- [ACCELEROMETER_Z](../raw_streams/autosense#accelerometer-xyz)
+
+### Used by
+- [STRESS](../inferences/stress)
+
+### Example
+
+| UTC Timestamp | Offset    | Stress Activity - standard deviation |
+| ------------- | --------- | ------------------------------------ |
+| 1533922952107 | -18000000 | 46.3462258223803                     |
+
+#### Column Details
+- **UTC Timestamp**: Coordinated Universal Time indicating the number of milliseconds since January 1, 1970
   - Unit: milliseconds
+  - Type: long
+- **Offset**: The difference in time (shown in milliseconds) between UTC time and the local observed time
+  - Unit: milliseconds
+  - Type: integer
+- **Stress Activity - standard deviation**: Represents the standard deviation of activity level for cStress
+  - Type: double
+  - Sampling frequency: 0.1 Hz
+
+
+## Stress Episode End
+Represents the cStress model stress episode's end time
+
+### Input Datastreams
+- [ELECTROCARDIOGRAM](../raw_streams/autosense#electrocardiogram)
+- [RESPIRATION](../raw_streams/autosense#respiration)
+- [ACCELEROMETER_X](../raw_streams/autosense#accelerometer-xyz)
+- [ACCELEROMETER_Y](../raw_streams/autosense#accelerometer-xyz)
+- [ACCELEROMETER_Z](../raw_streams/autosense#accelerometer-xyz)
+
+### Used by
+- [STRESS](../inferences/stress)
+
+### Example
+
+| UTC Timestamp | Offset    | Stress Episode End |
+| ------------- | --------- | ------------------ |
+| 1533922952107 | -18000000 | 2                  |
+
+#### Column Details
+- **UTC Timestamp**: Coordinated Universal Time indicating the number of milliseconds since January 1, 1970
+  - Unit: milliseconds
+  - Type: long
+- **Offset**: The difference in time (shown in milliseconds) between UTC time and the local observed time
+  - Unit: milliseconds
+  - Type: integer
+- **Stress Episode End**:
+  - Type: double
+  - Frequency: 0.0167 Hz
+  - Values:
+    -  **0** = not stressed
+    -  **1** = unsure
+    -  **2** = stressed
+    -  **3** = unknown
+    -  **4** = not classified
+
+
+## Stress Episode Peak
+Represents the cStress model stress episode's peak time
+
+### Input Datastreams
+- [ELECTROCARDIOGRAM](../raw_streams/autosense#electrocardiogram)
+- [RESPIRATION](../raw_streams/autosense#respiration)
+- [ACCELEROMETER_X](../raw_streams/autosense#accelerometer-xyz)
+- [ACCELEROMETER_Y](../raw_streams/autosense#accelerometer-xyz)
+- [ACCELEROMETER_Z](../raw_streams/autosense#accelerometer-xyz)
+
+### Used by
+- [STRESS](../inferences/stress)
+
+### Example
+
+| UTC Timestamp | Offset    | Stress Episode Peak |
+| ------------- | --------- | ------------------- |
+| 1533922952107 | -18000000 | 2                   |
+
+#### Column Details
+- **UTC Timestamp**: Coordinated Universal Time indicating the number of milliseconds since January 1, 1970
+  - Unit: milliseconds
+  - Type: long
+- **Offset**: The difference in time (shown in milliseconds) between UTC time and the local observed time
+  - Unit: milliseconds
+  - Type: integer
+- **Stress Episode Peak**:
+  - Type: double
+  - Frequency: 0.0167 Hz
+  - Values:
+    -  **0** = not stressed
+    -  **1** = unsure
+    -  **2** = stressed
+    -  **3** = unknown
+    -  **4** = not classified
+
+
+## Stress Episode Start
+Represents the cStress model stress episode's start time
+
+### Input Datastreams
+- [ELECTROCARDIOGRAM](../raw_streams/autosense#electrocardiogram)
+- [RESPIRATION](../raw_streams/autosense#respiration)
+- [ACCELEROMETER_X](../raw_streams/autosense#accelerometer-xyz)
+- [ACCELEROMETER_Y](../raw_streams/autosense#accelerometer-xyz)
+- [ACCELEROMETER_Z](../raw_streams/autosense#accelerometer-xyz)
+
+### Used by
+- [STRESS](../inferences/stress)
+
+### Example
+
+| UTC Timestamp | Offset    | Stress Episode Start |
+| ------------- | --------- | -------------------- |
+| 1533922952107 | -18000000 | 2                    |
+
+#### Column Details
+- **UTC Timestamp**: Coordinated Universal Time indicating the number of milliseconds since January 1, 1970
+  - Unit: milliseconds
+  - Type: long
+- **Offset**: The difference in time (shown in milliseconds) between UTC time and the local observed time
+  - Unit: milliseconds
+  - Type: integer
+- **Stress Episode Start**:
+  - Type: double
+  - Frequency: 0.0167 Hz
+  - Values:
+    -  **0** = not stressed
+    -  **1** = unsure
+    -  **2** = stressed
+    -  **3** = unknown
+    -  **4** = not classified
+
+
+## Stress Label
+Represents stress value of cStress model
+
+### Input Datastreams
+- [ELECTROCARDIOGRAM](../raw_streams/autosense#electrocardiogram)
+- [RESPIRATION](../raw_streams/autosense#respiration)
+- [ACCELEROMETER_X](../raw_streams/autosense#accelerometer-xyz)
+- [ACCELEROMETER_Y](../raw_streams/autosense#accelerometer-xyz)
+- [ACCELEROMETER_Z](../raw_streams/autosense#accelerometer-xyz)
+
+### Used by
+- [STRESS](../inferences/stress)
+
+### Example
+
+| UTC Timestamp | Offset    | Stress Label |
+| ------------- | --------- | ------------ |
+| 1533922952107 | -18000000 | 0            |
+
+#### Column Details
+- **UTC Timestamp**: Coordinated Universal Time indicating the number of milliseconds since January 1, 1970
+  - Unit: milliseconds
+  - Type: long
+- **Offset**: The difference in time (shown in milliseconds) between UTC time and the local observed time
+  - Unit: milliseconds
+  - Type: integer
+- **Label**: Represents stress value of cStress model
+  - Sampling frequency: 0.0167 Hz
+  - Values:
+    - **0**: no stress
+    - **1**: stress
+    - **2**: unsure
+
+
+## Stress Label (RIP)
+Represents stress value of cStress model (respiration only)
+
+### Input Datastreams
+- [RESPIRATION](../raw_streams/autosense#respiration)
+- [ACCELEROMETER_X](../raw_streams/autosense#accelerometer-xyz)
+- [ACCELEROMETER_Y](../raw_streams/autosense#accelerometer-xyz)
+- [ACCELEROMETER_Z](../raw_streams/autosense#accelerometer-xyz)
+
+### Used by
+- [STRESS](../inferences/stress)
+
+### Example
+
+| UTC Timestamp | Offset    | Stress Label (RIP) |
+| ------------- | --------- | ------------------ |
+| 1533922952107 | -18000000 | 0                  |
+
+#### Column Details
+- **UTC Timestamp**: Coordinated Universal Time indicating the number of milliseconds since January 1, 1970
+  - Unit: milliseconds
+  - Type: long
+- **Offset**: The difference in time (shown in milliseconds) between UTC time and the local observed time
+  - Unit: milliseconds
+  - Type: integer
+- **Label**: Represents stress value of cStress model (respiration only)
+  - Sampling frequency: 0.0167 Hz
+  - Values:
+    - **0**: no stress
+    - **1**: stress
+    - **2**: unsure
+
+
+## Stress Probability
+Represents the probability of stress using cStress model
+
+### Input Datastreams
+- [ELECTROCARDIOGRAM](../raw_streams/autosense#electrocardiogram)
+- [RESPIRATION](../raw_streams/autosense#respiration)
+- [ACCELEROMETER_X](../raw_streams/autosense#accelerometer-xyz)
+- [ACCELEROMETER_Y](../raw_streams/autosense#accelerometer-xyz)
+- [ACCELEROMETER_Z](../raw_streams/autosense#accelerometer-xyz)
+
+### Used by
+- [STRESS](../inferences/stress)
+
+### Example
+
+| UTC Timestamp | Offset    | Stress Probability |
+| ------------- | --------- | ------------------ |
+| 1533922952107 | -18000000 | 0.0601105106954767 |
+
+#### Column Details
+- **UTC Timestamp**: Coordinated Universal Time indicating the number of milliseconds since January 1, 1970
+  - Unit: milliseconds
+  - Type: long
+- **Offset**: The difference in time (shown in milliseconds) between UTC time and the local observed time
+  - Unit: milliseconds
+  - Type: integer
+- **Probability**: Represents the probability of stress using cStress model
   - Type: double
   - Sampling frequency: 0.0167 Hz
   - Range: 0 to 1
 
 
-## Label
-Represents puff value puffMarker model
+## Stress Probability (RIP)
+Represents the probability of stress using cStress model (respiration only)
 
 ### Input Datastreams
 - [RESPIRATION](../raw_streams/autosense#respiration)
 - [ACCELEROMETER_X](../raw_streams/autosense#accelerometer-xyz)
 - [ACCELEROMETER_Y](../raw_streams/autosense#accelerometer-xyz)
 - [ACCELEROMETER_Z](../raw_streams/autosense#accelerometer-xyz)
-- [ACCELEROMETER](../raw_streams/motionsense#accelerometer)
-- [GYROSCOPE](../raw_streams/motionsense#accelerometer)
 
 ### Used by
-- [SMOKING](../inferences/smoking.html)
+- [STRESS](../inferences/stress)
 
 ### Example
 
-| UTC Timestamp | Offset    | Label |
-| ------------- | --------- | ----- |
-| 1533922952107 | -18000000 | 1     |
+| UTC Timestamp | Offset    | Stress Probability (RIP) |
+| ------------- | --------- | ------------------------ |
+| 1533922952107 | -18000000 | 0.0820502815258544       |
 
 #### Column Details
 - **UTC Timestamp**: Coordinated Universal Time indicating the number of milliseconds since January 1, 1970
@@ -502,20 +736,7 @@ Represents puff value puffMarker model
 - **Offset**: The difference in time (shown in milliseconds) between UTC time and the local observed time
   - Unit: milliseconds
   - Type: integer
-- **Label**: Represents puff value puffMarker model
+- **Probability**: Represents the probability of stress using cStress model (respiration only)
+  - Type: double
   - Sampling frequency: 0.0167 Hz
-  - Values:
-    - **0**: no puff
-    - **1**: puff
-    - **2**: unsure
-
-
-## Stress Episode Classification
-
-## Stress Episode Array Classification Full Episode
-
-## Stress Episode Start
-
-## Stress Episode Peak
-
-## Stress Episode End
+  - Range: 0 to 1
