@@ -290,8 +290,7 @@ Represents the probability of Puff using the puffMarker model
 - **Offset**: The difference in time (shown in milliseconds) between UTC time and the local observed time
   - Unit: milliseconds
   - Type: integer
-- **Probability**: Represents the probability of Puff using the puffMarker model.
-  - Unit: milliseconds
+- **Probability**: Represents the probability of Puff using the puffMarker model
   - Type: double
   - Sampling frequency: 0.0167 Hz
   - Range: 0 to 1
