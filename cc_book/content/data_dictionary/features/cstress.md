@@ -300,143 +300,144 @@ feature vector describing the set of numeric features in cStress
   - Sampling frequency: 0.0167 Hz
 
 
+## Feature Vector (RIP)
+feature vector describing the set of numeric features in cStress (respiration only) **TWH - is this description accurate?**
+
+### Input Datastreams **TWH**
+- [RESPIRATION](../raw_streams/autosense#respiration)
+- [ACCELEROMETER_X](../raw_streams/autosense#accelerometer-xyz)
+- [ACCELEROMETER_Y](../raw_streams/autosense#accelerometer-xyz)
+- [ACCELEROMETER_Z](../raw_streams/autosense#accelerometer-xyz)
+
+### Used by
+- [STRESS](../inferences/stress)
+
+### Example
+
+| **Label**                                                    | **Value**             |
+| ------------------------------------------------------------ | --------------------- |
+| **UTC Timestamp**                                            | 1533922952107         |
+| **Offset**                                                   | -18000000             |
+| **RIP Breath Rate**                                          | 0.39468287752326      |
+| **RIP Inspiration Minute Ventilation**                       | -0.40011528536301     |
+| **RIP Inspiration Duration - quartile deviation**            | 0.355023126838219     |
+| **RIP Inspiration Duration - average**                       | 0.105591709336711     |
+| **RIP Inspiration Duration - median**                        | -0.20639682874922     |
+| **RIP Inspiration Duration - 80th percentile**               | 0.498894257788087     |
+| **RIP Expiration Duration - quartile deviation**             | 0.453803242430925     |
+| **RIP Expiration Duration - average**                        | -0.141472783196004    |
+| **RIP Expiration Duration - median**                         | -0.167617825969802    |
+| **RIP Expiration Duration - 80th percentile**                | 0.337607365453296     |
+| **RIP Respiration Duration - quartile deviation**            | 0.38712132086468      |
+| **RIP Respiration Duration - average**                       | -0.048578068876132    |
+| **RIP Respiration Duration - median**                        | -0.196633051867774    |
+| **RIP Respiration Duration - 80th percentile**               | 0.540318933297606     |
+| **RIP Inspiration/Expiration Duration - quartile deviation** | 0.349087499621176     |
+| **RIP Inspiration/Expiration Duration - average**            | -0.0979168174878814   |
+| **RIP Inspiration/Expiration Duration - median**             | -0.20914713064924     |
+| **RIP Inspiration/Expiration Duration - 80th percentile**    | 0.289793986846114     |
+| **RIP Stretch - quartile deviation**                         | 0.141216267157499     |
+| **RIP Stretch - average**                                    | -0.202196995183852    |
+| **RIP Stretch - median**                                     | -0.193960682813648    |
+| **RIP Stretch - 80th percentile**                            | -0.0164942155153861   |
+
+#### Column Details
+- **UTC Timestamp**: Coordinated Universal Time indicating the number of milliseconds since January 1, 1970
+  - Unit: milliseconds
+  - Type: long
+- **Offset**: The difference in time (shown in milliseconds) between UTC time and the local observed time
+  - Unit: milliseconds
+  - Type: integer
+- **RIP Breath Rate**: Represents the breath rate from the RIP data source
+  - Unit: breaths per minute **TWH - looking at the numbers, should this be breaths per second?**
+  - Type: double
+  - Sampling frequency: 0.0167 Hz
+- **RIP Inspiration Minute Ventilation**: Represents the minute ventilation from the RIP data source
+  - Unit: **TWH**
+  - Type: double
+  - Sampling frequency: 0.0167 Hz
+- **RIP Inspiration Duration - quartile deviation**: Represents the inspiration duration quartile deviation from the RIP data source
+  - Unit: milliseconds
+  - Type: double
+  - Sampling frequency: 0.0167 Hz
+- **RIP Inspiration Duration - average**: Represents the inspiration duration mean from the RIP data source
+  - Unit: milliseconds
+  - Type: double
+  - Sampling frequency: 0.0167 Hz
+- **RIP Inspiration Duration - median**: Represents the inspiration duration median from the RIP data source
+  - Unit: milliseconds
+  - Type: double
+  - Sampling frequency: 0.0167 Hz
+- **RIP Inspiration Duration - 80th percentile**: Represents the inspiration duration 80th percentile from the RIP data source
+  - Unit: milliseconds
+  - Type: double
+  - Sampling frequency: 0.0167 Hz
+- **RIP Expiration Duration - quartile deviation**: Represents the expiration duration quartile deviation from the RIP data source
+  - Unit: milliseconds
+  - Type: double
+  - Sampling frequency: 0.0167 Hz
+- **RIP Expiration Duration - average**: Represents the expiration duration mean from the RIP data source
+  - Unit: milliseconds
+  - Type: double
+  - Sampling frequency: 0.0167 Hz
+- **RIP Expiration Duration - median**: Represents the expiration duration median from the RIP data source
+  - Unit: milliseconds
+  - Type: double
+  - Sampling frequency: 0.0167 Hz
+- **RIP Expiration Duration - 80th percentile**: Represents the expiration duration 80th percentile from the RIP data source
+  - Unit: milliseconds
+  - Type: double
+  - Sampling frequency: 0.0167 Hz
+- **RIP Respiration Duration - quartile deviation**: Represents the respiration duration quartile deviation from the RIP data source
+  - Unit: milliseconds
+  - Type: double
+  - Sampling frequency: 0.0167 Hz
+- **RIP Respiration Duration - average**: Represents the respiration duration mean from the RIP data source
+  - Unit: milliseconds
+  - Type: double
+  - Sampling frequency: 0.0167 Hz
+- **RIP Respiration Duration - median**: Represents the respiration duration median from the RIP data source
+  - Unit: milliseconds
+  - Type: double
+  - Sampling frequency: 0.0167 Hz
+- **RIP Respiration Duration - 80th percentile**: Represents the respiration duration 80th percentile from the RIP data source
+  - Unit: milliseconds
+  - Type: double
+  - Sampling frequency: 0.0167 Hz
+- **RIP Inspiration/Expiration Duration - quartile deviation**: Represents the inspiration/expiration duration quartile deviation from the RIP data source
+  - Unit: milliseconds
+  - Type: double
+  - Sampling frequency: 0.0167 Hz
+- **RIP Inspiration/Expiration Duration - average**: Represents the inspiration/expiration duration mean from the RIP data source
+  - Unit: milliseconds
+  - Type: double
+  - Sampling frequency: 0.0167 Hz
+- **RIP Inspiration/Expiration Duration - median**: Represents the inspiration/expiration duration median from the RIP data source
+  - Unit: milliseconds
+  - Type: double
+  - Sampling frequency: 0.0167 Hz
+- **RIP Inspiration/Expiration Duration - 80th percentile**: Represents the inspiration/expiration duration 80th percentile from the RIP data source
+  - Unit: milliseconds
+  - Type: double
+  - Sampling frequency: 0.0167 Hz
+- **RIP Stretch - quartile deviation**: Represents the stretch quartile deviation from the RIP data source
+  - Unit: milliseconds
+  - Type: double
+  - Sampling frequency: 0.0167 Hz
+- **RIP Stretch - average**: Represents the stretch mean from the RIP data source
+  - Unit: milliseconds
+  - Type: double
+  - Sampling frequency: 0.0167 Hz
+- **RIP Stretch - median**: Represents the stretch median from the RIP data source
+  - Unit: milliseconds
+  - Type: double
+  - Sampling frequency: 0.0167 Hz
+- **RIP Stretch - 80th percentile**: Represents the stretch 80th percentile from the RIP data source
+  - Unit: milliseconds
+  - Type: double
+  - Sampling frequency: 0.0167 Hz
 
 
-
-
-- **RIP Expiration Duration**: Respiratory Inductance Plethysmography (RIP) breath expiration duration
-  - Unit: milliseconds
-  - Type: double
-  - Sampling frequency: 0.0167 Hz
-- **RIP Respiration Duration**: Represents the respiration duration from the RIP data source
-  - Unit: milliseconds
-  - Type: double
-  - Sampling frequency: 0.0167 Hz
-- **RIP Inspiration Expiration Ratio**: Represents the inspiration expiration ratio from the RIP data source
-  - Type: double
-  - Sampling frequency: 0.0167 Hz
-- **RIP Stretch**: Represents the stretch from the RIP data source
-  - Unit: **TWH**
-  - Type: double
-  - Sampling frequency: 0.0167 Hz
-- **RIP Upper Stretch**: Represents the stretch in upward direction from the RIP data source
-  - Unit: **TWH**
-  - Type: double
-  - Sampling frequency: 0.0167 Hz
-- **RIP Lower Stretch**: Represents the stretch in downward direction from the RIP data source
-  - Unit: **TWH**
-  - Type: double
-  - Sampling frequency: 0.0167 Hz
-- **RIP Backward Inspiration Duration**: Represents the first order differences of the inspiration duration values from their previous from the RIP data source
-  - Unit: milliseconds
-  - Type: double
-  - Sampling frequency: 0.0167 Hz
-- **RIP Backward Expiration Duration**: Represents the first order differences of the expiration duration values from their previous from the RIP data source
-  - Unit: milliseconds
-  - Type: double
-  - Sampling frequency: 0.0167 Hz
-- **RIP Backward Respiration Duration**: Represents the first order differences of the respiration duration values from their previous from the RIP data source
-  - Unit: milliseconds
-  - Type: double
-  - Sampling frequency: 0.0167 Hz
-- **RIP Backward Stretch**: Represents first order differences of the stretch values from their previous from the RIP data source
-  - Unit: **TWH**
-  - Type: double
-  - Sampling frequency: 0.0167 Hz
-- **RIP Forward Inspiration Duration**: Represents the first order differences of the inspiration duration values from their next from the RIP data source
-  - Unit: milliseconds
-  - Type: double
-  - Sampling frequency: 0.0167 Hz
-- **RIP Forward Expiration Duration**: Represents the first order differences of the expiration duration values from their next from the RIP data source
-  - Unit: milliseconds
-  - Type: double
-  - Sampling frequency: 0.0167 Hz
-- **RIP Forward Respiration Duration**: Represents the first order differences of the respiration duration values from their next from the RIP data source
-  - Unit: milliseconds
-  - Type: double
-  - Sampling frequency: 0.0167 Hz
-- **RIP Forward Stretch**: Represents first order differences of the stretch values from their next from the RIP data source
-  - Unit: **TWH**
-  - Type: double
-  - Sampling frequency: 0.0167 Hz
-- **RIP d5 Expiration**: Represents the ratio of its expiration duration to the average expiration duration value in a window of five cycles from the RIP data source
-  - Type: double
-  - Sampling frequency: 0.0167 Hz
-- **RIP d5 Stretch**: Represents the ratio of its stretch to the average stretch value in a window of five cycles from the RIP data source
-  - Type: double
-  - Sampling frequency: 0.0167 Hz
-- **RIP Maximum Rate of Change**: Represents the maximum rate of change of signal from the RIP data source
-  - Unit: **TWH**
-  - Type: double
-  - Sampling frequency: 0.0167 Hz
-- **RIP Minimum Rate of Change**: Represents the minimum rate of change of signal from the RIP data source
-  - Unit: **TWH**
-  - Type: double
-  - Sampling frequency: 0.0167 Hz
-- **Wrist Gyroscope Magnintude - average**: Represents the mean of magnitude of gyroscope of Motionsense wrist
-  - Unit: degree
-  - Type: double
-  - Sampling frequency: 0.0167 Hz
-- **Wrist Gyroscope Magnintude - median**: Represents the median of magnitude of gyroscope of Motionsense wrist
-  - Unit: degree
-  - Type: double
-  - Sampling frequency: 0.0167 Hz
-- **Wrist Gyroscope Magnintude - standard deviation**: Represents the standard deviation of magnitude of gyroscope of Motionsense wrist
-  - Unit: degree
-  - Type: double
-  - Sampling frequency: 0.0167 Hz
-- **Wrist Gyroscope Magnintude - quartile deviation**: Represents the quartile deviation of magnitude of gyroscope of Motionsense wrist
-  - Unit: degree
-  - Type: double
-  - Sampling frequency: 0.0167 Hz
-- **Wrist Pitch - average**: Represents the mean of the pitch of Motionsense wrist
-  - Unit: degree
-  - Type: double
-  - Sampling frequency: 0.0167 Hz
-- **Wrist Pitch - median**: Represents the median of the pitch of Motionsense wrist
-  - Unit: degree
-  - Type: double
-  - Sampling frequency: 0.0167 Hz
-- **Wrist Pitch - standard deviation**: Represents the standard deviation of the pitch of Motionsense wrist
-  - Unit: degree
-  - Type: double
-  - Sampling frequency: 0.0167 Hz
-- **Wrist Pitch - quartile deviation**: Represents the quartile deviation of the pitch of Motionsense wrist
-  - Unit: degree
-  - Type: double
-  - Sampling frequency: 0.0167 Hz
-- **Wrist Roll - average**: Represents the mean of the roll of Motionsense wrist
-  - Unit: degree
-  - Type: double
-  - Sampling frequency: 0.0167 Hz
-- **Wrist Roll - median**: Represents the median of the roll of Motionsense wrist
-  - Unit: degree
-  - Type: double
-  - Sampling frequency: 0.0167 Hz
-- **Wrist Roll - standard deviation**: Represents the standard deviation of the roll of Motionsense wrist
-  - Unit: degree
-  - Type: double
-  - Sampling frequency: 0.0167 Hz
-- **Wrist Roll - quartile deviation**: Represents the quartile deviation of the roll of Motionsense wrist
-  - Unit: degree
-  - Type: double
-  - Sampling frequency: 0.0167 Hz
-- **rStime - wStime**: Represents the time difference between respiration starttime and wrist segment starttime
-  - Unit: milliseconds
-  - Type: double
-  - Sampling frequency: 0.0167 Hz
-- **rEtime - wStime**: Represents the time difference between respiration endtime and wrist segment starttime
-  - Unit: milliseconds
-  - Type: double
-  - Sampling frequency: 0.0167 Hz
-- **rStime - wEtime**: Represents the time difference between respiration starttime and wrist segment endtime
-  - Unit: milliseconds
-  - Type: double
-  - Sampling frequency: 0.0167 Hz
-- **rEtime - wEtime**: Represents the time difference between respiration endtime and wrist segment endtime
-  - Unit: milliseconds
-  - Type: double
-  - Sampling frequency: 0.0167 Hz
 
 
 ## Probability
