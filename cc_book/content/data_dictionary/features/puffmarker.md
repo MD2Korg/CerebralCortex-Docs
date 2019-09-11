@@ -38,7 +38,6 @@ feature vector describing the set of numeric features in puffMarker
 | ------------- | --------- | ------------------------ | ----------------------- | -------------- | ----------- | --------------- |
 | 1533922952107 | -18000000 | 1271                     | 1701                    | 1.302452       | 10.996382   | 99.462646       | -->
 
-
 | **Label**                                           | **Value**         |
 | --------------------------------------------------- | ----------------- |
 | **UTC Timestamp**                                   | 1533922952107     |
@@ -228,41 +227,6 @@ feature vector describing the set of numeric features in puffMarker
   - Sampling frequency: 0.0167 Hz
 
 
-## Probability
-Represents the probability of Puff using the puffMarker model
-
-### Input Datastreams
-- [RESPIRATION](../raw_streams/autosense#respiration)
-- [ACCELEROMETER_X](../raw_streams/autosense#accelerometer-xyz)
-- [ACCELEROMETER_Y](../raw_streams/autosense#accelerometer-xyz)
-- [ACCELEROMETER_Z](../raw_streams/autosense#accelerometer-xyz)
-- [ACCELEROMETER](../raw_streams/motionsense#accelerometer)
-- [GYROSCOPE](../raw_streams/motionsense#accelerometer)
-
-### Used by
-- [SMOKING](../inferences/smoking.html)
-
-
-### Example
-
-| UTC Timestamp | Offset    | Probability       |
-| ------------- | --------- | ----------------- |
-| 1533922952107 | -18000000 | 0.309815016583471 |
-
-#### Column Details
-- **UTC Timestamp**: Coordinated Universal Time indicating the number of milliseconds since January 1, 1970
-  - Unit: milliseconds
-  - Type: long
-- **Offset**: The difference in time (shown in milliseconds) between UTC time and the local observed time
-  - Unit: milliseconds
-  - Type: integer
-- **Probability**: Represents the probability of Puff using the puffMarker model.
-  - Unit: milliseconds
-  - Type: double
-  - Sampling frequency: 0.0167 Hz
-  - Range: 0 to 1
-
-
 ## Label
 Represents puff value puffMarker model
 
@@ -296,3 +260,38 @@ Represents puff value puffMarker model
     - **0**: no puff
     - **1**: puff
     - **2**: unsure
+
+
+## Probability
+Represents the probability of Puff using the puffMarker model
+
+### Input Datastreams
+- [RESPIRATION](../raw_streams/autosense#respiration)
+- [ACCELEROMETER_X](../raw_streams/autosense#accelerometer-xyz)
+- [ACCELEROMETER_Y](../raw_streams/autosense#accelerometer-xyz)
+- [ACCELEROMETER_Z](../raw_streams/autosense#accelerometer-xyz)
+- [ACCELEROMETER](../raw_streams/motionsense#accelerometer)
+- [GYROSCOPE](../raw_streams/motionsense#accelerometer)
+
+### Used by
+- [SMOKING](../inferences/smoking.html)
+
+
+### Example
+
+| UTC Timestamp | Offset    | Probability       |
+| ------------- | --------- | ----------------- |
+| 1533922952107 | -18000000 | 0.309815016583471 |
+
+#### Column Details
+- **UTC Timestamp**: Coordinated Universal Time indicating the number of milliseconds since January 1, 1970
+  - Unit: milliseconds
+  - Type: long
+- **Offset**: The difference in time (shown in milliseconds) between UTC time and the local observed time
+  - Unit: milliseconds
+  - Type: integer
+- **Probability**: Represents the probability of Puff using the puffMarker model.
+  - Unit: milliseconds
+  - Type: double
+  - Sampling frequency: 0.0167 Hz
+  - Range: 0 to 1
