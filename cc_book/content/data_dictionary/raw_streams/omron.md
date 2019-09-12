@@ -1,32 +1,37 @@
-# EasySense
+# Omron
 
-Easysense is a radio-frequency (RF) sensor that tracks fine-grain internal measurements such as lung fluid and congestion. Rather than being wearable, the sensor is momentarily held to the chest to take quick measurements that penetrate clothing and tissue.
+Omron Blood Pressure Monitor measures highly-accurate blood pressure readings to monitor a user’s blood pressure. In conjunction with MD2K software, these blood pressure readings can be taken at home with the push of a button and can be easily tracked over a period of time to improve patient care.
 
-![MotionSense Hardware](../../images/OmronBP.png) ![MotionSense Hardware](../../images/OmronScale.png)
+![MotionSense Hardware](../../images/OmronBP.png)
+
+Omron Weight Scale is a digital scale to track a user’s weight. The sensor uses Bluetooth technology and is integrated with MD2K software to monitor weight measurements and maintain records of weights taken at any given intervals over a period of time.
+
+![MotionSense Hardware](../../images/OmronScale.png)
 
 
 <!-- **References:**
 {% bibliography --cited %} (remove comment after inserting Bibtex citation in paragraph above) -->
 
+### Used by
+**TWH - do any features use Omron streams?**
+
 
 **Example stream name structure:**
-`org.md2k.easysense+<STREAM_NAME>+<ATTACHMENT>`
+`org.md2k.omron+<STREAM_NAME>+<ATTACHMENT>`
 
 **Example names:**
-- `org.md2k.easysense+STATUS+EASYSENSE`
+- `org.md2k.omron+BATTERY+OMRON_BLOOD_PRESSURE`
+- `org.md2k.omron+WEIGHT+OMRON_WEIGHT_SCALE`
 
 
-## Status
-numerical value to show success or failure of Easysense measurement readings
-
-### Used by
-- [CSTRESS](../features/cstress)
+## Accelerometer Activity Deviation
+detects when the patient was in motion or not during the measurement reading
 
 ### Example
 
-| UTC Timestamp | Offset    | Status  |
-| ------------- | --------- | ------- |
-| 1533922952107 | -18000000 | SUCCESS |
+| UTC Timestamp | Offset    | Body Movement |
+| ------------- | --------- | ------------- |
+| 1533922952107 | -18000000 | 0             |
 
 #### Column Details
 - **UTC Timestamp**: Coordinated Universal Time indicating the number of milliseconds since January 1, 1970
@@ -35,8 +40,66 @@ numerical value to show success or failure of Easysense measurement readings
 - **Offset**: The difference in time (shown in milliseconds) between UTC time and the local observed time
   - Unit: milliseconds
   - Type: integer
-- **Status**:
-  - Type: java.lang.String
+- **Body Movement**:
+  - Type: integer
   - Values:
-    - **0**: SUCCESS
-    - **-1**: FAILURE
+    - **0**: STABLE
+    - **1**: MOVED
+
+
+## Battery
+shows the current battery level of the Omron device as a percentage
+
+### Example
+
+| UTC Timestamp | Offset    | Battery Level |
+| ------------- | --------- | ------------- |
+| 1533922952107 | -18000000 | 100           |
+
+#### Column Details
+- **UTC Timestamp**: Coordinated Universal Time indicating the number of milliseconds since January 1, 1970
+  - Unit: milliseconds
+  - Type: long
+- **Offset**: The difference in time (shown in milliseconds) between UTC time and the local observed time
+  - Unit: milliseconds
+  - Type: integer
+- **Battery Level**: shows the current battery level of the Omron device as a percentage
+  - Unit: percentage
+  - Type: integer
+  - Range: 0% to 100%
+
+
+## Blood Pressure
+shows the blood pressure measurement readings from the Omron Blood Pressure Monitor
+
+### Example
+
+| UTC Timestamp | Offset    | Systolic Blood Pressure | Diastolic Blood Pressure | Mean Arterial Pressure |
+| ------------- | --------- | ----------------------- | ------------------------ | ---------------------- |
+| 1533922952107 | -18000000 | 141                     | 88                       | 105                    |
+
+#### Column Details
+- **UTC Timestamp**: Coordinated Universal Time indicating the number of milliseconds since January 1, 1970
+  - Unit: milliseconds
+  - Type: long
+- **Offset**: The difference in time (shown in milliseconds) between UTC time and the local observed time
+  - Unit: milliseconds
+  - Type: integer
+- **Systolic Blood Pressure**:
+  - Unit: mmHg (millimeters of mercury)
+  - Type: double
+  - Range: 25 to 280
+- **Diastolic Blood Pressure**:
+  - Unit: mmHg (millimeters of mercury)
+  - Type: double
+  - Range: 0 to 255
+- **Mean Arterial Pressure**:
+  - Unit: mmHg (millimeters of mercury)
+  - Type: double
+  - Range: 8 to 262
+
+
+## Heart Rate
+
+
+## Weight
