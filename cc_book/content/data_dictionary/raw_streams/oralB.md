@@ -21,7 +21,7 @@ The Oral-B electric toothbrush with Bluetooth connectivity works with MD2K's sof
 measures the current mode of the Oral-B device
 
 ### Used by
-- **TWH**
+
 
 ### Example
 
@@ -38,22 +38,23 @@ measures the current mode of the Oral-B device
   - Type: integer
 - **Brushing Mode**:
   - Type: integer
-  - Values: **TWH - the range says -1 to 6 but the values are not defined in the data files (eg, ROBAS 7514e3cd-396a-3a9d-b942-3e2a965795bb)**
-    - **-1**:
-    - **0**:
-    - **1**:
-    - **2**:
-    - **3**:
-    - **4**:
-    - **5**:
-    - **6**:
+  - Values:
+    - **-1**: Unknown
+    - **0**: Off
+    - **1**: Daily Clean
+    - **2**: Sensitive
+    - **3**: Massage
+    - **4**: Whitening
+    - **5**: Deep Clean
+    - **6**: Tongue Cleaning
+    - **7**: Turbo
 
 
 ## Brushing State
 measures the current state of the Oral-B device
 
 ### Used by
-- **TWH**
+
 
 ### Example
 
@@ -70,20 +71,18 @@ measures the current state of the Oral-B device
   - Type: integer
 - **Brushing State**:
   - Type: integer
-  - Values: **TWH - the range says -1 to 4 but the values are not defined in the data files (eg, ROBAS 7514e3cd-396a-3a9d-b942-3e2a965795bb)**
-    - **-1**:
-    - **0**:
-    - **1**:
-    - **2**:
-    - **3**:
-    - **4**:
+  - Values:
+    - **-1**: Unknown
+    - **2**: Idle
+    - **3**: Brushing
+    - **4**: Charger
 
 
 ## Brushing Time
-measurement of the length of time during which a brushing episode occurred **TWH ?**
+measurement of the length of time of a brushing episode.
 
 ### Used by
-- **TWH**
+
 
 ### Example
 
@@ -99,16 +98,16 @@ measurement of the length of time during which a brushing episode occurred **TWH
   - Unit: milliseconds
   - Type: integer
 - **Brushing Time**:
-  - Unit: milliseconds **TWH ?**
+  - Unit: seconds
   - Type: integer
   - Range: 0 to 2147483647
 
 
 ## Connection
-measures the state of the Oral-B device Bluetooth connection **TWH - ?**
+measures the state of the Oral-B device Bluetooth connection.
 
 ### Used by
-- **TWH**
+
 
 ### Example
 
@@ -125,22 +124,22 @@ measures the state of the Oral-B device Bluetooth connection **TWH - ?**
   - Type: integer
 - **Connection**:
   - Type: integer
-  - Values: **TWH - I am guessing here, these values are not defined in the data files**
+  - Values:
     - **0**: Not Connected
     - **1**: Connected
 
 
 ## Pressure
-measures whether or not pressure is detected by the Oral-B sensor **TWH - ?**
+measures whether or not excessive pressure is detected by the Oral-B sensor.
 
 ### Used by
-- **TWH**
+
 
 ### Example
 
 | UTC Timestamp | Offset    | Pressure |
-| ------------- | --------- | ---------- |
-| 1533922952107 | -18000000 | 0          |
+| ------------- | --------- | -------- |
+| 1533922952107 | -18000000 | 0        |
 
 #### Column Details
 - **UTC Timestamp**: Coordinated Universal Time indicating the number of milliseconds since January 1, 1970
@@ -151,16 +150,15 @@ measures whether or not pressure is detected by the Oral-B sensor **TWH - ?**
   - Type: integer
 - **Pressure**:
   - Type: integer
-  - Values: **TWH - I am guessing here, these values are not defined in the data files**
-    - **0**: No Pressure Detected
-    - **1**: Pressure Detected
+  - Values:
+    - **0**: No Excess Pressure Detected
+    - **1**: Excess pressure Detected
 
 
 ## Sector
-detects which sector of the mouth is being brushed **TWH - ?**
+detects which sector of the mouth is being brushed
 
 ### Used by
-- **TWH**
 
 ### Example
 
@@ -177,14 +175,14 @@ detects which sector of the mouth is being brushed **TWH - ?**
   - Type: integer
 - **Sector**:
   - Type: integer
-  - Values: **TWH - the range says -1 to 8 but the values are not defined in the data files (eg, ROBAS 7514e3cd-396a-3a9d-b942-3e2a965795bb)**
-    - **-1**:
-    - **0**:
-    - **1**:
-    - **2**:
-    - **3**:
-    - **4**:
-    - **5**:
-    - **6**:
-    - **7**:
-    - **8**:
+  - Values:
+    - **-1**: No Sector
+    - **0**: Last Sector
+    - **1**: Sector 1
+    - **2**: Sector 2
+    - **3**: Sector 3
+    - **4**: Sector 4
+    - **5**: Sector 5
+    - **6**: Sector 6
+    - **7**: Sector 7
+    - **8**: Sector 8

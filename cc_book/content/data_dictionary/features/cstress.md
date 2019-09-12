@@ -18,8 +18,9 @@ cStress is a model for inferring stress from wearable sensors that has been care
 ## Data Quality (electrocardiogram)
 measures the data quality of the Autosense ECG signal
 
-### Input Datastreams **TWH**
+### Input Datastreams
 - [ELECTROCARDIOGRAM](../raw_streams/autosense#electrocardiogram)
+- [RESPIRATION](../raw_streams/autosense#respiration)
 - [ACCELEROMETER_X](../raw_streams/autosense#accelerometer-xyz)
 - [ACCELEROMETER_Y](../raw_streams/autosense#accelerometer-xyz)
 - [ACCELEROMETER_Z](../raw_streams/autosense#accelerometer-xyz)
@@ -53,7 +54,7 @@ measures the data quality of the Autosense ECG signal
 ## Data Quality (respiration)
 measures the data quality of the Autosense respiration signal
 
-### Input Datastreams **TWH**
+### Input Datastreams
 - [RESPIRATION](../raw_streams/autosense#respiration)
 - [ACCELEROMETER_X](../raw_streams/autosense#accelerometer-xyz)
 - [ACCELEROMETER_Y](../raw_streams/autosense#accelerometer-xyz)
@@ -88,7 +89,7 @@ measures the data quality of the Autosense respiration signal
 ## Feature Vector
 feature vector describing the set of numeric features in cStress
 
-### Input Datastreams **TWH**
+### Input Datastreams
 - [ELECTROCARDIOGRAM](../raw_streams/autosense#electrocardiogram)
 - [RESPIRATION](../raw_streams/autosense#respiration)
 - [ACCELEROMETER_X](../raw_streams/autosense#accelerometer-xyz)
@@ -193,11 +194,11 @@ feature vector describing the set of numeric features in cStress
   - Type: double
   - Sampling frequency: 0.0167 Hz
 - **RIP Breath Rate**: Represents the breath rate from the RIP data source
-  - Unit: breaths per minute **TWH - looking at the numbers, should this be breaths per second?**
+  - Unit: breaths per minute
   - Type: double
   - Sampling frequency: 0.0167 Hz
 - **RIP Inspiration Minute Ventilation**: Represents the minute ventilation from the RIP data source
-  - Unit: **TWH**
+  - Unit: milliseconds
   - Type: double
   - Sampling frequency: 0.0167 Hz
 - **RIP Inspiration Duration - quartile deviation**: Represents the inspiration duration quartile deviation from the RIP data source
@@ -280,19 +281,19 @@ feature vector describing the set of numeric features in cStress
   - Unit: milliseconds
   - Type: double
   - Sampling frequency: 0.0167 Hz
-- **RSA - quartile deviation**: Represents the RSA (**TWH - what does RSA stand for?**) quartile deviation from the RIP data source
+- **RSA - quartile deviation**: Represents the Respiratory Sinus Arrhythmia (RSA) quartile deviation from the RIP data source
   - Unit: milliseconds
   - Type: double
   - Sampling frequency: 0.0167 Hz
-- **RSA - average**: Represents the RSA mean from the RIP data source
+- **RSA - average**: Represents the Respiratory Sinus Arrhythmia (RSA) mean from the RIP data source
   - Unit: milliseconds
   - Type: double
   - Sampling frequency: 0.0167 Hz
-- **RSA - median**: Represents the RSA median from the RIP data source
+- **RSA - median**: Represents the Respiratory Sinus Arrhythmia (RSA) median from the RIP data source
   - Unit: milliseconds
   - Type: double
   - Sampling frequency: 0.0167 Hz
-- **RSA - 80th percentile**: Represents the RSA 80th percentile from the RIP data source
+- **RSA - 80th percentile**: Represents the Respiratory Sinus Arrhythmia (RSA) 80th percentile from the RIP data source
   - Unit: milliseconds
   - Type: double
   - Sampling frequency: 0.0167 Hz
@@ -301,7 +302,7 @@ feature vector describing the set of numeric features in cStress
 ## Feature Vector (RIP)
 feature vector describing the set of numeric features in cStress (respiration only)
 
-### Input Datastreams **TWH**
+### Input Datastreams
 - [RESPIRATION](../raw_streams/autosense#respiration)
 - [ACCELEROMETER_X](../raw_streams/autosense#accelerometer-xyz)
 - [ACCELEROMETER_Y](../raw_streams/autosense#accelerometer-xyz)
@@ -312,32 +313,32 @@ feature vector describing the set of numeric features in cStress (respiration on
 
 ### Example
 
-| **Label**                                                    | **Value**             |
-| ------------------------------------------------------------ | --------------------- |
-| **UTC Timestamp**                                            | 1533922952107         |
-| **Offset**                                                   | -18000000             |
-| **RIP Breath Rate**                                          | 0.39468287752326      |
-| **RIP Inspiration Minute Ventilation**                       | -0.40011528536301     |
-| **RIP Inspiration Duration - quartile deviation**            | 0.355023126838219     |
-| **RIP Inspiration Duration - average**                       | 0.105591709336711     |
-| **RIP Inspiration Duration - median**                        | -0.20639682874922     |
-| **RIP Inspiration Duration - 80th percentile**               | 0.498894257788087     |
-| **RIP Expiration Duration - quartile deviation**             | 0.453803242430925     |
-| **RIP Expiration Duration - average**                        | -0.141472783196004    |
-| **RIP Expiration Duration - median**                         | -0.167617825969802    |
-| **RIP Expiration Duration - 80th percentile**                | 0.337607365453296     |
-| **RIP Respiration Duration - quartile deviation**            | 0.38712132086468      |
-| **RIP Respiration Duration - average**                       | -0.048578068876132    |
-| **RIP Respiration Duration - median**                        | -0.196633051867774    |
-| **RIP Respiration Duration - 80th percentile**               | 0.540318933297606     |
-| **RIP Inspiration/Expiration Duration - quartile deviation** | 0.349087499621176     |
-| **RIP Inspiration/Expiration Duration - average**            | -0.0979168174878814   |
-| **RIP Inspiration/Expiration Duration - median**             | -0.20914713064924     |
-| **RIP Inspiration/Expiration Duration - 80th percentile**    | 0.289793986846114     |
-| **RIP Stretch - quartile deviation**                         | 0.141216267157499     |
-| **RIP Stretch - average**                                    | -0.202196995183852    |
-| **RIP Stretch - median**                                     | -0.193960682813648    |
-| **RIP Stretch - 80th percentile**                            | -0.0164942155153861   |
+| **Label**                                                    | **Value**           |
+| ------------------------------------------------------------ | ------------------- |
+| **UTC Timestamp**                                            | 1533922952107       |
+| **Offset**                                                   | -18000000           |
+| **RIP Breath Rate**                                          | 0.39468287752326    |
+| **RIP Inspiration Minute Ventilation**                       | -0.40011528536301   |
+| **RIP Inspiration Duration - quartile deviation**            | 0.355023126838219   |
+| **RIP Inspiration Duration - average**                       | 0.105591709336711   |
+| **RIP Inspiration Duration - median**                        | -0.20639682874922   |
+| **RIP Inspiration Duration - 80th percentile**               | 0.498894257788087   |
+| **RIP Expiration Duration - quartile deviation**             | 0.453803242430925   |
+| **RIP Expiration Duration - average**                        | -0.141472783196004  |
+| **RIP Expiration Duration - median**                         | -0.167617825969802  |
+| **RIP Expiration Duration - 80th percentile**                | 0.337607365453296   |
+| **RIP Respiration Duration - quartile deviation**            | 0.38712132086468    |
+| **RIP Respiration Duration - average**                       | -0.048578068876132  |
+| **RIP Respiration Duration - median**                        | -0.196633051867774  |
+| **RIP Respiration Duration - 80th percentile**               | 0.540318933297606   |
+| **RIP Inspiration/Expiration Duration - quartile deviation** | 0.349087499621176   |
+| **RIP Inspiration/Expiration Duration - average**            | -0.0979168174878814 |
+| **RIP Inspiration/Expiration Duration - median**             | -0.20914713064924   |
+| **RIP Inspiration/Expiration Duration - 80th percentile**    | 0.289793986846114   |
+| **RIP Stretch - quartile deviation**                         | 0.141216267157499   |
+| **RIP Stretch - average**                                    | -0.202196995183852  |
+| **RIP Stretch - median**                                     | -0.193960682813648  |
+| **RIP Stretch - 80th percentile**                            | -0.0164942155153861 |
 
 #### Column Details
 - **UTC Timestamp**: Coordinated Universal Time indicating the number of milliseconds since January 1, 1970
@@ -347,11 +348,11 @@ feature vector describing the set of numeric features in cStress (respiration on
   - Unit: milliseconds
   - Type: integer
 - **RIP Breath Rate**: Represents the breath rate from the RIP data source
-  - Unit: breaths per minute **TWH - looking at the numbers, should this be breaths per second?**
+  - Unit: breaths per minute
   - Type: double
   - Sampling frequency: 0.0167 Hz
 - **RIP Inspiration Minute Ventilation**: Represents the minute ventilation from the RIP data source
-  - Unit: **TWH**
+  - Unit: milliseconds
   - Type: double
   - Sampling frequency: 0.0167 Hz
 - **RIP Inspiration Duration - quartile deviation**: Represents the inspiration duration quartile deviation from the RIP data source

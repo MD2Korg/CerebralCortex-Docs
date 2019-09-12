@@ -23,7 +23,7 @@ description: >-
   This documentation is for the Cerebral Cortex platform.
 
 baseurl: /documentation               # the subpath of your site, e.g. /blog. If there is no subpath for your site, use an empty string ""
-url: https://mdk2.org/   # the base hostname & protocol for your site, e.g. http://example.com
+url: https://md2k.org/   # the base hostname & protocol for your site, e.g. http://example.com
 
 #######################################################################################
 # Jupyter Book settings

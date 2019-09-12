@@ -90,7 +90,7 @@ represents the sleep time entered during the study setup
 shows the infomation used to identify the current participant or user
 
 ### Used by
-**TWH**
+
 
 ### Example
 

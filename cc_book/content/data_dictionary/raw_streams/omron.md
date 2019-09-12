@@ -12,9 +12,6 @@ Omron Weight Scale is a digital scale to track a user’s weight. The sensor use
 <!-- **References:**
 {% bibliography --cited %} (remove comment after inserting Bibtex citation in paragraph above) -->
 
-### Used by
-**TWH - do any features use Omron streams?**
-
 
 **Example stream name structure:**
 `org.md2k.omron+<STREAM_NAME>+<ATTACHMENT>`

@@ -46,10 +46,10 @@
   - title: Machine Learning
     url: /cc3/machine_learning_example
 
-  - title: GitHub repository
-    url: https://github.com/md2korg/CerebralCortex
-    external: true
-    not_numbered: true
+  # - title: GitHub repository
+  #   url: https://github.com/md2korg/CerebralCortex/
+  #   external: true
+  #   not_numbered: true
 
 
 # External link

@@ -17,10 +17,8 @@ Here you will find the sensor and data streams available from the smartphone.
 ## Accelerometer
 the x, y, and z axes of the phone accelerometer
 
-### Used by **TWH - confirm?**
-- [CSTRESS](../features/cstress)
+### Used by
 - [EMA](../features/ema)
-- [PUFFMARKER](../features/puffmarker)
 
 ### Example
 
@@ -87,7 +85,7 @@ represents types of activity currently in progress
 shows the current battery information
 
 ### Used by
-**TWH**
+
 
 ### Example
 
@@ -121,10 +119,8 @@ shows the current battery information
 ## Gyroscope
 the x, y, and z axes of the phone gyroscope
 
-### Used by **TWH - confirm?**
-- [CSTRESS](../features/cstress)
+### Used by
 - [EMA](../features/ema)
-- [PUFFMARKER](../features/puffmarker)
 
 ### Example
 
@@ -207,7 +203,7 @@ the current GPS location of the phone
 shows the user's step count during a given time window
 
 ### Used by
-**TWH**
+
 
 ### Example
 

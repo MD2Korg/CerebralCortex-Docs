@@ -53,7 +53,7 @@ the x, y, and z axes of the MotionSense accelerometer
 shows the current battery level as a percentage
 
 ### Used by
-**TWH**
+
 
 ### Example
 

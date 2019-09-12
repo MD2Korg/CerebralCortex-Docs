@@ -1,42 +1,47 @@
-# Cerebral Cortex Docs and Tutorials
+# Cerebral Cortex Documentation and Tutorials
 
-CC lets you build an online book using a collection of Jupyter Notebooks
-and Markdown files. Its output is similar to the excellent [Bookdown](https://bookdown.org/yihui/bookdown/) tool,
-and adds extra functionality for people running a Jupyter stack.
+## Introduction
+This site provides two key components of the documentation of the MD2K platforms.  First, it provides a series of
+Jupyter notebooks demonstrating the capabilities of Cerebral Cortex and second, a
+data dictionary containing documentation of individual data stream that are part of the
+MD2K platform.
 
-For an example of a book built with Jupyter Books, see the [textbook for Data 100](https://www.textbook.ds100.org/) at UC Berkeley.
 
-Here are a few features of Jupyter Books
+### Platform Overview
+MD2K software platform provides a flexible, scalable, and open platform for collecting,
+analyzing, and sharing high-frequency, raw sensor data and associated labels in the context of scientific field
+studies. It supports the development and validation of computational models and algorithms for inferring
+markers of health, wellness and productivity, and their associated risk factors. The MD2K software platform is
+an open source project (https://github.com/MD2Korg/) with over 80 unique repositories for individual
+components of the various platforms. This platform currently supports research studies at 14 sites targeting 8
+health and workplace targets: Smoking, Eating, Stress, Congestive Heart Failure, Oral Health, Cocaine Use,
+Behavior Change, Workplace Performance. An estimated 2,251 users, 106,806 person-days, and 4.7 trillion
+data points are to be collected from these studies into its cloud platform.
 
-* All course content is written in markdown and Jupyter Notebooks, stored in `notebooks/`
-* The Jupyter Book repo comes packaged with helper scripts to convert these into Jekyll pages (in `scripts/`) that can be hosted for free on GitHub
-* Pages can have [Binder](https://mybinder.org) or JupyterHub links automatically added for interactivity.
-* The website itself is based on Jekyll, and is highly extensible and can be freely-hosted on GitHub.
-* There are lots of nifty HTML features under-the-hood, such as Turbolinks fast-navigation and
-  click-to-copy in code cells.
+The MD2K system includes two primary components: mCerebrum and Cerebral Cortex.
+mCerebrum is a software platform for smartphones that consists of 25+ apps that enables the collection of
+high-frequency data from wearable sensors and smartphones, as well as the collection of smartphone usage
+data. An integrated mobile stream processor framework enables real-time computation of behavioral
+biomarkers from the raw data collected by the phone. mCerebrum also allows the collection of self-reported
+assessments of activity, health, and behavioral states that serve as labels for machine learning-based model
+development and validation. mCerebrum is optimized for collecting high volumes of sensor data from both
+phone and multiple wearable sensors (exceeding 1,000 samples per second or 4 gigabytes per day).
 
-## Getting started
+The collected data is transferred in batches to the cloud-based Cerebral Cortex system that is the big
+data companion of mCerebrum designed to support thousands of concurrently deployed mCerebrum
+instances. Cerebral Cortex can receive data remotely from mCerebrum instances deployed in the field and
+provide a real-time remote monitoring of data collection status at each participant level. In addition, it supports
+population-scale data analysis, visualization, model development, and intervention design for mobile sensor
+data. It provides the ability to do machine learning model development on population scale data sets and
+provides interoperable interfaces for aggregation of diverse data sources. One of the primary capabilities of
+Cerebral Cortex is its ability to support scalable big data machine learning model development and iterative
+data analysis and model generation across population-scale data sets. It has been able to receive hundreds of
+gigabytes of sensor data per day from hundreds of participants spread across the country.
 
-To get started, you may be interested in the following links.
-Here are a few links of interest:
 
-* **[Quickstart](features/features)** is a quick demo and overview of Jupyter Books.
 
-* **[The Jupyter Book Guide](guide/01_overview)**
-  will step you through the process of configuring and building your own Jupyter Book.
 
-* **[The Jupyter Book template repo](https://github.com/jupyter/jupyter-book)** is the template
-  repository you'll use as a start for your Jupyter Book.
+## Contact Information
 
-* **A demo of the Jupyter Book** can be browsed via the sidebar to the left.
-
-## Installation
-
-Here's a brief rundown of how to create your own Jupyter Book using this site. For a more
-complete guide, see [the Jupyter Book guide](guide/01_overview).
-
-* Fork the Jupyter Book template repo
-* Replace the demo notebooks in `content/` with your own notebooks and markdown files.
-* Create a Table of Contents yaml file by editing `_data/toc.yaml`.
-* Generate the Jekyll markdown for your notebooks by running `scripts/generate_book.py`
-* Push your changes to GitHub (or wherever you host your site)!
+* General information: info@md2k.org
+* Technical information: dev@md2k.org

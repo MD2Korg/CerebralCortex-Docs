@@ -48,11 +48,11 @@ measures the acceleration on the x, y, and z axes of the Autosense accelerometer
   - *same as above (accelerometer_x)*
 
 
-## Ambient Temerature
+<!-- ## Ambient Temperature
 shows the ambient temperature of the AutoSense unit
 
 ### Used by
-**TWH**
+
 
 ### Example
 
@@ -68,17 +68,17 @@ shows the ambient temperature of the AutoSense unit
   - Unit: milliseconds
   - Type: integer
 - **Ambient Temperature**: current ambient temperature
-  - Unit: **TWH**
+  - Unit: ADC Value
   - Type: integer
   - Sampling frequency: 1.28 Hz
-  - Range: 0 to 4095
+  - Range: 0 to 4095 -->
 
 
 ## Battery
 shows the current battery level of the AutoSense unit
 
 ### Used by
-**TWH**
+
 
 ### Example
 
@@ -94,7 +94,7 @@ shows the current battery level of the AutoSense unit
   - Unit: milliseconds
   - Type: integer
 - **Battery Level**: current battery charge
-  - Unit: **TWH**
+  - Unit: ADC Value
   - Type: integer
   - Sampling frequency: 1.28 Hz
   - Range: 0 to 4095
@@ -252,11 +252,11 @@ an algorithmic measure of the participant's heart rate
   - Range: 0 to 4095
 
 
-## Galvanic Skin Response
+<!-- ## Galvanic Skin Response
 a change in the electrical resistance of the skin caused by emotional stress, measurable with a sensitive galvanometer
 
 ### Used by
-**TWH**
+
 
 ### Example
 
@@ -272,10 +272,10 @@ a change in the electrical resistance of the skin caused by emotional stress, me
   - Unit: milliseconds
   - Type: integer
 - **Ambient Temperature**: a change in the electrical resistance of the skin caused by emotional stress, measurable with a sensitive galvanometer
-  - Unit: **TWH**
+  - Unit: ADC Value
   - Type: integer
   - Samplinng frequency: 10.66 Hz
-  - Range: 0 to 4095
+  - Range: 0 to 4095 -->
 
 
 ## Respiration
@@ -306,11 +306,11 @@ an algorithmic measure of the participant's respiration
   - Range: 0 to 4095
 
 
-## Skin Temerature
+<!-- ## Skin Temerature
 shows the current skin temperature
 
 ### Used by
-**TWH**
+
 
 ### Example
 
@@ -326,7 +326,7 @@ shows the current skin temperature
   - Unit: milliseconds
   - Type: integer
 - **Ambient Temperature**: current skin temperature
-  - Unit: **TWH**
+  - Unit: ADC Value
   - Type: integer
   - Sampling frequency: 1.28 Hz
-  - Range: 0 to 4095
+  - Range: 0 to 4095 -->
