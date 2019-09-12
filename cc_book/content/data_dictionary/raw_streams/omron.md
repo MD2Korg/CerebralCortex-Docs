@@ -2,7 +2,7 @@
 
 Easysense is a radio-frequency (RF) sensor that tracks fine-grain internal measurements such as lung fluid and congestion. Rather than being wearable, the sensor is momentarily held to the chest to take quick measurements that penetrate clothing and tissue.
 
-![MotionSense Hardware](../../images/Easysense.png)
+![MotionSense Hardware](../../images/OmronBP.png) ![MotionSense Hardware](../../images/OmronScale.png)
 
 
 <!-- **References:**
