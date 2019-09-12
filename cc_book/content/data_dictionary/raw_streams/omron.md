@@ -100,6 +100,50 @@ shows the blood pressure measurement readings from the Omron Blood Pressure Moni
 
 
 ## Heart Rate
+shows the heart rate measurement readings from the Omron Blood Pressure Monitor
+
+### Example
+
+| UTC Timestamp | Offset    | Heart Rate | Irregular Pulse |
+| ------------- | --------- | ---------- | --------------- |
+| 1533922952107 | -18000000 | 86         | 0               |
+
+#### Column Details
+- **UTC Timestamp**: Coordinated Universal Time indicating the number of milliseconds since January 1, 1970
+  - Unit: milliseconds
+  - Type: long
+- **Offset**: The difference in time (shown in milliseconds) between UTC time and the local observed time
+  - Unit: milliseconds
+  - Type: integer
+- **Heart Rate**:
+  - Unit: beats per minute
+  - Type: double
+  - Range: 0 to 255
+- **Irregular Pulse**:
+  - Unit: true/false
+  - Type: double
+  - Values:
+    - **0**: no irregular pulse detected
+    - **1**: irregular pulse detected
 
 
 ## Weight
+shows the weight measurement readings from the Omron Weight Scale in kilograms
+
+### Example
+
+| UTC Timestamp | Offset    | Weight |
+| ------------- | --------- | ------ |
+| 1533922952107 | -18000000 | 211    |
+
+#### Column Details
+- **UTC Timestamp**: Coordinated Universal Time indicating the number of milliseconds since January 1, 1970
+  - Unit: milliseconds
+  - Type: long
+- **Offset**: The difference in time (shown in milliseconds) between UTC time and the local observed time
+  - Unit: milliseconds
+  - Type: integer
+- **Weight**: shows the weight measurement readings from the Omron Weight Scale
+  - Unit: kilograms
+  - Type: integer
+  - Range: 10 to 250
