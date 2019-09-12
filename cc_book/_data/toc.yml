@@ -122,6 +122,9 @@
   - title: MotionSenseHRV
     url: /data_dictionary/raw_streams/motionsensehrv
     not_numbered: true
+  - title: Omron
+    url: /data_dictionary/raw_streams/omron
+    not_numbered: true
   - title: Oral-B Smart Toothbrush
     url: /data_dictionary/raw_streams/oralB
     not_numbered: true
