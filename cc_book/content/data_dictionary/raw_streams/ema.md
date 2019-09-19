@@ -30,8 +30,8 @@ These are the processed Ecologic Momentary Assessment (EMA) data in JSON format 
 - **Offset**: The difference in time (shown in milliseconds) between UTC time and the local observed time
   - Unit: milliseconds
   - Type: integer
-- **Value**: This will contain the EMA questions (provided by the study site) and answers (input by the participant)
-  - the code block below serves as an example
+- **Value**: This data string will contain the EMA questions (provided by the study site) and answers (input by the participant)
+  - the code block below serves as an example EMA; the content will vary greatly for each study
 
 <!-- *code block with example "beautified" ema json file -->
 
