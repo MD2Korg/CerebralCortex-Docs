@@ -25,9 +25,6 @@
 - title: Search
   search: true
 
-# Divider for meta-pages and content page
-- divider: true
-
 # Top-level page
 - title: Home
   url: /index
@@ -65,13 +62,16 @@
 #   external: true
 #   not_numbered: true
 
-
 # Divider for meta-pages and content page
 - divider: true
 
 # Add a header and sample content section
 - header: Data Dictionary
 
+# Adds a searchbar link
+- title: Search
+  search: true
+  
 # A chapter w/ a collection of sections beneath it
 - title: Inferences
   url: /data_dictionary/inferences/intro
