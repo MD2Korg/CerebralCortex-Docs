@@ -39,7 +39,8 @@ These are the processed Ecologic Momentary Assessment (EMA) data in JSON format 
 *Below is a list of possible EMA file names. This list is not comprehensive, but will serve as a queryable list known possibile file names.
 - `org.md2k.scheduler+EMA_RANDOM`
 - `org.md2k.mindfulnessstrategy+MINDFULNESS_SMOKING+PHONE`
-- `org.md2k.ema+EMA_STRESS_EMI+DATA` -->
+- `org.md2k.ema+EMA_STRESS_EMI+DATA`
+- add others from Moffitt and look at other studies -->
 
 ## Smoking
 
