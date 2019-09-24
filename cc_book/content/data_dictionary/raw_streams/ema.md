@@ -92,7 +92,7 @@ These are the processed Ecologic Momentary Assessment (EMA) data in JSON format 
             ],
             "finish_time": 1532376092502,
             "prompt_time": 0,
-            "question_id": 36,
+            "question_id": 3,
             "question_text": "How long ago did you smoke the cigarette?",
             "question_type": "multiple_choice",
             "response": [
@@ -111,7 +111,7 @@ These are the processed Ecologic Momentary Assessment (EMA) data in JSON format 
         {
             "finish_time": 1532376110072,
             "prompt_time": 0,
-            "question_id": 42,
+            "question_id": 4,
             "question_text": "Since the last time I answered this set of questions, I experienced or thought about a positive experience.",
             "question_type": "multiple_choice",
             "response": [
@@ -127,7 +127,7 @@ These are the processed Ecologic Momentary Assessment (EMA) data in JSON format 
         {
             "finish_time": 0,
             "prompt_time": 0,
-            "question_id": 48,
+            "question_id": 5,
             "question_text": "Thank you for answering this Survey. Please click 'FINISH'.",
             "response": []
         }
