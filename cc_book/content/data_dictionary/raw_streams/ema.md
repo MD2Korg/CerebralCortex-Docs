@@ -149,14 +149,14 @@ These are the processed Ecologic Momentary Assessment (EMA) data in JSON format 
 
 ## Smoking
 
-metadata
+.
 
 ## Stress
 
-metadata
+.
 
 ## Random
 
-metadata
+.
 
 ## etc...
