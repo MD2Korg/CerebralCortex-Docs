@@ -1,0 +1,55 @@
+- file: intro
+
+- part: Getting started
+  chapters:
+  - file: mCerebrum/index
+    # sections:
+    #   - file: mCerebrum/index
+
+
+- part: Software
+  chapters:
+    - file: software/overview
+    - file: software/cerebralcortex/index
+      sections:
+       - file: software/cerebralcortex/kernel
+    - file: software/mcerebrum/index
+    - file: software/mprov/index
+    - file: software/mflow/index
+    - file: software/mpolicy_privlib/index
+    - file: software/physiogan/index
+    - file: software/nist_synthetic_data_challenge/index
+
+- part: Studies
+  chapters:
+    - file: studies/overview
+    - file: studies/moods
+    - file: studies/md2k_smoking_and_eating_cessation
+    - file: studies/md2k_congestive_heart_failure
+    - file: studies/mperf_workplace_performance
+    - file: studies/ses
+    - file: studies/aa
+    - file: studies/vermont_smoking_cessation
+    - file: studies/moffitt_smoking_cessation
+    - file: studies/robas
+    - file: studies/cocaine
+    - file: studies/pain_management
+    - file: studies/behavior_change
+    - file: studies/break_free
+    - file: studies/mars
+
+
+
+#
+#
+# file: markdown
+# sections:
+# - file: license
+# - file: content
+# - file: intro
+# - file: notebooks
+# - file: contributing
+# - file: Cerebral-Cortex/index
+#   sections:
+#   - file: Cerebral-Cortex/kernel
+# - file: mCerebrum/index
